@@ -2,8 +2,8 @@ define(function (require) {
 
 
     const React = require('react');
-    const Skin = require('fcui2/Skin.jsx');
-    const Wizard = require('fcui2/Wizard.jsx');
+    const Skin = require('jpui/Skin.jsx');
+    const Wizard = require('jpui/Wizard.jsx');
 
 
     const datasource = ['第一步', '第二步', '第三步', '第四步'];

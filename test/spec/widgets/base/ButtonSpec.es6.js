@@ -27,7 +27,7 @@ define(function (require) {
 
             beforeEach(() => {
                 buttonProps = {
-                    className: 'fcui2-button-test',
+                    className: 'jpui-button-test',
                     style: {
                         color: '#FFF'
                     },
@@ -44,7 +44,7 @@ define(function (require) {
             it('Readers a button with default props', () => {
                 let button = shallowRender(Button);
                 expect(button.type).toBe('div');
-                expect(button.props.className).toBe('fcui2-button fcui2-button-normal browser-chrome');
+                expect(button.props.className).toBe('jpui-button jpui-button-normal browser-chrome');
                 expect(button.props.title).toBe('');
                 expect(button.props.style).toEqual({});
                 expect(button.props.children).toEqual([null, <input type="button" name="" value="Button" disabled={false}/>]);
@@ -53,7 +53,7 @@ define(function (require) {
             it('Renders a button with given props', () => {
                 let button = shallowRender(Button, buttonProps);
                 expect(button.type).toBe('div');
-                expect(button.props.className).toBe('fcui2-button fcui2-button-test-skin fcui2-button-test browser-chrome');
+                expect(button.props.className).toBe('jpui-button jpui-button-test-skin jpui-button-test browser-chrome');
                 expect(button.props.title).toBe('testing title');
                 expect(button.props.style).toEqual({color: '#FFF'});
                 expect(button.props.children).toEqual([
@@ -66,7 +66,7 @@ define(function (require) {
                 let disabledProps = _.extend(buttonProps, {disabled: true});
                 let button = shallowRender(Button, disabledProps);
                 expect(button.type).toBe('div');
-                expect(button.props.className).toBe('fcui2-button fcui2-button-test-skin fcui2-button-test fcui2-button-disabled browser-chrome');
+                expect(button.props.className).toBe('jpui-button jpui-button-test-skin jpui-button-test jpui-button-disabled browser-chrome');
             });
         });
 

@@ -76,7 +76,7 @@ exports.getProcessors = function () {
         } ),
         new JsCompressor({
             files: [
-                'dist/fcui2.js'
+                'dist/jpui.js'
             ],
             compressOptions: {
                 warnings: false

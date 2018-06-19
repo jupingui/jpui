@@ -29,7 +29,7 @@ define(function (require) {
         },
 
         render() {
-            const className = 'fcui2-' + this.props.skin + '-wrapper'
+            const className = 'jpui-' + this.props.skin + '-wrapper'
                 + (this.props.className ? ' ' + this.props.className : '');
             return (
                 <div className={className}>

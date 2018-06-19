@@ -2,8 +2,8 @@ define(function (require) {
 
 
     const React = require('react');
-    const Skin = require('fcui2/Skin.jsx');
-    const Slider = require('fcui2/Slider.jsx');
+    const Skin = require('jpui/Skin.jsx');
+    const Slider = require('jpui/Slider.jsx');
 
 
     return React.createClass({

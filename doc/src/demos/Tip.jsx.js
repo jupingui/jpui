@@ -2,8 +2,8 @@ define(function (require) {
 
 
     var Creater = require('./Main.jsx');
-    var Tip = require('fcui2/Tip.jsx');
-    var Button = require('fcui2/Button.jsx');
+    var Tip = require('jpui/Tip.jsx');
+    var Button = require('jpui/Button.jsx');
 
 
     var items = [
@@ -27,7 +27,7 @@ define(function (require) {
         {
             title: 'Tip with Icon',
             props: {
-                title: 'It is tip\'s title', content: 'blablablabla', icon: 'fcui2-icon fcui2-icon-radio-selected',
+                title: 'It is tip\'s title', content: 'blablablabla', icon: 'jpui-icon jpui-icon-radio-selected',
                 style: {
                     fontWeight: 200,
                     fontSize: 18

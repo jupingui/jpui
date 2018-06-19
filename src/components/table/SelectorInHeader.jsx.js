@@ -93,7 +93,7 @@ define(function (require) {
             var virtualCheckboxProps = {
                 onClick: this.onMainSelectorChange,
                 
-                className: 'fcui2-icon fcui2-icon-checkbox'
+                className: 'jpui-icon jpui-icon-checkbox'
                     + (!checked && indeterminate ? '-indeterminate' : (checked ? '-selected' : '-unselected'))
                     + (disabled ? '-disabled' : '')
             };
@@ -111,9 +111,9 @@ define(function (require) {
             }
             var skin = this.context.appSkin ? this.context.appSkin + '-' : '';
             var containerProp = {
-                className: 'fcui2-dropdownlist fcui2-dropdownlist-' + skin +'normal'
-                    + (disabled ? ' fcui2-dropdownlist-' + skin +'disabled' : '')
-                    + (this.state.layerOpen && !disabled ? ' fcui2-dropdownlist-' + skin +'normal-hover' : ''),
+                className: 'jpui-dropdownlist jpui-dropdownlist-' + skin +'normal'
+                    + (disabled ? ' jpui-dropdownlist-' + skin +'disabled' : '')
+                    + (this.state.layerOpen && !disabled ? ' jpui-dropdownlist-' + skin +'normal-hover' : ''),
                 onMouseEnter: cTools.openLayerHandlerFactory(this, 'layerOpen'),
                 onMouseLeave: cTools.closeLayerHandlerFactory(this, 'layerOpen'),
                 style: {
@@ -132,7 +132,7 @@ define(function (require) {
             return (
                 <th className="th-header table-selector" rowSpan={this.props.rowSpan}>
                     <div {...containerProp}>
-                        <div className="icon-right fcui2-icon fcui2-icon-arrow-down"></div>
+                        <div className="icon-right jpui-icon jpui-icon-arrow-down"></div>
                         &nbsp;
                         <span {...virtualCheckboxProps} style={virtualCheckboxStyle}/>
                         <Layer {...layerProp}>

@@ -47,7 +47,7 @@ define(function (require) {
             var shorts = this.shortCutFactory(me);
             return React.createElement(
                 'div',
-                { className: 'fcui2-range-calendar' },
+                { className: 'jpui-range-calendar' },
                 shorts.length ? React.createElement(
                     'div',
                     { className: 'fast-operation-bar' },

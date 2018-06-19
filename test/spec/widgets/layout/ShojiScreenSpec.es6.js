@@ -55,7 +55,7 @@ define(function (require) {
                 dom.setState({titleWindow: false});
                 expect(dom.refs.titlewindow).toBe(undefined);
                 dom.setState({titleWindow: 'abcded'});
-                expect(dom.refs.titlewindow.___container___ .className).toBe('fcui2-shojiscreen fcui2-shojiscreen-normal');
+                expect(dom.refs.titlewindow.___container___ .className).toBe('jpui-shojiscreen jpui-shojiscreen-normal');
             });
 
             it('Test Close ShojiScreen', () => {

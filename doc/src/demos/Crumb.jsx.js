@@ -1,7 +1,7 @@
 define(function (require) {
 
     var Creater = require('./Main.jsx');
-    var Crumb = require('fcui2/Crumb.jsx');
+    var Crumb = require('jpui/Crumb.jsx');
 
     var items = [
         {

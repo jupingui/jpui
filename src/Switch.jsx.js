@@ -71,13 +71,13 @@ define(function (require) {
             var label = null;
             var value = this.___getValue___();
             containerProp.checked = (value === 'true' || value === true) ? true : false;
-            containerProp.className += ' fcui2-switch-' + (containerProp.checked ? 'on' : 'off');
+            containerProp.className += ' jpui-switch-' + (containerProp.checked ? 'on' : 'off');
             label = containerProp.checked && this.props.labels && this.props.labels.on ? this.props.labels.on : null;
             label = !containerProp.checked && this.props.labels && this.props.labels.off ? this.props.labels.off : label;
             return (
                 <div {...containerProp} onClick={this.onClick}>
-                    <div className="fcui2-switch-label">{label}</div>
-                    <div className="fcui2-switch-cursor"></div>
+                    <div className="jpui-switch-label">{label}</div>
+                    <div className="jpui-switch-cursor"></div>
                 </div>
             );
         }

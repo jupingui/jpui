@@ -37,7 +37,7 @@ define(function (require) {
                         ? mergedValue[i].value : tools.getRangeIntro(mergedValue[i].begin, mergedValue[i].end);
                 }
             } 
-            return (<div className="fcui2-schedule-normal-legend-layer">{text}</div>);
+            return (<div className="jpui-schedule-normal-legend-layer">{text}</div>);
         }
     });
 

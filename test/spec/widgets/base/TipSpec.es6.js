@@ -29,7 +29,7 @@ define(function (require) {
             beforeEach(() => {
                 tipProps = {
                     skin: 'test-skin',
-                    className: 'fcui2-tip-test',
+                    className: 'jpui-tip-test',
                     style: {
                         color: '#FFF'
                     },
@@ -43,7 +43,7 @@ define(function (require) {
             it('Renders a tip with default props', () => {
                 let tip = shallowRender(Tip);
                 expect(tip.type).toBe('div');
-                expect(tip.props.className).toBe('fcui2-tip fcui2-tip-normal browser-chrome font-icon fcui2-icon fcui2-icon-question');
+                expect(tip.props.className).toBe('jpui-tip jpui-tip-normal browser-chrome font-icon jpui-icon jpui-icon-question');
                 expect(tip.props.style).toEqual({display: 'none'});
                 expect(tip.props.children[0]).toBeNull();
                 expect(tip.props.children[1].type).toEqual(Layer);
@@ -53,8 +53,8 @@ define(function (require) {
                 let tip = shallowRender(Tip, tipProps);
                 expect(tip.type).toBe('div');
                 expect(tip.props.className).toBe(
-                    'fcui2-tip fcui2-tip-test-skin fcui2-tip-test fcui2-tip-disabled browser-chrome'
-                        + ' font-icon fcui2-icon fcui2-icon-question'
+                    'jpui-tip jpui-tip-test-skin jpui-tip-test jpui-tip-disabled browser-chrome'
+                        + ' font-icon jpui-icon jpui-icon-question'
                 );
                 expect(tip.props.style).toEqual({color: '#FFF'});
 

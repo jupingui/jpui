@@ -2,10 +2,10 @@ define(function (require) {
 
 
     var React = require('react');
-    var Form = require('fcui2/Form.jsx');
-    var Button = require('fcui2/Button.jsx');
-    var TextBox = require('fcui2/TextBox.jsx');
-    var NumberBox = require('fcui2/NumberBox.jsx');
+    var Form = require('jpui/Form.jsx');
+    var Button = require('jpui/Button.jsx');
+    var TextBox = require('jpui/TextBox.jsx');
+    var NumberBox = require('jpui/NumberBox.jsx');
 
 
     var demos = {

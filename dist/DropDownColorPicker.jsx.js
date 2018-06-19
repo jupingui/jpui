@@ -90,7 +90,7 @@ define(function (require) {
             containerProp.onClick = this.onMainBtnClick;
             var skin = this.props.skin ? this.props.skin : 'normal';
             skin = this.context.appSkin ? this.context.appSkin + '-' + skin : skin;
-            containerProp.className += layerProp.isOpen ? ' fcui2-dropdownlist-' + skin + '-hover' : '';
+            containerProp.className += layerProp.isOpen ? ' jpui-dropdownlist-' + skin + '-hover' : '';
             var Renderer = typeof this.props.renderer === 'function' ? this.props.renderer : NormalRenderer;
             return React.createElement(
                 'div',
@@ -101,7 +101,7 @@ define(function (require) {
                     layerProp,
                     React.createElement(
                         'div',
-                        { className: 'fcui2-dropdowncolorpicker-container' },
+                        { className: 'jpui-dropdowncolorpicker-container' },
                         React.createElement(ColorPicker, { value: this.state.pickerValue, onChange: this.onColorPickerChange }),
                         React.createElement(Button, { label: language.arraySelector.enter, skin: 'important', style: { margin: '0 0 10px 10px' }, onClick: this.onEnterClick }),
                         React.createElement(Button, { label: language.arraySelector.cancel, style: { marginLeft: 10 }, onClick: this.onCancelClick })

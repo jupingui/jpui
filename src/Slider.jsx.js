@@ -131,7 +131,7 @@ define(function (require) {
             valuePosition = this.state.valuePosition > -1 ? this.state.valuePosition : valuePosition;
             var cursorProp = {
                 ref: 'cursor',
-                className: 'fcui2-slider-cursor',
+                className: 'jpui-slider-cursor',
                 style: {left: valuePosition - 8},
                 onMouseDown: this.onDragStart
             };
@@ -146,24 +146,24 @@ define(function (require) {
                     {
                         this.props.showRangeLabel
                         ? (
-                            <div className="fcui2-slider-range-label min-label">
+                            <div className="jpui-slider-range-label min-label">
                                 {this.props.min}
                                 {this.props.measure}
                             </div>
                         ) : null
                     }
-                    <div className="fcui2-slider-base-axis" />
+                    <div className="jpui-slider-base-axis" />
                     {
                         this.props.showRangeLabel ? (
-                            <div className="fcui2-slider-range-label max-label">
+                            <div className="jpui-slider-range-label max-label">
                                 {this.props.max}
                                 {this.props.measure}
                             </div>
                         ) : null
                     }
-                    <div className="fcui2-slider-left-rule"></div>
-                    <div className="fcui2-slider-right-rule"></div>
-                    <div className="fcui2-slider-value-axis" style={{width: valuePosition + 7}}></div>
+                    <div className="jpui-slider-left-rule"></div>
+                    <div className="jpui-slider-right-rule"></div>
+                    <div className="jpui-slider-value-axis" style={{width: valuePosition + 7}}></div>
                     <div {...cursorProp}></div>
                     <WarningLayer {...warningLayerProps}/>
                 </div>

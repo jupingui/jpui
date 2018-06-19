@@ -79,7 +79,7 @@ define(function (require) {
             var layer = document.createElement('div');
             var renderContainer = document.createElement('div');
             var virtualBorder = document.createElement('div');
-            virtualBorder.className = 'fcui2-layer-virtual-border';
+            virtualBorder.className = 'jpui-layer-virtual-border';
             layer.style.left = '-9999px';
             layer.style.top = '-9999px';
             // 挂接容器事件和全局事件
@@ -190,7 +190,7 @@ define(function (require) {
             if (!this.___layerContainer___) return;
             var layer = this.___layerContainer___;
             var style = props.style || {};
-            layer.className = 'fcui2-layer fcui2-layer-'
+            layer.className = 'jpui-layer jpui-layer-'
                 + (typeof props.skin === 'string' && props.skin.length ? props.skin : 'normal')
                 + (typeof props.className === 'string' && props.className.length ? (' ' + props.className) : '');
             var cssText = '';

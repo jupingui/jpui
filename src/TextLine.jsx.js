@@ -161,7 +161,7 @@ define(function (require) {
             };
             var skin = (this.context.appSkin ? this.context.appSkin + '-' : '')
                 + (this.props.skin ? this.props.skin : 'normal');
-            containerProp.className += this.state.hasFocus ? ' fcui2-textline-' + skin + '-hover' : '';
+            containerProp.className += this.state.hasFocus ? ' jpui-textline-' + skin + '-hover' : '';
             return (
                 <div {...containerProp}>
                     <div {...labelProp}></div>

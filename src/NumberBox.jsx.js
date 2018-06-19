@@ -144,7 +144,7 @@ define(function (require) {
                 style: {width: width}
             });
             var placeholderProp = {
-                className: 'fcui2-numberbox-placeholder',
+                className: 'jpui-numberbox-placeholder',
                 style: {
                     visibility: value.length === 0 ? 'visible' : 'hidden'
                 }
@@ -176,9 +176,9 @@ define(function (require) {
                     <div {...placeholderProp}>{this.props.placeholder}</div>
                     <input {...inputProp} disabled={this.props.disabled} ref="inputbox"/>
                     <div {...btnContainerProp}>
-                        <div className="fcui2-icon fcui2-icon-small-arrow-up"
+                        <div className="jpui-icon jpui-icon-small-arrow-up"
                             data-ui-cmd="add" onClick={this.onSpinButtonClick}></div>
-                        <div className="fcui2-icon fcui2-icon-small-arrow-down"
+                        <div className="jpui-icon jpui-icon-small-arrow-down"
                             data-ui-cmd="sub" onClick={this.onSpinButtonClick}></div>
                     </div>
                 </div>

@@ -40,7 +40,7 @@ define(function (require) {
                 });
                 let child1 = dom.props.children[1];
                 expect(dom.type).toBe('div');
-                expect(dom.props.className).toBe('fcui2-dropdownlist fcui2-dropdownlist-normal browser-chrome');
+                expect(dom.props.className).toBe('jpui-dropdownlist jpui-dropdownlist-normal browser-chrome');
                 expect(child1).toEqual(
                     <span className="label-container">please select</span>
                 );

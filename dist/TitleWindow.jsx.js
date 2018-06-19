@@ -67,15 +67,15 @@ define(function (require) {
             var background = document.createElement('div');
             var workspace = document.createElement('div');
 
-            background.className = 'fcui2-titlewindow-background';
-            container.className = 'fcui2-titlewindow-container';
-            workspace.className = 'fcui2-titlewindow';
+            background.className = 'jpui-titlewindow-background';
+            container.className = 'jpui-titlewindow-container';
+            workspace.className = 'jpui-titlewindow';
             workspace.style.left = '-9999px';
             workspace.style.top = '-9999px';
             if (this.props.zIndex !== null) {
                 container.style.zIndex = this.props.zIndex;
             }
-            workspace.innerHTML = ['<div class="title-bar">', '<span></span>', '<div class="fcui2-icon fcui2-icon-close" data-ui-cmd="title-window-close"></div>', '</div>', '<div class="content">', '</div>'].join('');
+            workspace.innerHTML = ['<div class="title-bar">', '<span></span>', '<div class="jpui-icon jpui-icon-close" data-ui-cmd="title-window-close"></div>', '</div>', '<div class="content">', '</div>'].join('');
             container.appendChild(background);
             container.appendChild(workspace);
 
@@ -167,14 +167,14 @@ define(function (require) {
             var appSkin = this.context.appSkin;
             titleBar.childNodes[0].innerHTML = props.title;
             titleBar.childNodes[1].style.display = props.showCloseButton ? 'block' : 'none';
-            this.___workspace___.className = 'fcui2-titlewindow' + ' fcui2-titlewindow-' + (typeof appSkin === 'string' && appSkin.length ? appSkin + '-' : '') + (typeof skin === 'string' && skin.length ? skin : 'normal') + (typeof className === 'string' && className.length ? ' ' + className : '');
+            this.___workspace___.className = 'jpui-titlewindow' + ' jpui-titlewindow-' + (typeof appSkin === 'string' && appSkin.length ? appSkin + '-' : '') + (typeof skin === 'string' && skin.length ? skin : 'normal') + (typeof className === 'string' && className.length ? ' ' + className : '');
             if (!props.isOpen && !this.___appended___) return;
             // open
             var me = this;
             if (props.isOpen) {
                 if (!this.___appended___) {
                     // 记录滚动条组航太
-                    var bodyStatus = util.getNamespace('fcui2-body-scroll-status') || {};
+                    var bodyStatus = util.getNamespace('jpui-body-scroll-status') || {};
                     bodyStatus.windowNum = isNaN(bodyStatus.windowNum) ? 1 : bodyStatus.windowNum + 1;
                     bodyStatus.overflowX = !bodyStatus.hasOwnProperty('overflowX') ? util.getStyle(document.body, 'overflowX') : bodyStatus.overflowX;
                     bodyStatus.overflowY = !bodyStatus.hasOwnProperty('overflowY') ? util.getStyle(document.body, 'overflowY') : bodyStatus.overflowY;
@@ -222,7 +222,7 @@ define(function (require) {
         removeSubTree: function removeSubTree() {
             if (!this.___appended___) return;
             // 恢复滚动条状态
-            var bodyStatus = util.getNamespace('fcui2-body-scroll-status') || {};
+            var bodyStatus = util.getNamespace('jpui-body-scroll-status') || {};
             bodyStatus.windowNum--;
             if (bodyStatus.windowNum === 0) {
                 document.body.style.overflowX = bodyStatus.overflowX;

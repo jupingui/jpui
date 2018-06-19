@@ -61,7 +61,7 @@ define(function (require) {
             for (var i = 0; i < 7; i++) {
                 doms.push(React.createElement(
                     'div',
-                    { key: i, className: 'fcui2-checkbox disabled-selected', style: { top: i * 24 } },
+                    { key: i, className: 'jpui-checkbox disabled-selected', style: { top: i * 24 } },
                     language.day[i]
                 ));
             }

@@ -4,20 +4,20 @@ define(function (require) {
     var React = require('react');
 
     // 下面所有组件都是inline-block
-    var Button = require('fcui2/Button.jsx');
-    var TextBox = require('fcui2/TextBox.jsx');
-    var NumberBox = require('fcui2/NumberBox.jsx');
-    var Select = require('fcui2/Select.jsx');
-    var CheckBox = require('fcui2/CheckBox.jsx');
-    var Radio = require('fcui2/Radio.jsx');
-    var DropDownList= require('fcui2/DropDownList.jsx');
-    var DropDownCalendar = require('fcui2/DropDownCalendar.jsx');
-    var RangeCalendar = require('fcui2/RangeCalendar.jsx');
-    var DropDownRegion = require('fcui2/DropDownRegion.jsx')
-    var ComboList = require('fcui2/ComboList.jsx');
-    var SearchBox = require('fcui2/SearchBox.jsx');
-    var Tip = require('fcui2/Tip.jsx');
-    var Switch = require('fcui2/Switch.jsx');
+    var Button = require('jpui/Button.jsx');
+    var TextBox = require('jpui/TextBox.jsx');
+    var NumberBox = require('jpui/NumberBox.jsx');
+    var Select = require('jpui/Select.jsx');
+    var CheckBox = require('jpui/CheckBox.jsx');
+    var Radio = require('jpui/Radio.jsx');
+    var DropDownList= require('jpui/DropDownList.jsx');
+    var DropDownCalendar = require('jpui/DropDownCalendar.jsx');
+    var RangeCalendar = require('jpui/RangeCalendar.jsx');
+    var DropDownRegion = require('jpui/DropDownRegion.jsx')
+    var ComboList = require('jpui/ComboList.jsx');
+    var SearchBox = require('jpui/SearchBox.jsx');
+    var Tip = require('jpui/Tip.jsx');
+    var Switch = require('jpui/Switch.jsx');
 
     return React.createClass({
         render: function () {

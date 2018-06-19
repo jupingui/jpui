@@ -1,13 +1,13 @@
 // version 0.0.4
 
-.fcui2-wizard {
+.jpui-wizard {
     box-sizing: content-box;
     * {
         box-sizing: content-box;
     }
     position: relative;
     z-index: 0;
-    .fcui2-wizard-item {
+    .jpui-wizard-item {
         position: relative;
         display: inline-block;
         line-height: 40px;
@@ -16,7 +16,7 @@
         >span {
             margin-left: 40px;
         }
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             position: absolute;
             right: -20px;
             top: 0px;
@@ -30,7 +30,7 @@
                 display: none;
             }
         }
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             position: absolute;
             right: -22px;
             top: 0px;
@@ -47,135 +47,135 @@
             }
         }
         &:last-child {
-            .fcui2-wizard-arrow,.fcui2-wizard-arrow-bg {
+            .jpui-wizard-arrow,.jpui-wizard-arrow-bg {
                 display: none;
             }
         }
     }
 }
 
-.fcui2-wizard-normal {
+.jpui-wizard-normal {
     font-family: @font-normal;
-    .fcui2-wizard-item {
+    .jpui-wizard-item {
         font-size: 12px;
         font-weight: 700;
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border-top-color: transparent;
             border-bottom-color: transparent;
         }
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             border-top-color: transparent;
             border-bottom-color: transparent;
         }
     }
-    .fcui2-wizard-item-normal {
+    .jpui-wizard-item-normal {
         cursor: pointer;
         background-color: @color-bg-caption;
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border-left-color: @color-bg-caption;
         }
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             border-left-color: @color-bg; 
         }
         &:hover {
             background-color: @color-btn-hover;
             color: @color-bg;
-            .fcui2-wizard-arrow {
+            .jpui-wizard-arrow {
                 border-left-color: @color-btn-hover;
             }
         }
     }
-    .fcui2-wizard-item-disabled {
+    .jpui-wizard-item-disabled {
         cursor: default;
         color: @color-disabled-text;
         background-color: @color-bg-caption;
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border-left-color: @color-bg-caption;
         }
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             border-left-color: @color-bg; 
         }
     }
-    .fcui2-wizard-item-active {
+    .jpui-wizard-item-active {
         cursor: pointer;
         background-color: @color-btn-hover;
         color: @color-bg;
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border-left-color: @color-btn-hover;
         }
         &:hover {
             background-color: @color-btn-hover;
-            .fcui2-wizard-arrow {
+            .jpui-wizard-arrow {
                 border-left-color: @color-btn-hover;
             }
         }
     }
 }
 
-.fcui2-wizard-oneux3-normal {
+.jpui-wizard-oneux3-normal {
     font-family: @font-normal;
     border: 1px solid @oneux3-bgcolor-c2;
-    .fcui2-wizard-item {
+    .jpui-wizard-item {
         font-size: @oneux3-font-size-t3;
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border-top-color: transparent;
             border-bottom-color: transparent;
         }
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             border-top-color: transparent;
             border-bottom-color: transparent;
         }
     }
-    .fcui2-wizard-item-normal {
+    .jpui-wizard-item-normal {
         cursor: pointer;
         color: @oneux3-color-c4;
         background-color: @oneux3-bgcolor-c4;
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border-left-color: @oneux3-bgcolor-c4;
         }
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             border-left-color: @oneux3-bgcolor-c2; 
         }
         &:hover {
             color: @oneux3-color-c8;
             background-color: @oneux3-bgcolor-c17;
-            .fcui2-wizard-arrow {
+            .jpui-wizard-arrow {
                 border-left-color: @oneux3-bgcolor-c17;
             }
         }
     }
-    .fcui2-wizard-item-disabled {
+    .jpui-wizard-item-disabled {
         cursor: default;
         color: @oneux3-color-c3;
         background-color: @oneux3-bgcolor-c18;
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border-left-color: @oneux3-bgcolor-c18;
         }
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             border-left-color: @color-bg; 
         }
     }
-    .fcui2-wizard-item-active {
+    .jpui-wizard-item-active {
         cursor: pointer;
         background-color: @oneux3-bgcolor-c20;
         color: @color-bg;
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border-left-color: @oneux3-bgcolor-c20;
         }
         &:hover {
             background-color: @oneux3-bgcolor-c17;
-            .fcui2-wizard-arrow {
+            .jpui-wizard-arrow {
                 border-left-color: @oneux3-bgcolor-c17;
             }
         }
     }
 }
 
-.fcui2-wizard-oneux4-normal {
-    .fcui2-wizard-item {
+.jpui-wizard-oneux4-normal {
+    .jpui-wizard-item {
         cursor: pointer;
         color: @oneux4-color-c1;
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             display: block;
             position: absolute;
             z-index: -1;
@@ -186,7 +186,7 @@
             border: 0px;
             background-color: @oneux4-border-color-c6; 
         }
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             top: 7px;
             right: auto;
             left: 0px;
@@ -217,21 +217,21 @@
             }
         }
         &:last-child {
-            .fcui2-wizard-arrow {
+            .jpui-wizard-arrow {
                 display: block;
             }
         }
     }
-    .fcui2-wizard-item-active {
-        .fcui2-wizard-arrow-bg {
+    .jpui-wizard-item-active {
+        .jpui-wizard-arrow-bg {
             background-color: @oneux4-color-c1; 
         }
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border: 1px solid @oneux4-border-color-c5;
             height: 24px;
             width: 24px;
             background-color: @oneux4-bgcolor-c1;
-            font-family: 'fcui2-icon';
+            font-family: 'jpui-icon';
             &:before {
                 content: "\e612";
                 font-size: 16px;
@@ -246,11 +246,11 @@
             }
         }
     }
-    .fcui2-wizard-item-current {
-        .fcui2-wizard-arrow-bg {
+    .jpui-wizard-item-current {
+        .jpui-wizard-arrow-bg {
             background-color: @oneux4-border-color-c6; 
         }
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             border: 0px;
             height: 26px;
             width: 26px;
@@ -268,16 +268,16 @@
     }
 }
 
-.fcui2-wizard-oneux4-line {
+.jpui-wizard-oneux4-line {
     overflow: hidden;
-    .fcui2-wizard-item {
+    .jpui-wizard-item {
         >span {
             margin-left: 0px !important;
             position: absolute;
             top: 18px;
             left: -10px;
         }
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             border: 0px;
             display: none;
         }
@@ -285,7 +285,7 @@
             >span {
                 left: 0px;
             }
-            .fcui2-wizard-arrow-bg {
+            .jpui-wizard-arrow-bg {
                 display: block;
                 position: absolute;
                 width: 10px;
@@ -297,7 +297,7 @@
                 background-color: @oneux4-border-color-c7;
             }
         }
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             display: block !important;
             position: absolute;
             top: 10px;
@@ -319,29 +319,29 @@
             }
         }
     }
-    .fcui2-wizard-item-active {
+    .jpui-wizard-item-active {
         &:first-child {
-            .fcui2-wizard-arrow-bg {
+            .jpui-wizard-arrow-bg {
                 background-color: @oneux4-bgcolor-c6;
             } 
         }
-        .fcui2-wizard-arrow {
+        .jpui-wizard-arrow {
             background-color: @oneux4-bgcolor-c6;
             > span {
                 background-color: @oneux4-bgcolor-c6;
             }
         }
     }
-    .fcui2-wizard-item-pre {
-        .fcui2-wizard-arrow {
+    .jpui-wizard-item-pre {
+        .jpui-wizard-arrow {
             left: -10px;
             >span {
                 display: none;
             }
         }
     }
-    .fcui2-wizard-item-current {
-        .fcui2-wizard-arrow {
+    .jpui-wizard-item-current {
+        .jpui-wizard-arrow {
             width: 100%;
             background-color: @oneux4-border-color-c7;
             >span {
@@ -349,7 +349,7 @@
                 background-color: @oneux4-border-color-c7;
             }
         }
-        .fcui2-wizard-arrow-bg {
+        .jpui-wizard-arrow-bg {
             display: block !important;
             position: absolute;
             top: 5px !important;

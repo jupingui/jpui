@@ -28,7 +28,7 @@ require.config({
       location: '../../test'
     },
     {
-      name: 'fcui2',
+      name: 'jpui',
       location: '.'
     }
   ],

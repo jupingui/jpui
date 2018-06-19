@@ -1,7 +1,7 @@
 define(function (require) {
 
     var Creater = require('./Main.jsx');
-    var ComboList = require('fcui2/ComboList.jsx');
+    var ComboList = require('jpui/ComboList.jsx');
 
     var items = [
         {
@@ -72,7 +72,7 @@ define(function (require) {
                 value: 'Main Command6',
                 label: ' 成功',
                 width: 200,
-                icon: 'fcui2-icon fcui2-icon-success',
+                icon: 'jpui-icon jpui-icon-success',
                 datasource: [
                     {label: 'option1option1option1option1option1option1option1option1option1', value: 'option1'},
                     {label: 'option2', value: 'option2', disabled: true},

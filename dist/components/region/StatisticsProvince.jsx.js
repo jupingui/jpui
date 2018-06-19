@@ -82,7 +82,7 @@ define(function (require) {
             var selected = tools.getSelectedState(this.props.id, this.props.value);
             var containerProp = {
                 ref: 'container',
-                className: 'fcui2-region-province',
+                className: 'jpui-region-province',
                 onMouseLeave: this.onMouseLeave,
                 onMouseEnter: this.onMouseEnter
             };
@@ -107,7 +107,7 @@ define(function (require) {
                     layerProps,
                     React.createElement(
                         'table',
-                        { className: 'fcui2-region-city-container' },
+                        { className: 'jpui-region-city-container' },
                         React.createElement(
                             'tbody',
                             null,

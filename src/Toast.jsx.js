@@ -22,13 +22,13 @@ define(function(require) {
     };
 
     const iconType = {
-        success: 'fcui2-icon fcui2-icon-success',
-        error: 'fcui2-icon fcui2-icon-failed'
+        success: 'jpui-icon jpui-icon-success',
+        error: 'jpui-icon jpui-icon-failed'
     };
 
     let defaultProps = {
         className: '',
-        classPrefix: 'fcui2-toast',
+        classPrefix: 'jpui-toast',
         type: toastType.SUCCESS,
         icon: '',
         message: '',

@@ -3,7 +3,7 @@ define(function (require) {
 
     var React = require('react');
     var classitems = require('../../config').items;
-    var Table = require('fcui2/Table.jsx');
+    var Table = require('jpui/Table.jsx');
     var Code = require('./Code.jsx');
 
     var fieldConfig = [

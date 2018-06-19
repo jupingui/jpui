@@ -1,8 +1,8 @@
 define(function (require) {
 
     const React = require('react');
-    const NumberBox = require('fcui2/NumberBox.jsx');
-    const Skin = require('fcui2/Skin.jsx');
+    const NumberBox = require('jpui/NumberBox.jsx');
+    const Skin = require('jpui/Skin.jsx');
 
     return React.createClass({
         getInitialState() {
@@ -25,9 +25,9 @@ define(function (require) {
                             <NumberBox disabled={true}/>&nbsp;
                             <NumberBox showSpinButton={true}/>
                             <h5>Size</h5>
-                            <NumberBox placeholder="placeholder" showSpinButton={true} className="fcui2-numberbox-small"/>&nbsp;
+                            <NumberBox placeholder="placeholder" showSpinButton={true} className="jpui-numberbox-small"/>&nbsp;
                             <NumberBox placeholder="placeholder" showSpinButton={true}/>&nbsp;
-                            <NumberBox placeholder="placeholder"showSpinButton={true} className="fcui2-numberbox-big"/>
+                            <NumberBox placeholder="placeholder"showSpinButton={true} className="jpui-numberbox-big"/>
                         </Skin>
                     </div>
                     <div className="demo-item">

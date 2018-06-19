@@ -39,7 +39,7 @@ define(function (require) {
             this.props.close();
         },
         render: function render() {
-            var className = 'fcui2-dialog-' + (this.context.appSkin ? this.context.appSkin + '-alert' : 'alert');
+            var className = 'jpui-dialog-' + (this.context.appSkin ? this.context.appSkin + '-alert' : 'alert');
             var enterProps = {
                 skin: 'important',
                 label: this.props.labels.enter,

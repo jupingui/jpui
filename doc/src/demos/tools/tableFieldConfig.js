@@ -28,7 +28,7 @@ define(function (require) {
             label: '年龄',
             field: 'age',
             width: 100,
-            tip: {title: 'It is tip\'s title', content: '<img width="300px" src="https://www.baidu.com/img/bd_logo1.png"/>', icon: 'fcui2-icon fcui2-icon-exclamation'}
+            tip: {title: 'It is tip\'s title', content: '<img width="300px" src="https://www.baidu.com/img/bd_logo1.png"/>', icon: 'jpui-icon jpui-icon-exclamation'}
         },
         tipBirth: {
             label: '日期',
@@ -82,7 +82,7 @@ define(function (require) {
             align: 'right',
             renderType: 'float',
             fixed: 1,
-            renderer: require('fcui2/components/table/NumberRenderer.jsx'),
+            renderer: require('jpui/components/table/NumberRenderer.jsx'),
             prepare: function (props, item) {
                 props.content = item.age;
             }
@@ -93,17 +93,17 @@ define(function (require) {
             width: 150,
             content: '-',
             sortDisable: true,
-            renderer: require('fcui2/components/table/ButtonRenderer.jsx'),
+            renderer: require('jpui/components/table/ButtonRenderer.jsx'),
             prepare: function (props, item, row, column) {
                 if (item.name === 'Tom Chros') {
-                    props.buttonIcon = 'fcui2-icon fcui2-icon-calendar';
+                    props.buttonIcon = 'jpui-icon jpui-icon-calendar';
                     props.content = '移动在线';
                     props.style = {
                         color: 'green'
                     };
                 }
                 else if (item.name === 'Brian Li') {
-                    props.buttonIcon = 'fcui2-icon fcui2-icon-search';
+                    props.buttonIcon = 'jpui-icon jpui-icon-search';
                     props.content = '固话可用';
                     props.style = {
                         color: 'red'

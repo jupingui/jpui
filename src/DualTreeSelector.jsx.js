@@ -153,7 +153,7 @@ define(function (require) {
                 <div {...cTools.containerBaseProps('dualtreeselector', this)}>
                     <div className="tree-container">
                         <Tree {...treeProp1}/>
-                        <span className="cut-rule fcui2-icon fcui2-icon-arrow-right"></span>
+                        <span className="cut-rule jpui-icon jpui-icon-arrow-right"></span>
                         <Tree {...treeProp2}/>
                     </div>
                 </div>

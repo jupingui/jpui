@@ -2,9 +2,9 @@ define(function (require) {
 
 
     var React = require('react');
-    var util = require('fcui2/core/util');
-    var Form = require('fcui2/Form.jsx');
-    var Schedule = require('fcui2/Schedule.jsx');
+    var util = require('jpui/core/util');
+    var Form = require('jpui/Form.jsx');
+    var Schedule = require('jpui/Schedule.jsx');
 
 
     // 以下所有组件都能在Form中使用
@@ -13,23 +13,23 @@ define(function (require) {
         'Slider', 'Region', 'Pager', 'Calendar', 'RangeCalendar', 'Wizard', 'DropDownRegion', 'Tab', 'Table'
     ];
     var components = {
-        textbox: require('fcui2/TextBox.jsx'),
-        numberbox: require('fcui2/NumberBox.jsx'),
-        checkbox: require('fcui2/CheckBox.jsx'),
-        radio: require('fcui2/Radio.jsx'),
-        select: require('fcui2/Select.jsx'),
-        textarea: require('fcui2/TextArea.jsx'),
-        searchbox: require('fcui2/SearchBox.jsx'),
-        dropdowncalendar: require('fcui2/DropDownCalendar.jsx'),
-        slider: require('fcui2/Slider.jsx'),
-        region: require('fcui2/Region.jsx'),
-        pager: require('fcui2/Pager.jsx'),
-        calendar: require('fcui2/Calendar.jsx'),
-        rangecalendar: require('fcui2/RangeCalendar.jsx'),
-        wizard: require('fcui2/Wizard.jsx'),
-        dropdownregion: require('fcui2/DropDownRegion.jsx'),
-        tab: require('fcui2/Tab.jsx'),
-        table: require('fcui2/Table.jsx')
+        textbox: require('jpui/TextBox.jsx'),
+        numberbox: require('jpui/NumberBox.jsx'),
+        checkbox: require('jpui/CheckBox.jsx'),
+        radio: require('jpui/Radio.jsx'),
+        select: require('jpui/Select.jsx'),
+        textarea: require('jpui/TextArea.jsx'),
+        searchbox: require('jpui/SearchBox.jsx'),
+        dropdowncalendar: require('jpui/DropDownCalendar.jsx'),
+        slider: require('jpui/Slider.jsx'),
+        region: require('jpui/Region.jsx'),
+        pager: require('jpui/Pager.jsx'),
+        calendar: require('jpui/Calendar.jsx'),
+        rangecalendar: require('jpui/RangeCalendar.jsx'),
+        wizard: require('jpui/Wizard.jsx'),
+        dropdownregion: require('jpui/DropDownRegion.jsx'),
+        tab: require('jpui/Tab.jsx'),
+        table: require('jpui/Table.jsx')
     };
     var defaultFormValue = {
         textbox: 'textbox',

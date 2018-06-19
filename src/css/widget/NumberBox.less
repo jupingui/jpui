@@ -1,6 +1,6 @@
 // version 0.0.4
 
-.fcui2-numberbox {
+.jpui-numberbox {
     * {
         box-sizing: content-box;
     }
@@ -9,7 +9,7 @@
     top: 11px;
     margin-top: -11px;
     height: 30px;
-    .fcui2-numberbox-placeholder {
+    .jpui-numberbox-placeholder {
         position: absolute;
         left: 0px;
         top: 0px;
@@ -34,32 +34,32 @@
         width: 20px;
         height: 28px;
         border-left: 1px solid;
-        .fcui2-icon {
+        .jpui-icon {
             line-height: 14px;
             text-align: center;
         }
     }
-    .fcui2-icon {
+    .jpui-icon {
         font-size: 12px;
     }
 }
 
 
-.fcui2-numberbox-normal {
+.jpui-numberbox-normal {
     background-color: @color-bg;
     input {
         height: 26px;
         border-color: @color-outer-border;
         background-color: transparent;
     }
-    .fcui2-numberbox-placeholder {
+    .jpui-numberbox-placeholder {
         color: @color-disabled-text;
         font-size: 12px;
     }
     .btn-container {
         background-color: @color-bg-btn;
         border-left-color: @color-outer-border;
-        .fcui2-icon {
+        .jpui-icon {
             cursor: pointer;
             &:hover {
                 background-color: @color-btn;
@@ -74,15 +74,15 @@
         border-color: @color-btn-hover;
     }
 }
-.fcui2-numberbox-reject {
+.jpui-numberbox-reject {
     input {
         height: 26px;
     }
 }
 
 
-.fcui2-numberbox-oneux3-normal,
-.fcui2-numberbox-oneux3-reject {
+.jpui-numberbox-oneux3-normal,
+.jpui-numberbox-oneux3-reject {
     height: 28px;
     background-color: @color-bg;
     top: 9px;
@@ -92,7 +92,7 @@
         border-color: @oneux3-bgcolor-c2;
         background-color: transparent;
     }
-    .fcui2-numberbox-placeholder {
+    .jpui-numberbox-placeholder {
         color: @color-disabled-text;
         font-size: 12px; 
     }
@@ -100,7 +100,7 @@
         background-color: @color-bg-btn;
         border-left-color: @oneux3-bgcolor-c2;
         height: 26px;
-        .fcui2-icon {
+        .jpui-icon {
             line-height: 13px;
             text-align: center;
             cursor: pointer;
@@ -116,14 +116,14 @@
         }
     }
 }
-.fcui2-numberbox-oneux3-normal input:focus,
-.fcui2-numberbox-oneux3-normal:hover input {
+.jpui-numberbox-oneux3-normal input:focus,
+.jpui-numberbox-oneux3-normal:hover input {
     border-color: @oneux3-bgcolor-c20;
 }
 
 
-.fcui2-numberbox-oneux4-normal,
-.fcui2-numberbox-oneux4-reject {
+.jpui-numberbox-oneux4-normal,
+.jpui-numberbox-oneux4-reject {
     height: 26px;
     background-color: @color-bg;
     top: 7px;
@@ -133,14 +133,14 @@
         border-color: @oneux4-border-color-c1;
         background-color: transparent;
     }
-    .fcui2-numberbox-placeholder {
+    .jpui-numberbox-placeholder {
         color: @color-disabled-text;
         font-size: 12px;
     }
     .btn-container {
         border-left-color: @oneux3-bgcolor-c2;
         height: 26px;
-        .fcui2-icon {
+        .jpui-icon {
             line-height: 12px;
             text-align: center;
             cursor: pointer;
@@ -155,70 +155,70 @@
         }
     }
 }
-.fcui2-numberbox-oneux4-normal input:focus,
-.fcui2-numberbox-oneux4-normal:hover input {
+.jpui-numberbox-oneux4-normal input:focus,
+.jpui-numberbox-oneux4-normal:hover input {
     border-color: @oneux4-border-color-c3;
 }
 
 
-.fcui2-numberbox-reject,
-.fcui2-numberbox-oneux3-reject,
-.fcui2-numberbox-oneux4-reject {
+.jpui-numberbox-reject,
+.jpui-numberbox-oneux3-reject,
+.jpui-numberbox-oneux4-reject {
     input {
         border-color: @color-error !important;
     }
 }
 
 
-.fcui2-numberbox-disabled,
-.fcui2-numberbox-oneux3-disabled,
-.fcui2-numberbox-oneux4-disabled {
+.jpui-numberbox-disabled,
+.jpui-numberbox-oneux3-disabled,
+.jpui-numberbox-oneux4-disabled {
     input {
         background-color: @color-bg-btn;
         border-color: @color-outer-border !important;
     }
-    .fcui2-icon {
+    .jpui-icon {
         color: @color-disabled-text !important;
         background-color: @color-bg-btn !important;
         cursor: default !important;
     }
 }
-.fcui2-numberbox-oneux4-disabled input {
+.jpui-numberbox-oneux4-disabled input {
     cursor: not-allowed;
 }
        
 
-.fcui2-numberbox-small {
+.jpui-numberbox-small {
     height: 20px;
     top: 5px;
     margin-top: -5px;
     input {
         height: 18px;
     }
-    .fcui2-numberbox-placeholder {
+    .jpui-numberbox-placeholder {
         line-height: 22px;
     }
     .btn-container {
         height: 20px;
-        .fcui2-icon {
+        .jpui-icon {
             height: 10px;
             line-height: 10px;
         }
     }
 }
-.fcui2-numberbox-big {
+.jpui-numberbox-big {
     height: 36px;
     top: 12px;
     margin-top: -12px;
     input {
         height: 34px;
     }
-    .fcui2-numberbox-placeholder {
+    .jpui-numberbox-placeholder {
         line-height: 36px;
     }
     .btn-container {
         height: 36px;
-        .fcui2-icon {
+        .jpui-icon {
             height: 18px;
             line-height: 18px;
         }

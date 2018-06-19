@@ -34,7 +34,7 @@ define(function (require) {
                 ];
                 listProps = {
                     skin: 'test-skin',
-                    className: 'fcui2-list-test',
+                    className: 'jpui-list-test',
                     style: {
                         color: '#FFF'
                     },
@@ -47,7 +47,7 @@ define(function (require) {
             it('Renders a list with default props', () => {
                 let list = shallowRender(List);
                 expect(list.type).toBe('div');
-                expect(list.props.className).toBe('fcui2-list fcui2-list-normal browser-chrome');
+                expect(list.props.className).toBe('jpui-list jpui-list-normal browser-chrome');
                 expect(list.props.style).toEqual({});
                 expect(list.props.children).toBeNull();
             });
@@ -55,7 +55,7 @@ define(function (require) {
             it('Renders a list with given props', () => {
                 let list = shallowRender(List, listProps);
                 expect(list.type).toBe('div');
-                expect(list.props.className).toBe('fcui2-list fcui2-list-test-skin fcui2-list-test browser-chrome');
+                expect(list.props.className).toBe('jpui-list jpui-list-test-skin jpui-list-test browser-chrome');
                 expect(list.props.style).toEqual({color: '#FFF', width: 98});
 
                 let listChildren = list.props.children;

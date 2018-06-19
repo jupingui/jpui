@@ -92,13 +92,13 @@ define(function (require) {
             containerProp.onClick = this.onMainBtnClick;
             var skin = this.props.skin ? this.props.skin : 'normal';
             skin = this.context.appSkin ? (this.context.appSkin + '-' + skin) : skin;
-            containerProp.className += layerProp.isOpen ? (' fcui2-dropdownlist-' + skin + '-hover') : '';
+            containerProp.className += layerProp.isOpen ? (' jpui-dropdownlist-' + skin + '-hover') : '';
             var Renderer = typeof this.props.renderer === 'function' ? this.props.renderer : NormalRenderer;
             return (
                 <div {...containerProp}>
                     <Renderer value={this.___getValue___()} mode={this.props.mode}/>
                     <Layer {...layerProp}>
-                        <div className="fcui2-dropdowncolorpicker-container">
+                        <div className="jpui-dropdowncolorpicker-container">
                             <ColorPicker value={this.state.pickerValue} onChange={this.onColorPickerChange}/>
                             <Button label={language.arraySelector.enter} skin="important" style={{margin: '0 0 10px 10px'}} onClick={this.onEnterClick}/>
                             <Button label={language.arraySelector.cancel} style={{marginLeft: 10}} onClick={this.onCancelClick}/>

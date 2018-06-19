@@ -6,8 +6,8 @@
 define(function (require) {
 
     let React = require('react');
-    let DeployablePanel = require('fcui2/DeployablePanel.jsx');    
-    let Button = require('fcui2/Button.jsx');
+    let DeployablePanel = require('jpui/DeployablePanel.jsx');    
+    let Button = require('jpui/Button.jsx');
 
     return React.createClass({
         // @override

@@ -1,8 +1,8 @@
 define(function (require) {
 
     const React = require('react');
-    const TextArea = require('fcui2/TextArea.jsx');
-    const Skin = require('fcui2/Skin.jsx');
+    const TextArea = require('jpui/TextArea.jsx');
+    const Skin = require('jpui/Skin.jsx');
 
     return React.createClass({
         getInitialState() {

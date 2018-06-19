@@ -2,8 +2,8 @@ define(function (require) {
 
 
     const React = require('react');
-    const Skin = require('fcui2/Skin.jsx');
-    const SearchBox = require('fcui2/SearchBox.jsx');
+    const Skin = require('jpui/Skin.jsx');
+    const SearchBox = require('jpui/SearchBox.jsx');
 
 
     return React.createClass({

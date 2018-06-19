@@ -47,7 +47,7 @@ define(function (require) {
                     min: '1999-02-01',
                     max: '1999-01-20'
                 });
-                expect(dom.refs.container.childNodes[2].childNodes[10].className.indexOf('fcui2-button-disabled') > -1)
+                expect(dom.refs.container.childNodes[2].childNodes[10].className.indexOf('jpui-button-disabled') > -1)
                     .toBe(true);
             });
 

@@ -30,7 +30,7 @@ define(function (require) {
             this.props.close();
         },
         render: function () {
-            var className = 'fcui2-dialog-'
+            var className = 'jpui-dialog-'
                 + (this.context.appSkin ? this.context.appSkin + '-alert' : 'alert');
             var buttonProps = {
                 skin: 'important',

@@ -2,8 +2,8 @@ define(function (require) {
 
 
     var Creater = require('./Main.jsx');
-    var DualTreeSelector = require('fcui2/enterprise/DualTreeSelector.jsx');
-    var treeTools = require('fcui2/core/treeTools');
+    var DualTreeSelector = require('jpui/enterprise/DualTreeSelector.jsx');
+    var treeTools = require('jpui/core/treeTools');
     var React = require('react');
 
 

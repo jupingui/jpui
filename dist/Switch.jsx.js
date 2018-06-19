@@ -72,7 +72,7 @@ define(function (require) {
             var label = null;
             var value = this.___getValue___();
             containerProp.checked = value === 'true' || value === true ? true : false;
-            containerProp.className += ' fcui2-switch-' + (containerProp.checked ? 'on' : 'off');
+            containerProp.className += ' jpui-switch-' + (containerProp.checked ? 'on' : 'off');
             label = containerProp.checked && this.props.labels && this.props.labels.on ? this.props.labels.on : null;
             label = !containerProp.checked && this.props.labels && this.props.labels.off ? this.props.labels.off : label;
             return React.createElement(
@@ -80,10 +80,10 @@ define(function (require) {
                 _extends({}, containerProp, { onClick: this.onClick }),
                 React.createElement(
                     'div',
-                    { className: 'fcui2-switch-label' },
+                    { className: 'jpui-switch-label' },
                     label
                 ),
-                React.createElement('div', { className: 'fcui2-switch-cursor' })
+                React.createElement('div', { className: 'jpui-switch-cursor' })
             );
         }
     });

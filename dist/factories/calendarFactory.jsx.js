@@ -78,7 +78,7 @@ define(function (require) {
             var skin = me.props.skin ? me.props.skin : 'normal';
             skin = me.context.appSkin ? me.context.appSkin + '-' + skin : skin;
             var subBtnProp = {
-                icon: 'fcui2-icon fcui2-icon-arrow-left',
+                icon: 'jpui-icon jpui-icon-arrow-left',
                 label: '',
                 iconLeft: 5,
                 onClick: me.onMonthSub,
@@ -106,7 +106,7 @@ define(function (require) {
                 skin: skin
             };
             var addBtnProp = {
-                icon: 'fcui2-icon fcui2-icon-arrow-right',
+                icon: 'jpui-icon jpui-icon-arrow-right',
                 label: '',
                 iconLeft: 7,
                 onClick: me.onMonthAdd,
@@ -127,7 +127,7 @@ define(function (require) {
             var skin = me.props.skin ? me.props.skin : 'normal';
             skin = me.context.appSkin ? me.context.appSkin + '-' + skin : skin;
             var subYearBtnProp = {
-                icon: 'fcui2-icon fcui2-icon-arrow-left-2',
+                icon: 'jpui-icon jpui-icon-arrow-left-2',
                 label: '',
                 iconLeft: 5,
                 style: { left: 0 },
@@ -142,7 +142,7 @@ define(function (require) {
                 skin: skin
             };
             var subMonthBtnProp = {
-                icon: 'fcui2-icon fcui2-icon-arrow-left',
+                icon: 'jpui-icon jpui-icon-arrow-left',
                 label: '',
                 iconLeft: 5,
                 onClick: me.onMonthSub,
@@ -173,7 +173,7 @@ define(function (require) {
                 skin: skin
             };
             var addMonthBtnProp = {
-                icon: 'fcui2-icon fcui2-icon-arrow-right',
+                icon: 'jpui-icon jpui-icon-arrow-right',
                 label: '',
                 iconLeft: 7,
                 style: { right: 29 },
@@ -182,7 +182,7 @@ define(function (require) {
                 skin: skin
             };
             var addYearBtnProp = {
-                icon: 'fcui2-icon fcui2-icon-arrow-right-2',
+                icon: 'jpui-icon jpui-icon-arrow-right-2',
                 label: '',
                 iconLeft: 7,
                 style: { right: 2 },

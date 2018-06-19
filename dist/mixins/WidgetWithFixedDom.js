@@ -44,9 +44,9 @@ define(function (require) {
                 // 检查位置并设置fixed
                 var pos = util.getDOMPosition(dom);
                 var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
-                var fixedClass = 'fcui2-fixed-with-scroll';
+                var fixedClass = 'jpui-fixed-with-scroll';
                 if (scrollY - oldData.posTop + obj.top < 0) {
-                    dom.className = dom.className.replace(/ fcui2-fixed-with-scroll/g, '');
+                    dom.className = dom.className.replace(/ jpui-fixed-with-scroll/g, '');
                     dom.style.zIndex = oldData.zIndex;
                     dom.style.top = oldData.top;
                     typeof this.onDomPositionUnFixed === 'function' && this.onDomPositionUnFixed(obj.ref);

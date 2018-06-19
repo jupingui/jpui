@@ -225,11 +225,11 @@ define(function (require) {
             }
             var skin = this.props.skin ? this.props.skin : 'normal';
             skin = this.context.appSkin ? this.context.appSkin + '-' + skin : skin;
-            containerProp.className += layerProp.isOpen ? ' fcui2-dropdownlist-' + skin + '-hover' : '';
+            containerProp.className += layerProp.isOpen ? ' jpui-dropdownlist-' + skin + '-hover' : '';
             return React.createElement(
                 'div',
                 containerProp,
-                React.createElement('div', { className: 'icon-right fcui2-icon fcui2-icon-arrow-down' }),
+                React.createElement('div', { className: 'icon-right jpui-icon jpui-icon-arrow-down' }),
                 React.createElement(
                     'span',
                     { className: 'label-container' },

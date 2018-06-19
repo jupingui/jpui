@@ -29,7 +29,7 @@ define(function (require) {
             beforeEach(() => {
                 listProps = {
                     skin: 'test-skin',
-                    className: 'fcui2-dropdownlist-test',
+                    className: 'jpui-dropdownlist-test',
                     style: {
                         color: '#FFF'
                     },
@@ -40,10 +40,10 @@ define(function (require) {
             it('Renders a dropdownlist with default props', () => {
                 let dropdownlist = shallowRender(DropDownList);
                 expect(dropdownlist.type).toBe('div');
-                expect(dropdownlist.props.className).toBe('fcui2-dropdownlist fcui2-dropdownlist-normal browser-chrome');
+                expect(dropdownlist.props.className).toBe('jpui-dropdownlist jpui-dropdownlist-normal browser-chrome');
                 expect(dropdownlist.props.style).toEqual({});
                 expect(dropdownlist.props.children[0]).toEqual(
-                    <div className="icon-right fcui2-icon fcui2-icon-arrow-down"></div>
+                    <div className="icon-right jpui-icon jpui-icon-arrow-down"></div>
                 );
                 expect(dropdownlist.props.children[1]).toEqual(
                     <span className="label-container">DropDownList</span>
@@ -57,10 +57,10 @@ define(function (require) {
             it('Renders a dropdownlist with given props', () => {
                 let dropdownlist = shallowRender(DropDownList, listProps);
                 expect(dropdownlist.type).toBe('div');
-                expect(dropdownlist.props.className).toBe('fcui2-dropdownlist fcui2-dropdownlist-test-skin fcui2-dropdownlist-test browser-chrome');
+                expect(dropdownlist.props.className).toBe('jpui-dropdownlist jpui-dropdownlist-test-skin jpui-dropdownlist-test browser-chrome');
                 expect(dropdownlist.props.style).toEqual({color: '#FFF'});
                 expect(dropdownlist.props.children[0]).toEqual(
-                    <div className="icon-right fcui2-icon fcui2-icon-arrow-down"></div>
+                    <div className="icon-right jpui-icon jpui-icon-arrow-down"></div>
                 );
                 expect(dropdownlist.props.children[1]).toEqual(
                     <span className="label-container">TestDropDownList</span>
@@ -92,7 +92,7 @@ define(function (require) {
             it('Simulating mouse events of dropdownlist layer', () => {
                 jasmine.clock().install();
                 let dropdownlist = realRender(DropDownList, listProps);
-                let containerDom = TestUtils.findRenderedDOMComponentWithClass(dropdownlist, 'fcui2-dropdownlist');
+                let containerDom = TestUtils.findRenderedDOMComponentWithClass(dropdownlist, 'jpui-dropdownlist');
                 expect(dropdownlist.state.layerOpen).toBe(false);
                 expect(dropdownlist.state.mouseenter).toBe(false);
 
@@ -108,7 +108,7 @@ define(function (require) {
 
                 listProps.openLayerType = 'onClick';
                 dropdownlist = realRender(DropDownList, listProps);
-                containerDom = TestUtils.findRenderedDOMComponentWithClass(dropdownlist, 'fcui2-dropdownlist');
+                containerDom = TestUtils.findRenderedDOMComponentWithClass(dropdownlist, 'jpui-dropdownlist');
 
                 TestUtils.Simulate.click(containerDom);
                 expect(dropdownlist.state.layerOpen).toBe(true);
@@ -126,7 +126,7 @@ define(function (require) {
                 expect(dropdownlist.state.layerOpen).toBe(false);
                 expect(dropdownlist.state.mouseenter).toBe(false);
 
-                let containerDom = TestUtils.findRenderedDOMComponentWithClass(dropdownlist, 'fcui2-dropdownlist');
+                let containerDom = TestUtils.findRenderedDOMComponentWithClass(dropdownlist, 'jpui-dropdownlist');
                 TestUtils.Simulate.mouseEnter(containerDom);
                 expect(dropdownlist.state.layerOpen).toBe(true);
                 expect(dropdownlist.state.mouseenter).toBe(true);

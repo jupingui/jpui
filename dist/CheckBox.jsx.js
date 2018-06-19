@@ -87,7 +87,7 @@ define(function (require) {
             }
             var checked = this.___getValue___();
             var labelProp = {
-                className: 'fcui2-checkbox-label',
+                className: 'jpui-checkbox-label',
                 onClick: this.onClick
             };
             var inputProp = {
@@ -99,7 +99,7 @@ define(function (require) {
                 onChange: this.onChange
             };
             var virtualCheckboxProp = {
-                className: 'fcui2-icon fcui2-icon-checkbox' + (!checked && this.props.indeterminate ? '-indeterminate' : checked ? '-selected' : '-unselected'),
+                className: 'jpui-icon jpui-icon-checkbox' + (!checked && this.props.indeterminate ? '-indeterminate' : checked ? '-selected' : '-unselected'),
                 onClick: this.onClick
             };
             return React.createElement(

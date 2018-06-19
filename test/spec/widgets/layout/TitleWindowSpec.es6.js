@@ -55,7 +55,7 @@ define(function (require) {
                 dom.setState({titleWindow: false});
                 expect(dom.refs.titlewindow).toBe(undefined);
                 dom.setState({titleWindow: 'abcded'});
-                expect(dom.refs.titlewindow.___workspace___ .className).toBe('fcui2-titlewindow fcui2-titlewindow-normal');
+                expect(dom.refs.titlewindow.___workspace___ .className).toBe('jpui-titlewindow jpui-titlewindow-normal');
             });
 
             it('Close TitleWindow', () => {

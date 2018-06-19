@@ -4,7 +4,7 @@ define(function (require) {
     var React = require('react');
     var Parser = require('./parsers/Main.jsx');
     var config = require('./config');
-    var util = require('fcui2/core/util');
+    var util = require('jpui/core/util');
 
 
     function menuFactory(me) {
@@ -20,7 +20,7 @@ define(function (require) {
                 <div {...prop}>
                     <span data-level={config.menu[i].level}
                         className={
-                            'fcui2-icon fcui2-icon-arrow-'
+                            'jpui-icon jpui-icon-arrow-'
                                 + (me.props.level !== config.menu[i].level ? 'right' : 'down')
                         }>
                     </span>
@@ -85,9 +85,9 @@ define(function (require) {
         },
         render: function () {
             var Demo = config.demos[this.props.file.replace(/_/g, '\\')];
-            var componentSource = 'https://github.com/fcfe/fcui2/tree/master/'
+            var componentSource = 'https://github.com/Akonna/jpui/tree/master/'
                 + this.props.file.replace(/_/g, '/');
-            var demoSource = 'https://github.com/fcfe/fcui2/tree/master/doc/src/demos'
+            var demoSource = 'https://github.com/fcfe/jpui/tree/master/doc/src/demos'
                 + this.props.file.replace(/_/g, '/').replace('src', '');
             return (
                 <div>

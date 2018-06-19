@@ -1,13 +1,13 @@
 // version 0.0.4
 
-.fcui2-calendar {
+.jpui-calendar {
     position: relative;
     width: 224px;
     overflow: hidden;
     .calendar-operation {
         position: relative;
         height: 36px;
-        .fcui2-button {
+        .jpui-button {
             position: absolute;
             top: 6px;
             height: 26px;
@@ -15,7 +15,7 @@
             -moz-border-radius: 0;
             -webkit-border-radius: 0;
             border-radius: 0;
-            .fcui2-icon {
+            .jpui-icon {
                 line-height: 26px;
                 font-size: 14px;
             }
@@ -32,7 +32,7 @@
                 right: 6px;
             }
         }
-        .fcui2-numberbox {
+        .jpui-numberbox {
             position: absolute;
             top: 15px;
         }
@@ -51,7 +51,7 @@
         position: relative;
         height: 192px;
         width: 224px;
-        .fcui2-button {
+        .jpui-button {
             position: absolute;
             width: 30px;
             height: 30px;
@@ -67,30 +67,30 @@
     }
 }
 
-.fcui2-calendar-normal {
+.jpui-calendar-normal {
     .calendar-operation {
         background-color: @color-bg-caption;
-        .fcui2-button-disabled, .fcui2-button-disabled:hover{
+        .jpui-button-disabled, .jpui-button-disabled:hover{
             color: @color-disabled-text;
         }
-        .fcui2-numberbox-normal {
+        .jpui-numberbox-normal {
             background-color: @color-bg-caption;
             input {
                 background-color: @color-bg;
             }
         }
-        .fcui2-button {
-            .fcui2-icon {
+        .jpui-button {
+            .jpui-icon {
                 color: @color-gray-7
             }
             &:hover {
-                .fcui2-icon {
+                .jpui-icon {
                     color: @color-btn-hover;
                 }
                 border-color: @color-btn-hover;
             }
         }
-        .fcui2-numberbox .fcui2-icon {
+        .jpui-numberbox .jpui-icon {
             color: @color-gray-7;
         }
     }
@@ -103,37 +103,37 @@
         }
     }
     .calendar-buttons {
-        .fcui2-button-calendar {
+        .jpui-button-calendar {
             border-color: @color-bg;
         }
-        .fcui2-button-disabled {
+        .jpui-button-disabled {
             background-color: @color-bg !important;
             border-color: @color-bg !important;
         }
-        .fcui2-button-calendar:hover {
+        .jpui-button-calendar:hover {
             border-color: @color-btn-hover;
         }
     }
 }
 
-.fcui2-calendar-oneux3-normal {
+.jpui-calendar-oneux3-normal {
     .calendar-operation {
         background-color: @color-bg-caption;
-        .fcui2-numberbox {
+        .jpui-numberbox {
             top: 13px;
         }
-        .fcui2-button {
-            .fcui2-icon {
+        .jpui-button {
+            .jpui-icon {
                 color: @color-gray-7;
             }
             &:hover {
-                .fcui2-icon {
+                .jpui-icon {
                     color: @oneux3-bgcolor-c20;
                 }
                 border-color: @oneux3-bgcolor-c20;
             }
         }
-        .fcui2-numberbox .fcui2-icon {
+        .jpui-numberbox .jpui-icon {
             color: @color-gray-7;
             &:hover {
                 color: #FFF;
@@ -150,20 +150,20 @@
         }
     }
     .calendar-buttons {
-        .fcui2-button-calendar {
+        .jpui-button-calendar {
             border-color: @color-bg;
         }
-        .fcui2-button-disabled {
+        .jpui-button-disabled {
             background-color: @color-bg !important;
             border-color: @color-bg !important;
             input {
                 color: @color-disabled-text !important;
             }
         }
-        .fcui2-button-calendar:hover {
+        .jpui-button-calendar:hover {
             border-color: @color-btn-hover;
         }
-        .fcui2-button-active {
+        .jpui-button-active {
             border-color: @oneux3-bgcolor-c20;
             background-color: @oneux3-bgcolor-c20;
             input {
@@ -173,19 +173,19 @@
     }
 }
 
-.fcui2-calendar-oneux4-normal {
+.jpui-calendar-oneux4-normal {
     .calendar-operation {
         background-color: @oneux4-bgcolor-c1;
-        .fcui2-button {
+        .jpui-button {
             border-color: transparent;
             input {
                 color: @oneux4-color-c1;
             }
         }
-        .fcui2-numberbox {
+        .jpui-numberbox {
             top: 11px;
         }
-        .fcui2-icon-arrow-right {
+        .jpui-icon-arrow-right {
             color: @oneux4-color-c6;
             transform:rotate(270deg);
             -ms-transform:rotate(270deg);
@@ -197,7 +197,7 @@
                 content: "\e60e";
             }
         }
-        .fcui2-icon-arrow-left {
+        .jpui-icon-arrow-left {
             color: @oneux4-color-c6;
             transform:rotate(90deg);
             -ms-transform:rotate(90deg);
@@ -218,10 +218,10 @@
         }
     }
     .calendar-buttons {
-        .fcui2-button-calendar {
+        .jpui-button-calendar {
             border-color: transparent;
         }
-        .fcui2-button {
+        .jpui-button {
             -webkit-box-shadow: 0 0 0;
             -moz-box-shadow: 0 0 0;
             box-shadow: 0 0 0;
@@ -234,7 +234,7 @@
                 background-color: @oneux4-bgcolor-c15;
             }
         }
-        .fcui2-button-disabled {
+        .jpui-button-disabled {
             background-color: @color-bg !important;
             border-color: @color-bg !important;
             &:hover {
@@ -245,7 +245,7 @@
                 background-color: @color-bg !important;
             }
         }
-        .fcui2-button-active {
+        .jpui-button-active {
             background-color: @oneux4-bgcolor-c14;
             border-color: @oneux4-bgcolor-c14;
             &:hover {
@@ -262,10 +262,10 @@
     }
 }
 
-.fcui2-calendar-oneux4-disabled {
+.jpui-calendar-oneux4-disabled {
     .calendar-operation {
         background-color: @oneux4-bgcolor-c1;
-        .fcui2-button {
+        .jpui-button {
             border-color: transparent !important;
             background-color: transparent !important;
         }
@@ -277,7 +277,7 @@
         }
     }
     .calendar-buttons {
-        .fcui2-button {
+        .jpui-button {
             &:hover {
                 border-color: @oneux4-bgcolor-c1;
             }

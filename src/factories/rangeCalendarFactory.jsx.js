@@ -47,7 +47,7 @@ define(function (require) {
             };
             var shorts = this.shortCutFactory(me);
             return (
-                <div className="fcui2-range-calendar">
+                <div className="jpui-range-calendar">
                     {shorts.length ? <div className="fast-operation-bar">{shorts}</div> : null}
                     <div className="resuit-display-bar">
                         <div>{language.startTime + me.state.value1}</div>

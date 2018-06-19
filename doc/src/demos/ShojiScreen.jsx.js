@@ -6,10 +6,10 @@
 define(function (require) {
 
     let React = require('react');
-    let Button = require('fcui2/Button.jsx');
-    let ShojiScreen = require('fcui2/ShojiScreen.jsx');
-    let DropDownRegion = require('fcui2/DropDownRegion.jsx');
-    let Dialog = require('fcui2/Dialog.jsx');
+    let Button = require('jpui/Button.jsx');
+    let ShojiScreen = require('jpui/ShojiScreen.jsx');
+    let DropDownRegion = require('jpui/DropDownRegion.jsx');
+    let Dialog = require('jpui/Dialog.jsx');
     let dialog = new Dialog();
 
     return React.createClass({

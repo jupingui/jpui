@@ -1,7 +1,7 @@
 // version 0.0.4
 
 
-.fcui2-table {
+.jpui-table {
     * {
         box-sizing: content-box;
     }
@@ -76,7 +76,7 @@
 }
 
 
-.fcui2-table-normal {
+.jpui-table-normal {
     table {
         border-right-color: @color-inner-border;
         border-bottom-color: @color-inner-border;
@@ -93,8 +93,8 @@
     }
 }
 
-.fcui2-table-oneux4-normal,
-.fcui2-table-oneux3-normal {
+.jpui-table-oneux4-normal,
+.jpui-table-oneux3-normal {
     table {
         border-right-color: @oneux3-bgcolor-c2;
         border-bottom-color: @oneux3-bgcolor-c2;
@@ -114,7 +114,7 @@
 
 
 // Renderers插件渲染
-.fcui2-table {
+.jpui-table {
     // NoData
     .table-nodata {
         display: inline-block;
@@ -134,7 +134,7 @@
     // Selector
     .td-selector {
         text-align: center;
-        .fcui2-checkbox-label {
+        .jpui-checkbox-label {
             display: none;
         }
         input {
@@ -144,14 +144,14 @@
     }
     .table-selector {
         text-align: center;
-        .fcui2-dropdownlist {
+        .jpui-dropdownlist {
             position: relative;
             top: 3px;
-            .fcui2-icon-arrow-down {
+            .jpui-icon-arrow-down {
                 font-size: 12px;
             }
         }
-        .fcui2-icon {
+        .jpui-icon {
             font-weight: 200;
             cursor: pointer;
         }
@@ -209,7 +209,7 @@
 }
 
 
-.fcui2-table-normal {
+.jpui-table-normal {
     // NoData
     .table-nodata {
         border-color: @color-inner-border;
@@ -229,13 +229,13 @@
         background-color: @color-bg-hover-table;
     }
     .table-selector {
-        .fcui2-icon-checkbox-unselected,
-        .fcui2-icon-radio {
+        .jpui-icon-checkbox-unselected,
+        .jpui-icon-radio {
             color: @color-gray-5;
         }
-        .fcui2-icon-checkbox-selected,
-        .fcui2-icon-checkbox-indeterminate,
-        .fcui2-icon-radio-selected {
+        .jpui-icon-checkbox-selected,
+        .jpui-icon-checkbox-indeterminate,
+        .jpui-icon-radio-selected {
             color: @color-blue-3;
         }
     }
@@ -265,8 +265,8 @@
 }
 
 
-.fcui2-table-oneux4-normal,
-.fcui2-table-oneux3-normal {
+.jpui-table-oneux4-normal,
+.jpui-table-oneux3-normal {
     // NoData
     .table-nodata {
         border-color: @oneux3-bgcolor-c2;
@@ -282,19 +282,19 @@
         }
     }
     .table-selector {
-        .fcui2-dropdownlist {
+        .jpui-dropdownlist {
             background-color: @oneux3-bgcolor-c1;
         }
-        .fcui2-dropdownlist-oneux3-normal-hover .fcui2-icon {
+        .jpui-dropdownlist-oneux3-normal-hover .jpui-icon {
             color: @oneux3-bgcolor-c16;
         }
-        .fcui2-dropdownlist-oneux3-disabled:hover .fcui2-icon {
+        .jpui-dropdownlist-oneux3-disabled:hover .jpui-icon {
             color: @oneux3-color-c9;
         }
-        .fcui2-icon-checkbox-unselected,.fcui2-icon-radio {
+        .jpui-icon-checkbox-unselected,.jpui-icon-radio {
             color: @oneux3-bgcolor-c22;
         }
-        .fcui2-icon-checkbox-indeterminate,.fcui2-icon-checkbox-selected {
+        .jpui-icon-checkbox-indeterminate,.jpui-icon-checkbox-selected {
             color: @oneux3-bgcolor-c16;
         }
     }
@@ -324,7 +324,7 @@
 }
 
 
-.fcui2-fixed-with-scroll {
+.jpui-fixed-with-scroll {
     tr:last-child {
         td, td {
             border-bottom: 1px solid @color-inner-border;

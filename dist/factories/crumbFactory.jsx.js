@@ -11,7 +11,7 @@ define(function (require) {
                 if (!item.hasOwnProperty('href') || me.props.disabled || item.disabled) {
                     doms.push(React.createElement(
                         'span',
-                        { key: 'n' + i, className: 'fcui2-crumb-label' },
+                        { key: 'n' + i, className: 'jpui-crumb-label' },
                         item.label
                     ));
                 } else {
@@ -22,7 +22,7 @@ define(function (require) {
                     ));
                 }
                 if (i < me.props.datasource.length - 1) {
-                    doms.push(React.createElement('div', { key: 's' + i, className: 'fcui2-crumb-separator' }));
+                    doms.push(React.createElement('div', { key: 's' + i, className: 'jpui-crumb-separator' }));
                 }
             }
             return doms;

@@ -85,7 +85,7 @@ define(function (require) {
         /**
          * @properties
          * @param {String} ref 组件根容器索引，默认为'container'
-         * @param {String} skin 组件皮肤此属性最终加在组件根容器的class上，例如：fcui2-componentname-skinname
+         * @param {String} skin 组件皮肤此属性最终加在组件根容器的class上，例如：jpui-componentname-skinname
          * @param {String} className 外接class此属性最终加在组件根容器的class上
          * @param {Object} style 外接style此属性最终加在组件根容器的style上
          * @param {boolean} disabled 组件是否可用
@@ -95,7 +95,7 @@ define(function (require) {
             var result = {
                 ref: 'container',
                 style: {},
-                className: 'fcui2-' + type
+                className: 'jpui-' + type
             };
             var key = '';
             var appSkin = me.context.appSkin ? '-' + me.context.appSkin : '';
@@ -106,16 +106,16 @@ define(function (require) {
             // style
             result.style = util.extend({}, result.style, me.props.style);
             // skin
-            result.className += ' fcui2-' + type + appSkin + '-' + (typeof me.props.skin === 'string' && me.props.skin.length ? me.props.skin : 'normal');
+            result.className += ' jpui-' + type + appSkin + '-' + (typeof me.props.skin === 'string' && me.props.skin.length ? me.props.skin : 'normal');
             // className
             result.className += typeof me.props.className === 'string' && me.props.className.length ? ' ' + me.props.className : '';
             // reject
             if (me.state.isValid === false) {
-                result.className += ' fcui2-' + type + appSkin + '-reject';
+                result.className += ' jpui-' + type + appSkin + '-reject';
             }
             // disabled
             else if (me.props.disabled) {
-                    result.className += ' fcui2-' + type + appSkin + '-disabled';
+                    result.className += ' jpui-' + type + appSkin + '-disabled';
                 }
             // browser
             result.className += ' browser-' + util.getBrowserType();

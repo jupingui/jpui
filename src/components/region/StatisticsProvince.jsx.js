@@ -85,7 +85,7 @@ define(function (require) {
             var selected = tools.getSelectedState(this.props.id, this.props.value);
             var containerProp = {
                 ref: 'container',
-                className: 'fcui2-region-province',
+                className: 'jpui-region-province',
                 onMouseLeave: this.onMouseLeave,
                 onMouseEnter: this.onMouseEnter
             };
@@ -103,7 +103,7 @@ define(function (require) {
                         {selected.selected + '/' + selected.total}
                     </span>
                     <Layer {...layerProps}>
-                        <table className="fcui2-region-city-container">
+                        <table className="jpui-region-city-container">
                             <tbody>{cityFactory(this)}</tbody>
                         </table>
                     </Layer>

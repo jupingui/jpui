@@ -7,7 +7,7 @@
 define(function (require) {
 
 
-    var fcui2 = require('./util').getNamespace('___fcui2___');
+    var jpui = require('./util').getNamespace('___fcui2___');
 
 
     return {
@@ -19,9 +19,9 @@ define(function (require) {
          */
         addExpandButton: function (dom) {
             if (!dom) return;
-            fcui2.shojiScreenExpandButtonArray = fcui2.shojiScreenExpandButtonArray instanceof Array
-                ? fcui2.shojiScreenExpandButtonArray : [];
-            var arr = fcui2.shojiScreenExpandButtonArray;
+            jpui.shojiScreenExpandButtonArray = jpui.shojiScreenExpandButtonArray instanceof Array
+                ? jpui.shojiScreenExpandButtonArray : [];
+            var arr = jpui.shojiScreenExpandButtonArray;
             for (var i = 0; i < arr.length; i++) {
                 if (arr[i] === dom) return;
             }
@@ -35,15 +35,15 @@ define(function (require) {
          */
         removeExpandButton: function (dom) {
             if (!dom) return;
-            fcui2.shojiScreenExpandButtonArray = fcui2.shojiScreenExpandButtonArray instanceof Array
-                ? fcui2.shojiScreenExpandButtonArray : [];
-            var arr = fcui2.shojiScreenExpandButtonArray;
+            jpui.shojiScreenExpandButtonArray = jpui.shojiScreenExpandButtonArray instanceof Array
+                ? jpui.shojiScreenExpandButtonArray : [];
+            var arr = jpui.shojiScreenExpandButtonArray;
             var result = [];
             for (var i = 0; i < arr.length; i++) {
                 if (arr[i] === dom) {continue;}
                 result.push(arr[i]);
             }
-            fcui2.shojiScreenExpandButtonArray = result;
+            jpui.shojiScreenExpandButtonArray = result;
         },
 
         /**
@@ -51,9 +51,9 @@ define(function (require) {
          * @interface freshExpandButton
          */
         freshExpandButton: function () {
-            fcui2.shojiScreenExpandButtonArray = fcui2.shojiScreenExpandButtonArray instanceof Array
-                ? fcui2.shojiScreenExpandButtonArray : [];
-            var arr = fcui2.shojiScreenExpandButtonArray;
+            jpui.shojiScreenExpandButtonArray = jpui.shojiScreenExpandButtonArray instanceof Array
+                ? jpui.shojiScreenExpandButtonArray : [];
+            var arr = jpui.shojiScreenExpandButtonArray;
             for (var i = 0; i < arr.length; i++) {
                 arr[i].style.top = ((i + 1) * 51 + 74) + 'px';
             }

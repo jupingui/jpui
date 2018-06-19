@@ -51,7 +51,7 @@ define(function (require) {
                 expect(value.split(',').length).toBe(401);
 
                 let province = dom.refs.container.childNodes[1].childNodes[1].childNodes[2];
-                expect(province.className).toBe('fcui2-region-province');
+                expect(province.className).toBe('jpui-region-province');
                 TestUtils.Simulate.mouseEnter(province);
                 expect(dom.___currentLayer___.props.id).toBe(13);
                 expect(dom.___currentLayer___.state.layerShow).toBe(true);
@@ -84,7 +84,7 @@ define(function (require) {
                 expect(value).toBe('');
 
                 let province = dom.refs.container.childNodes[1].childNodes[1].childNodes[2];
-                expect(province.className).toBe('fcui2-region-province');
+                expect(province.className).toBe('jpui-region-province');
                 TestUtils.Simulate.mouseEnter(province);
                 expect(dom.___currentLayer___).toBe();
                 TestUtils.Simulate.mouseLeave(province);

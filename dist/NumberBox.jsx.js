@@ -143,7 +143,7 @@ define(function (require) {
                 style: { width: width }
             });
             var placeholderProp = {
-                className: 'fcui2-numberbox-placeholder',
+                className: 'jpui-numberbox-placeholder',
                 style: {
                     visibility: value.length === 0 ? 'visible' : 'hidden'
                 }
@@ -181,9 +181,9 @@ define(function (require) {
                 React.createElement(
                     'div',
                     btnContainerProp,
-                    React.createElement('div', { className: 'fcui2-icon fcui2-icon-small-arrow-up',
+                    React.createElement('div', { className: 'jpui-icon jpui-icon-small-arrow-up',
                         'data-ui-cmd': 'add', onClick: this.onSpinButtonClick }),
-                    React.createElement('div', { className: 'fcui2-icon fcui2-icon-small-arrow-down',
+                    React.createElement('div', { className: 'jpui-icon jpui-icon-small-arrow-down',
                         'data-ui-cmd': 'sub', onClick: this.onSpinButtonClick })
                 )
             );

@@ -1,8 +1,8 @@
 define(function (require) {
 
     const React = require('react');
-    const Skin = require('fcui2/Skin.jsx');
-    const TextBox = require('fcui2/TextBox.jsx');
+    const Skin = require('jpui/Skin.jsx');
+    const TextBox = require('jpui/TextBox.jsx');
 
     return React.createClass({
         getInitialState() {
@@ -30,9 +30,9 @@ define(function (require) {
                             <TextBox value={this.state.value} count={this.state.value.length + '/100'} onChange={this.onChange}/>&nbsp;
                             <TextBox skin="reject" count="205/200"/>&nbsp;
                             <h5>Size</h5>
-                            <TextBox className="fcui2-textbox-small" placeholder="placeholder" count="0/0"/>&nbsp;
+                            <TextBox className="jpui-textbox-small" placeholder="placeholder" count="0/0"/>&nbsp;
                             <TextBox/>&nbsp;
-                            <TextBox className="fcui2-textbox-big" placeholder="placeholder" count="0/0"/>
+                            <TextBox className="jpui-textbox-big" placeholder="placeholder" count="0/0"/>
                         </Skin>
                     </div>
                     <div className="demo-item">

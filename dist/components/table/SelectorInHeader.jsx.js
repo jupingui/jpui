@@ -82,7 +82,7 @@ define(function (require) {
             var virtualCheckboxProps = {
                 onClick: this.onMainSelectorChange,
 
-                className: 'fcui2-icon fcui2-icon-checkbox' + (!checked && indeterminate ? '-indeterminate' : checked ? '-selected' : '-unselected') + (disabled ? '-disabled' : '')
+                className: 'jpui-icon jpui-icon-checkbox' + (!checked && indeterminate ? '-indeterminate' : checked ? '-selected' : '-unselected') + (disabled ? '-disabled' : '')
             };
             var virtualCheckboxStyle = {
                 position: 'absolute',
@@ -98,7 +98,7 @@ define(function (require) {
             }
             var skin = this.context.appSkin ? this.context.appSkin + '-' : '';
             var containerProp = {
-                className: 'fcui2-dropdownlist fcui2-dropdownlist-' + skin + 'normal' + (disabled ? ' fcui2-dropdownlist-' + skin + 'disabled' : '') + (this.state.layerOpen && !disabled ? ' fcui2-dropdownlist-' + skin + 'normal-hover' : ''),
+                className: 'jpui-dropdownlist jpui-dropdownlist-' + skin + 'normal' + (disabled ? ' jpui-dropdownlist-' + skin + 'disabled' : '') + (this.state.layerOpen && !disabled ? ' jpui-dropdownlist-' + skin + 'normal-hover' : ''),
                 onMouseEnter: cTools.openLayerHandlerFactory(this, 'layerOpen'),
                 onMouseLeave: cTools.closeLayerHandlerFactory(this, 'layerOpen'),
                 style: {
@@ -120,7 +120,7 @@ define(function (require) {
                 React.createElement(
                     'div',
                     containerProp,
-                    React.createElement('div', { className: 'icon-right fcui2-icon fcui2-icon-arrow-down' }),
+                    React.createElement('div', { className: 'icon-right jpui-icon jpui-icon-arrow-down' }),
                     '\xA0',
                     React.createElement('span', _extends({}, virtualCheckboxProps, { style: virtualCheckboxStyle })),
                     React.createElement(

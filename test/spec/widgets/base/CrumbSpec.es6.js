@@ -41,7 +41,7 @@ define(function (require) {
                 ];
                 crumbProps = {
                     skin: 'test-skin',
-                    className: 'fcui2-crumb-test',
+                    className: 'jpui-crumb-test',
                     style: {color: '#FFF'},
                     disabled: false,
                     datasource: datasource
@@ -51,7 +51,7 @@ define(function (require) {
             it('Renders a crumb with default props', () => {
                 let crumb = shallowRender(Crumb);
                 expect(crumb.type).toBe('div');
-                expect(crumb.props.className).toBe('fcui2-crumb fcui2-crumb-normal browser-chrome');
+                expect(crumb.props.className).toBe('jpui-crumb jpui-crumb-normal browser-chrome');
                 expect(crumb.props.style).toEqual({});
                 expect(crumb.props.children).toEqual([]);
             });
@@ -59,13 +59,13 @@ define(function (require) {
             it('Renders a crumb with given props', () => {
                 let crumb = shallowRender(Crumb, crumbProps);
                 expect(crumb.type).toBe('div');
-                expect(crumb.props.className).toBe('fcui2-crumb fcui2-crumb-test-skin fcui2-crumb-test browser-chrome');
+                expect(crumb.props.className).toBe('jpui-crumb jpui-crumb-test-skin jpui-crumb-test browser-chrome');
                 expect(crumb.props.style).toEqual({color: '#FFF'});
                 expect(crumb.props.children).toEqual([
                     <a key="l0" href="http://www.baidu.com/1" target="_blank">账户</a>,
-                    <div key="s0" className="fcui2-crumb-separator"></div>,
+                    <div key="s0" className="jpui-crumb-separator"></div>,
                     <a key="l1" href="http://www.baidu.com/2" target="_blank">计划</a>,
-                    <div key="s1" className="fcui2-crumb-separator"></div>,
+                    <div key="s1" className="jpui-crumb-separator"></div>,
                     <a key="l2" href="http://www.baidu.com/3" target="_blank">单元</a>
                 ]);
             });
@@ -75,14 +75,14 @@ define(function (require) {
                 crumbProps.datasource = datasource;
                 let crumb = shallowRender(Crumb, crumbProps);
                 expect(crumb.type).toBe('div');
-                expect(crumb.props.className).toBe('fcui2-crumb fcui2-crumb-test-skin fcui2-crumb-test browser-chrome');
+                expect(crumb.props.className).toBe('jpui-crumb jpui-crumb-test-skin jpui-crumb-test browser-chrome');
                 expect(crumb.props.style).toEqual({color: '#FFF'});
                 expect(crumb.props.children).toEqual([
                     <a key="l0" href="http://www.baidu.com/1" target="_blank">账户</a>,
-                    <div key="s0" className="fcui2-crumb-separator"></div>,
+                    <div key="s0" className="jpui-crumb-separator"></div>,
                     <a key="l1" href="http://www.baidu.com/2" target="_blank">计划</a>,
-                    <div key="s1" className="fcui2-crumb-separator"></div>,
-                    <span key="n2" className="fcui2-crumb-label">单元</span>
+                    <div key="s1" className="jpui-crumb-separator"></div>,
+                    <span key="n2" className="jpui-crumb-label">单元</span>
                 ]);
             });
         });

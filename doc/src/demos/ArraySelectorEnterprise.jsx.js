@@ -1,7 +1,7 @@
 define(function (require) {
 
     var Creater = require('./Main.jsx');
-    var ArraySelector = require('fcui2/enterprise/ArraySelector.jsx');
+    var ArraySelector = require('jpui/enterprise/ArraySelector.jsx');
     var defaultValue = {
         selected: [
             {value: 1, label: 'option1'},

@@ -236,10 +236,10 @@ define(function (require) {
             }
             var skin = this.props.skin ? this.props.skin : 'normal';
             skin = this.context.appSkin ? (this.context.appSkin + '-' + skin) : skin;
-            containerProp.className += layerProp.isOpen ? (' fcui2-dropdownlist-' + skin + '-hover') : '';
+            containerProp.className += layerProp.isOpen ? (' jpui-dropdownlist-' + skin + '-hover') : '';
             return (
                 <div {...containerProp}>
-                    <div className="icon-right fcui2-icon fcui2-icon-arrow-down"></div>
+                    <div className="icon-right jpui-icon jpui-icon-arrow-down"></div>
                     <span className="label-container">{label}</span>
                     <Layer {...layerProp}>
                         <div style={{maxWidth: 600}}>

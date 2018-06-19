@@ -39,7 +39,7 @@ module.exports = {
             // 'react': path.resolve(__dirname, 'dep/preact-compat.js'),
             // 'prop-types': path.resolve(__dirname, 'dep/prop-types.js'),
             // 'react-dom': path.resolve(__dirname, 'dep/preact-compat.js'),
-            'fcui2': path.join(__dirname, 'src'),
+            'jpui': path.join(__dirname, 'src'),
             'js-formatter': path.join(__dirname, 'dep/formatterJS'),
             'markdown': path.join(__dirname, 'dep/markdown.min')
         }

@@ -35,7 +35,7 @@ define(function (require) {
             beforeEach(() => {
                 tabProps = {
                     skin: 'test-skin',
-                    className: 'fcui2-tab-test',
+                    className: 'jpui-tab-test',
                     style: {
                         color: '#FFF'
                     },
@@ -47,7 +47,7 @@ define(function (require) {
             it('Renders a tab with default props', () => {
                 let tab = shallowRender(Tab);
                 expect(tab.type).toBe('div');
-                expect(tab.props.className).toBe('fcui2-tab fcui2-tab-normal browser-chrome');
+                expect(tab.props.className).toBe('jpui-tab jpui-tab-normal browser-chrome');
                 expect(tab.props.style).toEqual({});
                 expect(tab.props.children).toBeNull();
             });
@@ -55,15 +55,15 @@ define(function (require) {
             it('Renders a tab with given props', () => {
                 let tab = shallowRender(Tab, tabProps);
                 expect(tab.type).toBe('div');
-                expect(tab.props.className).toBe('fcui2-tab fcui2-tab-test-skin fcui2-tab-test browser-chrome');
+                expect(tab.props.className).toBe('jpui-tab jpui-tab-test-skin jpui-tab-test browser-chrome');
                 expect(tab.props.style).toEqual({color: '#FFF'});
 
                 let TabItem = Tab.defaultProps.renderer;
                 let onClick = tab.props.children[0].props.onClick;
                 expect(tab.props.children).toEqual([
-                    <TabItem key="0" className="fcui2-tab-item-active" label="Tab-1" value="alpha" onClick={onClick} />,
-                    <TabItem key="1" className="fcui2-tab-item-disabled" disabled={true} label="Tab-2" value="beta" onClick={componentTools.noop} />,
-                    <TabItem key="2" className="fcui2-tab-item" label="Tab-3" value="gamma" onClick={onClick} />
+                    <TabItem key="0" className="jpui-tab-item-active" label="Tab-1" value="alpha" onClick={onClick} />,
+                    <TabItem key="1" className="jpui-tab-item-disabled" disabled={true} label="Tab-2" value="beta" onClick={componentTools.noop} />,
+                    <TabItem key="2" className="jpui-tab-item" label="Tab-3" value="gamma" onClick={onClick} />
                 ]);
             });
         });

@@ -84,7 +84,7 @@ define(function (require) {
         render: function () {
             var containerProp = {
                 ref: 'container',
-                className: 'fcui2-region-province',
+                className: 'jpui-region-province',
                 onMouseLeave: this.onMouseLeave,
                 onMouseEnter: this.onMouseEnter
             };
@@ -99,7 +99,7 @@ define(function (require) {
                 <div {...containerProp}>
                     {this.props.type === 'single' ? <Radio {...checkboxProps}/> : <CheckBox {...checkboxProps}/>}
                     <Layer {...layerProps}>
-                        <table className="fcui2-region-city-container">
+                        <table className="jpui-region-city-container">
                             <tbody>{cityFactory(this)}</tbody>
                         </table>
                     </Layer>

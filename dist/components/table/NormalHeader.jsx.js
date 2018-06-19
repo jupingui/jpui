@@ -54,7 +54,7 @@ define(function (require) {
                 sortType = 'desc'; //desc 降序 asc升序
             }
             var sortButtonProp = {
-                className: 'sort-button fcui2-icon ' + (sortType === 'asc' ? 'fcui2-icon-asc' : 'fcui2-icon-desc'),
+                className: 'sort-button jpui-icon ' + (sortType === 'asc' ? 'jpui-icon-asc' : 'jpui-icon-desc'),
                 style: {
                     display: sortEnable ? 'inline-block' : 'none',
                     color: sortField !== fieldConfig.field ? '#DEDEDE' : '#2F82F5'

@@ -81,10 +81,10 @@ define(function (require) {
             var workspace = document.createElement('div');
             var expandButton = document.createElement('div');
 
-            container.className = 'fcui2-shojiscreen';
-            background.className = 'fcui2-shojiscreen-background';
-            workspace.className = 'fcui2-shojiscreen-workspace';
-            expandButton.className = 'fcui2-shojiscreen-expand-button';
+            container.className = 'jpui-shojiscreen';
+            background.className = 'jpui-shojiscreen-background';
+            workspace.className = 'jpui-shojiscreen-workspace';
+            expandButton.className = 'jpui-shojiscreen-expand-button';
 
             container.appendChild(background);
             container.appendChild(workspace);
@@ -141,7 +141,7 @@ define(function (require) {
             document.body.appendChild(this.___expandButton___);
             tools.addExpandButton(this.___expandButton___);
             tools.freshExpandButton();
-            var bodyStatus = util.getNamespace('fcui2-body-scroll-status') || {};
+            var bodyStatus = util.getNamespace('jpui-body-scroll-status') || {};
             bodyStatus.windowNum--;
             if (bodyStatus.windowNum === 0) {
                 document.body.style.overflowX = bodyStatus.overflowX;
@@ -155,7 +155,7 @@ define(function (require) {
             if (!this.___container___ || !this.props.isOpen || !this.___appended___) return;
             document.body.appendChild(this.___container___);
             document.body.removeChild(this.___expandButton___);
-            var bodyStatus = util.getNamespace('fcui2-body-scroll-status') || {};
+            var bodyStatus = util.getNamespace('jpui-body-scroll-status') || {};
             bodyStatus.windowNum++;
             document.body.style.overflowX = 'hidden';
             document.body.style.overflowY = 'hidden';
@@ -199,17 +199,17 @@ define(function (require) {
                 this.___enterButton___.innerHTML = buttonLabels.enter ? buttonLabels.enter : language.enter;
                 this.___cancelButton___.innerHTML = buttonLabels.cancel ? buttonLabels.cancel : language.cancel;
                 this.___hideButton___.innerHTML = buttonLabels.hide ? buttonLabels.hide : language.hide;
-                this.___container___.className = 'fcui2-shojiscreen'
+                this.___container___.className = 'jpui-shojiscreen'
                     + (typeof className === 'string' && className ? (' ' + className) : '')
-                    + ' fcui2-shojiscreen-' + (typeof skin === 'string' && skin ? skin : 'normal')
+                    + ' jpui-shojiscreen-' + (typeof skin === 'string' && skin ? skin : 'normal')
                     + (props.className ? ' ' + props.className : '')
-                    + (props.showFootBar ? '' : ' fcui2-shojiscreen-hide-foot-bar');
+                    + (props.showFootBar ? '' : ' jpui-shojiscreen-hide-foot-bar');
                 this.___workspace___.style.width = (isNaN(width) ? 1000 : width) + 'px';
                 this.___footBarContent___.innerHTML = typeof props.footBarInnerHtml === 'string'
                     ? props.footBarInnerHtml : '';
                 if (!this.___appended___) {
                     // 记录滚动条组航太
-                    var bodyStatus = util.getNamespace('fcui2-body-scroll-status') || {};
+                    var bodyStatus = util.getNamespace('jpui-body-scroll-status') || {};
                     bodyStatus.windowNum = isNaN(bodyStatus.windowNum) ? 1 : bodyStatus.windowNum + 1;
                     bodyStatus.overflowX = !bodyStatus.hasOwnProperty('overflowX')
                         ? util.getStyle(document.body, 'overflowX') : bodyStatus.overflowX;
@@ -251,7 +251,7 @@ define(function (require) {
             tools.removeExpandButton(this.___expandButton___);
             tools.freshExpandButton();
             this.___appended___ = false;
-            var bodyStatus = util.getNamespace('fcui2-body-scroll-status') || {};
+            var bodyStatus = util.getNamespace('jpui-body-scroll-status') || {};
             if (!this.___alreadyHide___) {
                 bodyStatus.windowNum--;
             }

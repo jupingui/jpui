@@ -240,11 +240,11 @@ define(function (require) {
             };
             var skin = (this.context.appSkin ? this.context.appSkin + '-' : '') + (this.props.skin ? this.props.skin : 'normal');
             containerProp.ref = 'dropdownContainer';
-            containerProp.className += layerProp.isOpen ? ' fcui2-dropdownlist-' + skin + '-hover' : '';
+            containerProp.className += layerProp.isOpen ? ' jpui-dropdownlist-' + skin + '-hover' : '';
             return React.createElement(
                 'div',
                 containerProp,
-                React.createElement('div', { className: 'icon-right fcui2-icon fcui2-icon-arrow-down' }),
+                React.createElement('div', { className: 'icon-right jpui-icon jpui-icon-arrow-down' }),
                 React.createElement(
                     'span',
                     { className: 'label-container' },
@@ -261,7 +261,7 @@ define(function (require) {
                         React.createElement(Button, { label: language.cancel, onClick: this.onLayerClose, style: { marginLeft: 10 } }),
                         React.createElement(
                             'span',
-                            { className: 'fcui2-error-msg' },
+                            { className: 'jpui-error-msg' },
                             labels.errorMessage && !this.state.___beOperated___ ? labels.errorMessage : ''
                         )
                     )
@@ -293,7 +293,7 @@ define(function (require) {
         var skin = (me.context.appSkin ? me.context.appSkin + '-' : '') + (me.props.skin ? me.props.skin : 'normal');
         var containerProp = me.props.isDropDown ? {
             ref: 'container',
-            className: 'fcui2-dualtreeselector-enterprise fcui2-dualtreeselector-enterprise-' + skin
+            className: 'jpui-dualtreeselector-enterprise jpui-dualtreeselector-enterprise-' + skin
         } : cTools.containerBaseProps('dualtreeselector-enterprise', me);
         return React.createElement(
             'div',

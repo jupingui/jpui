@@ -124,11 +124,11 @@ define(function (require) {
                 onInput: this.___onInput___
             };
             var searchIconProps = {
-                className: 'fcui2-icon fcui2-icon-search',
+                className: 'jpui-icon jpui-icon-search',
                 onClick: this.onButtonClick 
             };
             var removeIconProps = {
-                className: 'fcui2-icon fcui2-icon-remove',
+                className: 'jpui-icon jpui-icon-remove',
                 style: {
                     right: this.props.mode === 'withButton' ? 5 : 25
                 },

@@ -52,7 +52,7 @@ define(function (require) {
                 && this.props.item.hasOwnProperty('expandId')
             ) {
                 buttonClass += (this.props.tableExpandId + '' === this.props.item.expandId + '')
-                    ? ' fcui2-icon fcui2-icon-arrow-down' : ' fcui2-icon fcui2-icon-arrow-right';
+                    ? ' jpui-icon jpui-icon-arrow-down' : ' jpui-icon jpui-icon-arrow-right';
             }
             else {
                 buttonClass = '';

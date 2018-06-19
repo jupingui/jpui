@@ -73,7 +73,7 @@ define(function (require) {
                         value === 'expand' ? labels.hide : labels.expand
                     ),
                     React.createElement('span', { onClick: this.onChange,
-                        className: 'fcui2-icon fcui2-icon-arrow-' + (value === 'expand' ? 'up' : 'down')
+                        className: 'jpui-icon jpui-icon-arrow-' + (value === 'expand' ? 'up' : 'down')
                     })
                 ) : null,
                 React.createElement(
@@ -90,7 +90,7 @@ define(function (require) {
                         value === 'expand' ? labels.hide : labels.expand
                     ),
                     React.createElement('span', { onClick: this.onChange,
-                        className: 'fcui2-icon fcui2-icon-arrow-' + (value === 'expand' ? 'up' : 'down')
+                        className: 'jpui-icon jpui-icon-arrow-' + (value === 'expand' ? 'up' : 'down')
                     })
                 ) : null
             );

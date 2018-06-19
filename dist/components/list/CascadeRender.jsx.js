@@ -77,7 +77,7 @@ define(function (require) {
                         null,
                         this.props.label
                     ),
-                    React.createElement('div', { className: 'icon-right fcui2-icon fcui2-icon-arrow-right' }),
+                    React.createElement('div', { className: 'icon-right jpui-icon jpui-icon-arrow-right' }),
                     React.createElement(
                         'div',
                         { className: 'children-container' },

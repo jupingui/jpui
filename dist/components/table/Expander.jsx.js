@@ -46,7 +46,7 @@ define(function (require) {
         render: function render() {
             var buttonClass = '';
             if (this.props.hasOwnProperty('tableExpandId') && this.props.item.hasOwnProperty('expandId')) {
-                buttonClass += this.props.tableExpandId + '' === this.props.item.expandId + '' ? ' fcui2-icon fcui2-icon-arrow-down' : ' fcui2-icon fcui2-icon-arrow-right';
+                buttonClass += this.props.tableExpandId + '' === this.props.item.expandId + '' ? ' jpui-icon jpui-icon-arrow-down' : ' jpui-icon jpui-icon-arrow-right';
             } else {
                 buttonClass = '';
             }

@@ -12,7 +12,7 @@ define(function (require) {
             for (var i = 0; i < me.props.datasource.length; i++) {
                 var props = {
                     key: i,
-                    className: 'fcui2-wizard-item',
+                    className: 'jpui-wizard-item',
                     onClick: me.onClick,
                     'data-ui-cmd': i,
                     style: {
@@ -21,14 +21,14 @@ define(function (require) {
                     }
                 };
                 if (me.props.disabled) {
-                    props.className += ' fcui2-wizard-item-disabled';
+                    props.className += ' jpui-wizard-item-disabled';
                 } else if (i < value + 1) {
-                    props.className += ' fcui2-wizard-item-active' + (i === value - 1 ? ' fcui2-wizard-item-pre' : '');
+                    props.className += ' jpui-wizard-item-active' + (i === value - 1 ? ' jpui-wizard-item-pre' : '');
                 } else {
-                    props.className += ' fcui2-wizard-item-normal';
+                    props.className += ' jpui-wizard-item-normal';
                 }
                 if (value === i) {
-                    props.className += ' fcui2-wizard-item-current';
+                    props.className += ' jpui-wizard-item-current';
                 }
                 doms.push(React.createElement(
                     'div',
@@ -38,10 +38,10 @@ define(function (require) {
                         { 'data-ui-cmd': i },
                         me.props.datasource[i]
                     ),
-                    React.createElement('div', { 'data-ui-cmd': i, className: 'fcui2-wizard-arrow-bg' }),
+                    React.createElement('div', { 'data-ui-cmd': i, className: 'jpui-wizard-arrow-bg' }),
                     React.createElement(
                         'div',
-                        { 'data-ui-cmd': i, className: 'fcui2-wizard-arrow' },
+                        { 'data-ui-cmd': i, className: 'jpui-wizard-arrow' },
                         React.createElement(
                             'span',
                             { 'data-ui-cmd': i },

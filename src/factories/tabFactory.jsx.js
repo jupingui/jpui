@@ -18,10 +18,10 @@ define(function (require) {
                 props.key = i;
                 props.onClick = props.disabled ? cTools.noop : me.onClick;
                 if (me.props.disabled || props.disabled) {
-                    props.className = 'fcui2-tab-item-disabled';
+                    props.className = 'jpui-tab-item-disabled';
                 }
                 else {
-                    props.className = 'fcui2-tab-item' + (props.value === value ? '-active' : '');
+                    props.className = 'jpui-tab-item' + (props.value === value ? '-active' : '');
                 }
                 doms.push(<Renderer {...props} />);
                 if (skin === 'oneux4-level-4' && i < me.props.datasource.length - 1) {

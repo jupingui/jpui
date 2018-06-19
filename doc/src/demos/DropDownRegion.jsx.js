@@ -1,7 +1,7 @@
 define(function (require) {
 
     var Creater = require('./Main.jsx');
-    var DropDownRegion = require('fcui2/DropDownRegion.jsx');
+    var DropDownRegion = require('jpui/DropDownRegion.jsx');
 
     var items = [
         {

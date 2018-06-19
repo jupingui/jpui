@@ -198,10 +198,10 @@ define(function (require) {
             containerProp.ref = 'dropdownContainer';
             var skin = this.props.skin ? this.props.skin : 'normal';
             skin = this.context.appSkin ? (this.context.appSkin + '-' + skin) : skin;
-            containerProp.className += layerProp.isOpen ? (' fcui2-dropdownlist-' + skin + '-hover') : '';
+            containerProp.className += layerProp.isOpen ? (' jpui-dropdownlist-' + skin + '-hover') : '';
             return (
                 <div {...containerProp}>
-                    <div className="icon-right fcui2-icon fcui2-icon-arrow-down"></div>
+                    <div className="icon-right jpui-icon jpui-icon-arrow-down"></div>
                     <span className="label-container">{labels.dropdownLabel ? labels.dropdownLabel : ''}</span>
                     <Layer {...layerProp}>
                         <div style={{padding: 10, width: 555}}>
@@ -220,7 +220,7 @@ define(function (require) {
         var labels = util.extend({}, defaultLabels, me.props.labels);
         var containerProp = me.props.isDropDown ? {
                 ref: 'container',
-                className: 'fcui2-arrayselector-enterprise fcui2-arrayselector-enterprise-'
+                className: 'jpui-arrayselector-enterprise jpui-arrayselector-enterprise-'
                     + (me.props.skin ? me.props.skin : 'normal')
                     + ' ' + (me.props.className ? me.props.className : '')
             } : cTools.containerBaseProps('arrayselector-enterprise', me);
@@ -244,7 +244,7 @@ define(function (require) {
                     {labels.selectedLabel}
                     <span className="selected-option-title-info">
                         {'(' + language.click}
-                        <span className="fcui2-icon fcui2-icon-remove"></span>
+                        <span className="jpui-icon jpui-icon-remove"></span>
                         {language.delete + ')'}
                     </span>
                 </div>
@@ -255,7 +255,7 @@ define(function (require) {
                     {labels.unselectedLabel}
                     <span className="selected-option-title-info">
                         {'(' + language.click}
-                        <span className="fcui2-icon fcui2-icon-plus"></span>
+                        <span className="jpui-icon jpui-icon-plus"></span>
                         {language.add + ')'}
                     </span>
                 </div>
@@ -271,19 +271,19 @@ define(function (require) {
         for (var i = 0; i < arr.length; i++) {
             var disabled = me.props.disabled || arr[i].disabled;
             var leftProp = {
-                className: 'fcui2-icon fcui2-icon-arrow-left'
+                className: 'jpui-icon jpui-icon-arrow-left'
                     + (i === 0 || disabled? ' icon-disabled' : ''),
                 onClick: i === 0 || disabled ? undefined : me.onMoveForward,
                 'data-ui-cmd': i + ''
             };
             var rightProp = {
-                className: 'fcui2-icon fcui2-icon-arrow-right'
+                className: 'jpui-icon jpui-icon-arrow-right'
                     + (i === arr.length - 1 || disabled  ? ' icon-disabled' : ''),
                 onClick: i === arr.length - 1 || disabled ? undefined : me.onMoveBackward,
                 'data-ui-cmd': i + ''
             };
             var deleteProp = {
-                className: 'fcui2-icon fcui2-icon-remove' + (disabled ? ' icon-disabled' : ''),
+                className: 'jpui-icon jpui-icon-remove' + (disabled ? ' icon-disabled' : ''),
                 onClick: me.props.disabled || disabled ? undefined : me.onRemove,
                 'data-ui-cmd': i + ''
             };
@@ -305,7 +305,7 @@ define(function (require) {
         for (var i = 0; i < arr.length; i++) {
             var disabled = me.props.disabled || arr[i].disabled;
             var addBtn = {
-                className: 'fcui2-icon fcui2-icon-plus' + (disabled ? ' icon-disabled' : ''),
+                className: 'jpui-icon jpui-icon-plus' + (disabled ? ' icon-disabled' : ''),
                 onClick:  disabled ? undefined : me.onAdd,
                 'data-ui-cmd': i + ''
             };

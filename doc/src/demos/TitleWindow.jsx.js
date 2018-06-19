@@ -6,8 +6,8 @@
 define(function (require) {
 
     let React = require('react');
-    let Button = require('fcui2/Button.jsx');
-    let TitleWindow = require('fcui2/TitleWindow.jsx');    
+    let Button = require('jpui/Button.jsx');
+    let TitleWindow = require('jpui/TitleWindow.jsx');    
 
 
     return React.createClass({

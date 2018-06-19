@@ -45,7 +45,7 @@ define(function (require) {
                 // self
                 title: '',
                 content: '',
-                icon: 'fcui2-icon fcui2-icon-question',
+                icon: 'jpui-icon jpui-icon-question',
                 renderer: null,
                 renderProps: {},
                 layerLocation: 'right left top bottom',
@@ -126,8 +126,8 @@ define(function (require) {
             var Renderer = this.props.renderer;
             containerProp.className += typeof Renderer === 'function' ? '' : ' font-icon ' + this.props.icon;
             var layerClassName = [
-                'fcui2-tip-layer',
-                'fcui2-tip-layer-' + skin,
+                'jpui-tip-layer',
+                'jpui-tip-layer-' + skin,
                 this.props.layerClassName ? this.props.layerClassName : ''
             ].join(' ');
             return (

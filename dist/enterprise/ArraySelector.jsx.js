@@ -199,11 +199,11 @@ define(function (require) {
             containerProp.ref = 'dropdownContainer';
             var skin = this.props.skin ? this.props.skin : 'normal';
             skin = this.context.appSkin ? this.context.appSkin + '-' + skin : skin;
-            containerProp.className += layerProp.isOpen ? ' fcui2-dropdownlist-' + skin + '-hover' : '';
+            containerProp.className += layerProp.isOpen ? ' jpui-dropdownlist-' + skin + '-hover' : '';
             return React.createElement(
                 'div',
                 containerProp,
-                React.createElement('div', { className: 'icon-right fcui2-icon fcui2-icon-arrow-down' }),
+                React.createElement('div', { className: 'icon-right jpui-icon jpui-icon-arrow-down' }),
                 React.createElement(
                     'span',
                     { className: 'label-container' },
@@ -229,7 +229,7 @@ define(function (require) {
         var labels = util.extend({}, defaultLabels, me.props.labels);
         var containerProp = me.props.isDropDown ? {
             ref: 'container',
-            className: 'fcui2-arrayselector-enterprise fcui2-arrayselector-enterprise-' + (me.props.skin ? me.props.skin : 'normal') + ' ' + (me.props.className ? me.props.className : '')
+            className: 'jpui-arrayselector-enterprise jpui-arrayselector-enterprise-' + (me.props.skin ? me.props.skin : 'normal') + ' ' + (me.props.className ? me.props.className : '')
         } : cTools.containerBaseProps('arrayselector-enterprise', me);
         try {
             value = JSON.parse(value);
@@ -265,7 +265,7 @@ define(function (require) {
                     'span',
                     { className: 'selected-option-title-info' },
                     '(' + language.click,
-                    React.createElement('span', { className: 'fcui2-icon fcui2-icon-remove' }),
+                    React.createElement('span', { className: 'jpui-icon jpui-icon-remove' }),
                     language.delete + ')'
                 )
             ),
@@ -282,7 +282,7 @@ define(function (require) {
                     'span',
                     { className: 'selected-option-title-info' },
                     '(' + language.click,
-                    React.createElement('span', { className: 'fcui2-icon fcui2-icon-plus' }),
+                    React.createElement('span', { className: 'jpui-icon jpui-icon-plus' }),
                     language.add + ')'
                 )
             ),
@@ -299,17 +299,17 @@ define(function (require) {
         for (var i = 0; i < arr.length; i++) {
             var disabled = me.props.disabled || arr[i].disabled;
             var leftProp = {
-                className: 'fcui2-icon fcui2-icon-arrow-left' + (i === 0 || disabled ? ' icon-disabled' : ''),
+                className: 'jpui-icon jpui-icon-arrow-left' + (i === 0 || disabled ? ' icon-disabled' : ''),
                 onClick: i === 0 || disabled ? undefined : me.onMoveForward,
                 'data-ui-cmd': i + ''
             };
             var rightProp = {
-                className: 'fcui2-icon fcui2-icon-arrow-right' + (i === arr.length - 1 || disabled ? ' icon-disabled' : ''),
+                className: 'jpui-icon jpui-icon-arrow-right' + (i === arr.length - 1 || disabled ? ' icon-disabled' : ''),
                 onClick: i === arr.length - 1 || disabled ? undefined : me.onMoveBackward,
                 'data-ui-cmd': i + ''
             };
             var deleteProp = {
-                className: 'fcui2-icon fcui2-icon-remove' + (disabled ? ' icon-disabled' : ''),
+                className: 'jpui-icon jpui-icon-remove' + (disabled ? ' icon-disabled' : ''),
                 onClick: me.props.disabled || disabled ? undefined : me.onRemove,
                 'data-ui-cmd': i + ''
             };
@@ -339,7 +339,7 @@ define(function (require) {
         for (var i = 0; i < arr.length; i++) {
             var disabled = me.props.disabled || arr[i].disabled;
             var addBtn = {
-                className: 'fcui2-icon fcui2-icon-plus' + (disabled ? ' icon-disabled' : ''),
+                className: 'jpui-icon jpui-icon-plus' + (disabled ? ' icon-disabled' : ''),
                 onClick: disabled ? undefined : me.onAdd,
                 'data-ui-cmd': i + ''
             };

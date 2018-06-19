@@ -36,7 +36,7 @@ define(function (require) {
             }
             return React.createElement(
                 'div',
-                { className: 'fcui2-schedule-normal-legend-layer' },
+                { className: 'jpui-schedule-normal-legend-layer' },
                 text
             );
         }

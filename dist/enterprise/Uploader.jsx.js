@@ -115,7 +115,7 @@ define(function (require) {
             // DO NOTHING
         }
         var buttonProps = {
-            icon: 'fcui2-icon fcui2-icon-upload',
+            icon: 'jpui-icon jpui-icon-upload',
             label: '    文件上传'
         };
         return React.createElement(

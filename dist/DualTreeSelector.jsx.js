@@ -154,7 +154,7 @@ define(function (require) {
                     'div',
                     { className: 'tree-container' },
                     React.createElement(Tree, treeProp1),
-                    React.createElement('span', { className: 'cut-rule fcui2-icon fcui2-icon-arrow-right' }),
+                    React.createElement('span', { className: 'cut-rule jpui-icon jpui-icon-arrow-right' }),
                     React.createElement(Tree, treeProp2)
                 )
             );

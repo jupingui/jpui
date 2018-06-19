@@ -92,7 +92,7 @@ define(function (require) {
             });
             var hasDatasource = this.props.datasource instanceof Array && this.props.datasource.length > 0;
             var dropdownButtonProp = {
-                className: 'icon-right fcui2-icon fcui2-icon-arrow-down'
+                className: 'icon-right jpui-icon jpui-icon-arrow-down'
                     + (this.state.layerOpen && hasDatasource && !this.props.disabled ? ' layerOpen' : ''),
                 onClick: this.onDropDownButtonClick
             };

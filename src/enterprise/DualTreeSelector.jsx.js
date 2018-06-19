@@ -252,17 +252,17 @@ define(function (require) {
             var skin = (this.context.appSkin ? this.context.appSkin + '-' : '')
                 + (this.props.skin ? this.props.skin : 'normal');
             containerProp.ref = 'dropdownContainer';
-            containerProp.className += layerProp.isOpen ? ' fcui2-dropdownlist-' + skin + '-hover' : '';
+            containerProp.className += layerProp.isOpen ? ' jpui-dropdownlist-' + skin + '-hover' : '';
             return (
                 <div {...containerProp}>
-                    <div className="icon-right fcui2-icon fcui2-icon-arrow-down"></div>
+                    <div className="icon-right jpui-icon jpui-icon-arrow-down"></div>
                     <span className="label-container">{labels.dropdownLabel ? labels.dropdownLabel : ''}</span>
                     <Layer {...layerProp}>
                         <div style={{padding: 10}}>
                             {mainContentFactory(this)}
                             <Button {...enterButtonProp}/>
                             <Button label={language.cancel} onClick={this.onLayerClose} style={{marginLeft: 10}}/>
-                            <span className="fcui2-error-msg">
+                            <span className="jpui-error-msg">
                                 {labels.errorMessage && !this.state.___beOperated___ ? labels.errorMessage : ''}
                             </span>
                         </div>
@@ -299,7 +299,7 @@ define(function (require) {
             + (me.props.skin ? me.props.skin : 'normal');
         var containerProp = me.props.isDropDown ? {
                 ref: 'container',
-                className: 'fcui2-dualtreeselector-enterprise fcui2-dualtreeselector-enterprise-' + skin
+                className: 'jpui-dualtreeselector-enterprise jpui-dualtreeselector-enterprise-' + skin
             } : cTools.containerBaseProps('dualtreeselector-enterprise', me);
         return (
             <div {...containerProp}>

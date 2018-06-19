@@ -1,6 +1,6 @@
 {
-  "name": "fcui2",
-  "version": "2.0.25",
+  "name": "JPUI",
+  "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --progress --colors --content-base build.doc --hot --port 8847 --host 0.0.0.0",
     "test": "node node_modules/edp/bin/edp-cli build -f && node node_modules/karma/bin/karma start",
@@ -9,40 +9,12 @@
     "spec": "./node_modules/.bin/edp build -f && ./node_modules/.bin/edp test start",
     "coverage": "cat ./coverage/lcov/lcov.info | ./node_modules/.bin/coveralls"
   },
-  "maintainers": [
-    {
-      "name": "Li Haitao",
-      "email": "lbxxlht@163.com"
-    }
-  ],
-  "contributors": [
-    {
-      "name": "Han Bingfeng"
-    },
-    {
-      "name": "Wang Yi"
-    },
-    {
-      "name": "Hao Cuicui"
-    },
-    {
-      "name": "Han Cong"
-    },
-    {
-      "name": "Sun WenFei"
-    },
-    {
-      "name": "Chen Xiao"
-    },
-    {
-      "name": "Shan Qianmin"
-    }
-  ],
-  "dependencies": {},
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "less-loader": "^2.2.3"
+  },
   "main": "dist/index.js",
-  "description": "FCUI2, a lightweight UI based on React.",
-  "homepage": "https://github.com/fcfe/fcui2",
-  "repository": "git@github.com:fcfe/fcui2.git",
+  "description": "JPUI, a lightweight UI based on React.",
   "devDependencies": {
     "react": "^15.6.2",
     "babel-core": "^6.7.7",
