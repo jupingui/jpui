@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/core/tableTools.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/core/</a> tableTools.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">56.6% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>60/106</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">47.56% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>39/82</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">57.14% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>60/105</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">26×</span>
+<span class="cline-any cline-yes">26×</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">28×</span>
+<span class="cline-any cline-yes">28×</span>
+<span class="cline-any cline-yes">28×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">68×</span>
+<span class="cline-any cline-yes">68×</span>
+<span class="cline-any cline-yes">68×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">68×</span>
+<span class="cline-any cline-yes">32×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">68×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-yes">30×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">198×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">816×</span>
+<span class="cline-any cline-yes">816×</span>
+<span class="cline-any cline-yes">138×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-yes">204×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">70×</span>
+<span class="cline-any cline-yes">70×</span>
+<span class="cline-any cline-yes">70×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">70×</span>
+<span class="cline-any cline-yes">210×</span>
+<span class="cline-any cline-yes">210×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">210×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">70×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">70×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">70×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">define('jpui/core/tableTools', ['require'], function (require) {
+    var STYLES_MERGE_FROM_CONF_TO_PROPS = {
+        width: 'width',
+        align: 'textAlign',
+        verticalAlign: 'verticalAlign',
+        color: 'color'
+    };
+    return {
+        getSelectedCount: function (obj) {
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (obj === -1)
+<span class="cstat-no" title="statement not covered" >                return -1;</span>
+            var n = 0;
+            for (var key in obj) {
+                <span class="missing-if-branch" title="else path not taken" >E</span>if (obj.hasOwnProperty(key))
+                    n++;
+            }
+            return n;
+        },
+        haveDate: function (me) {
+            var config = me.props.fieldConfig instanceof Array ? me.props.fieldConfig : <span class="branch-1 cbranch-no" title="branch not covered" >[];</span>
+            var datasource = me.props.datasource instanceof Array ? me.props.datasource : <span class="branch-1 cbranch-no" title="branch not covered" >[];</span>
+            return datasource.length &gt; 0 &amp;&amp; config.length &gt; 0;
+        },
+        getSelectedHash: function (value) {
+            value = typeof value === 'string' ? JSON.parse(value) : <span class="branch-1 cbranch-no" title="branch not covered" >{};</span>
+            var selected = {};
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (value.selected === -1) {
+<span class="cstat-no" title="statement not covered" >                selected = -1;</span>
+            } else if (value.selected instanceof Array) {
+                for (var i = 0; i &lt; value.selected.length; i++)
+<span class="cstat-no" title="statement not covered" >                    selected[value.selected[i]] = true;</span>
+            }
+            return selected;
+        },
+        getRowSelectedState: function (row, value) {
+            var selectHash = this.getSelectedHash(value);
+            var indeterminate = {};
+            value = typeof value === 'string' ? JSON.parse(value) : <span class="branch-1 cbranch-no" title="branch not covered" >{};</span>
+            if (value.indeterminate instanceof Array) {
+                for (var i = 0; i &lt; value.indeterminate.length; i++)
+<span class="cstat-no" title="statement not covered" >                    indeterminate[value.indeterminate[i]] = true;</span>
+            }
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (selectHash === -1 || selectHash[row])
+<span class="cstat-no" title="statement not covered" >                return 0;</span>
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (indeterminate[row])
+<span class="cstat-no" title="statement not covered" >                return 1;</span>
+            return -1;
+        },
+        updateSelected: <span class="fstat-no" title="function not covered" >function (index, checked, selectMode, tableValue, datasource) {</span>
+<span class="cstat-no" title="statement not covered" >            var result = [];</span>
+<span class="cstat-no" title="statement not covered" >            var selected = this.getSelectedHash(tableValue);</span>
+<span class="cstat-no" title="statement not covered" >            if (selected === -1 &amp;&amp; !checked) {</span>
+<span class="cstat-no" title="statement not covered" >                for (var i = 0; i &lt; datasource.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >                    if (i === index)</span>
+<span class="cstat-no" title="statement not covered" >                        continue;</span>
+<span class="cstat-no" title="statement not covered" >                    result.push(i);</span>
+                }
+            } else <span class="cstat-no" title="statement not covered" >if (selected !== -1 &amp;&amp; checked) {</span>
+<span class="cstat-no" title="statement not covered" >                selected[index] = true;</span>
+<span class="cstat-no" title="statement not covered" >                for (var i = 0; i &lt; datasource.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >                    if (!selected[i])</span>
+<span class="cstat-no" title="statement not covered" >                        continue;</span>
+<span class="cstat-no" title="statement not covered" >                    result.push(i);</span>
+                }
+            } else <span class="cstat-no" title="statement not covered" >if (selected !== -1 &amp;&amp; !checked) {</span>
+<span class="cstat-no" title="statement not covered" >                selected[index] = false;</span>
+<span class="cstat-no" title="statement not covered" >                for (var i = 0; i &lt; datasource.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >                    if (!selected[i])</span>
+<span class="cstat-no" title="statement not covered" >                        continue;</span>
+<span class="cstat-no" title="statement not covered" >                    result.push(i);</span>
+                }
+            }
+<span class="cstat-no" title="statement not covered" >            if (selectMode === '-1') {</span>
+<span class="cstat-no" title="statement not covered" >                result = -1;</span>
+            } else <span class="cstat-no" title="statement not covered" >if (selectMode === '-2') {</span>
+<span class="cstat-no" title="statement not covered" >                result = [];</span>
+<span class="cstat-no" title="statement not covered" >                for (var i = 0; i &lt; datasource.length; i++)</span>
+<span class="cstat-no" title="statement not covered" >                    result.push(i);</span>
+            } else <span class="cstat-no" title="statement not covered" >if (selectMode === '-3') {</span>
+<span class="cstat-no" title="statement not covered" >                result = [];</span>
+            }
+<span class="cstat-no" title="statement not covered" >            return result;</span>
+        },
+        tdPropsFactory: function (conf, item, me, row, column) {
+            var props = JSON.parse(JSON.stringify(conf));
+            props.item = item;
+            props.row = row;
+            props.column = column;
+            props.onAction = me.props.onAction;
+            props.key = 'column-' + column;
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof conf.content === 'function') {
+<span class="cstat-no" title="statement not covered" >                props.content = conf.content(item, row, column, me);</span>
+            } else <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof conf.content === 'string' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >item.hasOwnProperty(conf.content))</span> {
+<span class="cstat-no" title="statement not covered" >                props.content = item[conf.content];</span>
+            } else if (!conf.hasOwnProperty('content') &amp;&amp; conf.hasOwnProperty('field')) {
+                props.content = item[conf.field];
+            } else <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof conf.content !== 'string') {
+                props.content = '';
+            }
+            props.style = props.style || {};
+            for (var key in STYLES_MERGE_FROM_CONF_TO_PROPS) {
+                var styleName = STYLES_MERGE_FROM_CONF_TO_PROPS[key];
+                if (conf.hasOwnProperty(key) &amp;&amp; !props.style.hasOwnProperty(styleName)) {
+                    props.style[styleName] = conf[key];
+                }
+            }
+            if (typeof conf.prepare === 'function') {
+                conf.prepare(props, item, row, column, me);
+            }
+            props.content = props.content + '';
+            return props;
+        },
+        fieldConfigFactory: function (me, renderers) {
+            var fields = [];
+            var hasSelector = false;
+            var selectorConfig = {
+                isSelector: true,
+                fixed: true,
+                width: 60,
+                renderer: renderers.selectorItem,
+                thRenderer: renderers.selectorHeader,
+                prepare: function (props, item, row, column, me) {
+                    props.onRowSelect = me.onRowSelect;
+                }
+            };
+            for (var i = 0; i &lt; me.props.fieldConfig.length; i++) {
+                var item = me.props.fieldConfig[i];
+                <span class="missing-if-branch" title="if path not taken" >I</span>if (item.isSelector) {
+<span class="cstat-no" title="statement not covered" >                    hasSelector = true;</span>
+<span class="cstat-no" title="statement not covered" >                    var newItem = {</span>
+                        isSelector: true,
+                        maxWidth: 60,
+                        fixed: i === 0,
+                        renderer: renderers.selectorItem,
+                        thRenderer: renderers.selectorHeader,
+                        prepare: <span class="fstat-no" title="function not covered" >function (oldPrepare) {</span>
+<span class="cstat-no" title="statement not covered" >                            return <span class="fstat-no" title="function not covered" >function (props, item, row, column, me) {</span></span>
+<span class="cstat-no" title="statement not covered" >                                props.onRowSelect = me.onRowSelect;</span>
+<span class="cstat-no" title="statement not covered" >                                props.disabled = me.props.disabled;</span>
+<span class="cstat-no" title="statement not covered" >                                typeof oldPrepare === 'function' &amp;&amp; oldPrepare(props, item, row, column, me);</span>
+                            };
+                        }(item.prepare)
+                    };
+<span class="cstat-no" title="statement not covered" >                    newItem.width = isNaN(item.width) ? 60 : item.width;</span>
+<span class="cstat-no" title="statement not covered" >                    fields.push(newItem);</span>
+                } else {
+                    fields.push(item);
+                }
+            }
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (hasSelector)
+<span class="cstat-no" title="statement not covered" >                return fields;</span>
+            if (me.props.flags &amp;&amp; me.props.flags.showSelector) {
+                fields.unshift(selectorConfig);
+            }
+            return fields;
+        }
+    };
+});
+&nbsp;
+&nbsp;
+/** d e f i n e */
+define('core/tableTools', ['jpui/core/tableTools'], <span class="fstat-no" title="function not covered" >function (target) {</span> <span class="cstat-no" title="statement not covered" >return target; </span>});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 19 2018 11:30:14 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

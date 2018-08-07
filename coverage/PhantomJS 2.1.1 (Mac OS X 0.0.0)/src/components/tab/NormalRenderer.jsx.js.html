@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/tab/NormalRenderer.jsx.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">src/components/tab/</a> NormalRenderer.jsx.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>9/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">71.43% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/10</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">define('jpui/components/tab/NormalRenderer.jsx', ['require', 'react'], function (require) {
+    var React = require('react');
+    return React.createClass({
+        getDefaultProps: function getDefaultProps() {
+            return {
+                className: '',
+                label: '',
+                value: '',
+                onClick: <span class="fstat-no" title="function not covered" >function onClick() {</span>}
+            };
+        },
+        getInitialState: function getInitialState() {
+            return {};
+        },
+        onItemClick: function onItemClick(e) {
+            e.target.value = this.props.value;
+            this.props.onClick(e);
+        },
+        render: function render() {
+            return React.createElement('div', {
+                className: this.props.className,
+                onClick: this.onItemClick
+            }, this.props.label);
+        }
+    });
+});
+&nbsp;
+/** d e f i n e */
+define('components/tab/NormalRenderer.jsx', ['jpui/components/tab/NormalRenderer.jsx'], <span class="fstat-no" title="function not covered" >function (target) {</span>
+<span class="cstat-no" title="statement not covered" >    return target;</span>
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIk5vcm1hbFJlbmRlcmVyLmpzeC5qcyJdLCJuYW1lcyI6WyJkZWZpbmUiLCJyZXF1aXJlIiwiUmVhY3QiLCJjcmVhdGVDbGFzcyIsImdldERlZmF1bHRQcm9wcyIsImNsYXNzTmFtZSIsImxhYmVsIiwidmFsdWUiLCJvbkNsaWNrIiwiZ2V0SW5pdGlhbFN0YXRlIiwib25JdGVtQ2xpY2siLCJlIiwidGFyZ2V0IiwicHJvcHMiLCJyZW5kZXIiLCJjcmVhdGVFbGVtZW50Il0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBTyx3Q0FBUCxFQUFpRCxDQUM3QyxTQUQ2QyxFQUU3QyxPQUY2QyxDQUFqRCxFQUdHLFVBQVVDLE9BQVYsRUFBbUI7QUFDbEIsUUFBSUMsUUFBUUQsUUFBUSxPQUFSLENBQVo7QUFDQSxXQUFPQyxNQUFNQyxXQUFOLENBQWtCO0FBQ3JCQyx5QkFBaUIsU0FBU0EsZUFBVCxHQUEyQjtBQUN4QyxtQkFBTztBQUNIQywyQkFBVyxFQURSO0FBRUhDLHVCQUFPLEVBRko7QUFHSEMsdUJBQU8sRUFISjtBQUlIQyx5QkFBUyxTQUFTQSxPQUFULEdBQW1CLENBQzNCO0FBTEUsYUFBUDtBQU9ILFNBVG9CO0FBVXJCQyx5QkFBaUIsU0FBU0EsZUFBVCxHQUEyQjtBQUN4QyxtQkFBTyxFQUFQO0FBQ0gsU0Fab0I7QUFhckJDLHFCQUFhLFNBQVNBLFdBQVQsQ0FBcUJDLENBQXJCLEVBQXdCO0FBQ2pDQSxjQUFFQyxNQUFGLENBQVNMLEtBQVQsR0FBaUIsS0FBS00sS0FBTCxDQUFXTixLQUE1QjtBQUNBLGlCQUFLTSxLQUFMLENBQVdMLE9BQVgsQ0FBbUJHLENBQW5CO0FBQ0gsU0FoQm9CO0FBaUJyQkcsZ0JBQVEsU0FBU0EsTUFBVCxHQUFrQjtBQUN0QixtQkFBT1osTUFBTWEsYUFBTixDQUFvQixLQUFwQixFQUEyQjtBQUM5QlYsMkJBQVcsS0FBS1EsS0FBTCxDQUFXUixTQURRO0FBRTlCRyx5QkFBUyxLQUFLRTtBQUZnQixhQUEzQixFQUdKLEtBQUtHLEtBQUwsQ0FBV1AsS0FIUCxDQUFQO0FBSUg7QUF0Qm9CLEtBQWxCLENBQVA7QUF3QkgsQ0E3QkQ7O0FBZ0NBO0FBQ0FOLE9BQU8sbUNBQVAsRUFBNEMsQ0FBQyx3Q0FBRCxDQUE1QyxFQUF3RixVQUFVWSxNQUFWLEVBQWtCO0FBQUUsV0FBT0EsTUFBUDtBQUFnQixDQUE1SCIsImZpbGUiOiJOb3JtYWxSZW5kZXJlci5qc3guanMiLCJzb3VyY2VzQ29udGVudCI6WyJkZWZpbmUoJ2pwdWkvY29tcG9uZW50cy90YWIvTm9ybWFsUmVuZGVyZXIuanN4JywgW1xuICAgICdyZXF1aXJlJyxcbiAgICAncmVhY3QnXG5dLCBmdW5jdGlvbiAocmVxdWlyZSkge1xuICAgIHZhciBSZWFjdCA9IHJlcXVpcmUoJ3JlYWN0Jyk7XG4gICAgcmV0dXJuIFJlYWN0LmNyZWF0ZUNsYXNzKHtcbiAgICAgICAgZ2V0RGVmYXVsdFByb3BzOiBmdW5jdGlvbiBnZXREZWZhdWx0UHJvcHMoKSB7XG4gICAgICAgICAgICByZXR1cm4ge1xuICAgICAgICAgICAgICAgIGNsYXNzTmFtZTogJycsXG4gICAgICAgICAgICAgICAgbGFiZWw6ICcnLFxuICAgICAgICAgICAgICAgIHZhbHVlOiAnJyxcbiAgICAgICAgICAgICAgICBvbkNsaWNrOiBmdW5jdGlvbiBvbkNsaWNrKCkge1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH07XG4gICAgICAgIH0sXG4gICAgICAgIGdldEluaXRpYWxTdGF0ZTogZnVuY3Rpb24gZ2V0SW5pdGlhbFN0YXRlKCkge1xuICAgICAgICAgICAgcmV0dXJuIHt9O1xuICAgICAgICB9LFxuICAgICAgICBvbkl0ZW1DbGljazogZnVuY3Rpb24gb25JdGVtQ2xpY2soZSkge1xuICAgICAgICAgICAgZS50YXJnZXQudmFsdWUgPSB0aGlzLnByb3BzLnZhbHVlO1xuICAgICAgICAgICAgdGhpcy5wcm9wcy5vbkNsaWNrKGUpO1xuICAgICAgICB9LFxuICAgICAgICByZW5kZXI6IGZ1bmN0aW9uIHJlbmRlcigpIHtcbiAgICAgICAgICAgIHJldHVybiBSZWFjdC5jcmVhdGVFbGVtZW50KCdkaXYnLCB7XG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lOiB0aGlzLnByb3BzLmNsYXNzTmFtZSxcbiAgICAgICAgICAgICAgICBvbkNsaWNrOiB0aGlzLm9uSXRlbUNsaWNrXG4gICAgICAgICAgICB9LCB0aGlzLnByb3BzLmxhYmVsKTtcbiAgICAgICAgfVxuICAgIH0pO1xufSk7XG5cblxuLyoqIGQgZSBmIGkgbiBlICovXG5kZWZpbmUoJ2NvbXBvbmVudHMvdGFiL05vcm1hbFJlbmRlcmVyLmpzeCcsIFsnanB1aS9jb21wb25lbnRzL3RhYi9Ob3JtYWxSZW5kZXJlci5qc3gnXSwgZnVuY3Rpb24gKHRhcmdldCkgeyByZXR1cm4gdGFyZ2V0OyB9KTsiXX0=</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 19 2018 11:30:14 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

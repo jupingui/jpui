@@ -13,6 +13,10 @@
     "css-loader": "^0.23.1",
     "less-loader": "^2.2.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jupingui/jpui.git"
+  },
   "main": "dist/index.js",
   "description": "JPUI, a lightweight UI based on React.",
   "devDependencies": {

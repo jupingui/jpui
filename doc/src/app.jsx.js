@@ -68,7 +68,7 @@ define(function (require) {
             return {
                 file: 'src\\Button.jsx.js',
                 level: 'widget',
-                title: 'FCUI2 Docs OneUX3',
+                title: 'JPUI Docs OneUX3',
                 skin: 'oneux3',
                 dispatch: function () {}
             };
@@ -85,9 +85,9 @@ define(function (require) {
         },
         render: function () {
             var Demo = config.demos[this.props.file.replace(/_/g, '\\')];
-            var componentSource = 'https://github.com/Akonna/jpui/tree/master/'
+            var componentSource = 'https://github.com/jupingui/jpui/tree/master/'
                 + this.props.file.replace(/_/g, '/');
-            var demoSource = 'https://github.com/fcfe/jpui/tree/master/doc/src/demos'
+            var demoSource = 'https://github.com/jupingui/jpui/tree/master/doc/src/demos'
                 + this.props.file.replace(/_/g, '/').replace('src', '');
             return (
                 <div>

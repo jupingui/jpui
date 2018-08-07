@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/factories/crumbFactory.jsx.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/factories/</a> crumbFactory.jsx.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.86% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>13/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.86% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>13/14</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">define('jpui/factories/crumbFactory.jsx', ['require', 'react'], function (require) {
+    var React = require('react');
+    return {
+        linkFactory: function linkFactory(me) {
+            var doms = [];
+            for (var i = 0; i &lt; me.props.datasource.length; i++) {
+                var item = me.props.datasource[i];
+                if (!item.hasOwnProperty('href') || me.props.disabled || item.disabled) {
+                    doms.push(React.createElement('span', {
+                        key: 'n' + i,
+                        className: 'jpui-crumb-label'
+                    }, item.label));
+                } else {
+                    doms.push(React.createElement('a', {
+                        key: 'l' + i,
+                        href: item.href,
+                        target: item.target
+                    }, item.label));
+                }
+                if (i &lt; me.props.datasource.length - 1) {
+                    doms.push(React.createElement('div', {
+                        key: 's' + i,
+                        className: 'jpui-crumb-separator'
+                    }));
+                }
+            }
+            return doms;
+        }
+    };
+});
+&nbsp;
+/** d e f i n e */
+define('factories/crumbFactory.jsx', ['jpui/factories/crumbFactory.jsx'], <span class="fstat-no" title="function not covered" >function (target) {</span>
+<span class="cstat-no" title="statement not covered" >    return target;</span>
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNydW1iRmFjdG9yeS5qc3guanMiXSwibmFtZXMiOlsiZGVmaW5lIiwicmVxdWlyZSIsIlJlYWN0IiwibGlua0ZhY3RvcnkiLCJtZSIsImRvbXMiLCJpIiwicHJvcHMiLCJkYXRhc291cmNlIiwibGVuZ3RoIiwiaXRlbSIsImhhc093blByb3BlcnR5IiwiZGlzYWJsZWQiLCJwdXNoIiwiY3JlYXRlRWxlbWVudCIsImtleSIsImNsYXNzTmFtZSIsImxhYmVsIiwiaHJlZiIsInRhcmdldCJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU8saUNBQVAsRUFBMEMsQ0FDdEMsU0FEc0MsRUFFdEMsT0FGc0MsQ0FBMUMsRUFHRyxVQUFVQyxPQUFWLEVBQW1CO0FBQ2xCLFFBQUlDLFFBQVFELFFBQVEsT0FBUixDQUFaO0FBQ0EsV0FBTztBQUNIRSxxQkFBYSxTQUFTQSxXQUFULENBQXFCQyxFQUFyQixFQUF5QjtBQUNsQyxnQkFBSUMsT0FBTyxFQUFYO0FBQ0EsaUJBQUssSUFBSUMsSUFBSSxDQUFiLEVBQWdCQSxJQUFJRixHQUFHRyxLQUFILENBQVNDLFVBQVQsQ0FBb0JDLE1BQXhDLEVBQWdESCxHQUFoRCxFQUFxRDtBQUNqRCxvQkFBSUksT0FBT04sR0FBR0csS0FBSCxDQUFTQyxVQUFULENBQW9CRixDQUFwQixDQUFYO0FBQ0Esb0JBQUksQ0FBQ0ksS0FBS0MsY0FBTCxDQUFvQixNQUFwQixDQUFELElBQWdDUCxHQUFHRyxLQUFILENBQVNLLFFBQXpDLElBQXFERixLQUFLRSxRQUE5RCxFQUF3RTtBQUNwRVAseUJBQUtRLElBQUwsQ0FBVVgsTUFBTVksYUFBTixDQUFvQixNQUFwQixFQUE0QjtBQUNsQ0MsNkJBQUssTUFBTVQsQ0FEdUI7QUFFbENVLG1DQUFXO0FBRnVCLHFCQUE1QixFQUdQTixLQUFLTyxLQUhFLENBQVY7QUFJSCxpQkFMRCxNQUtPO0FBQ0haLHlCQUFLUSxJQUFMLENBQVVYLE1BQU1ZLGFBQU4sQ0FBb0IsR0FBcEIsRUFBeUI7QUFDL0JDLDZCQUFLLE1BQU1ULENBRG9CO0FBRS9CWSw4QkFBTVIsS0FBS1EsSUFGb0I7QUFHL0JDLGdDQUFRVCxLQUFLUztBQUhrQixxQkFBekIsRUFJUFQsS0FBS08sS0FKRSxDQUFWO0FBS0g7QUFDRCxvQkFBSVgsSUFBSUYsR0FBR0csS0FBSCxDQUFTQyxVQUFULENBQW9CQyxNQUFwQixHQUE2QixDQUFyQyxFQUF3QztBQUNwQ0oseUJBQUtRLElBQUwsQ0FBVVgsTUFBTVksYUFBTixDQUFvQixLQUFwQixFQUEyQjtBQUNqQ0MsNkJBQUssTUFBTVQsQ0FEc0I7QUFFakNVLG1DQUFXO0FBRnNCLHFCQUEzQixDQUFWO0FBSUg7QUFDSjtBQUNELG1CQUFPWCxJQUFQO0FBQ0g7QUF6QkUsS0FBUDtBQTJCSCxDQWhDRDs7QUFtQ0E7QUFDQUwsT0FBTyw0QkFBUCxFQUFxQyxDQUFDLGlDQUFELENBQXJDLEVBQTBFLFVBQVVtQixNQUFWLEVBQWtCO0FBQUUsV0FBT0EsTUFBUDtBQUFnQixDQUE5RyIsImZpbGUiOiJjcnVtYkZhY3RvcnkuanN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZGVmaW5lKCdqcHVpL2ZhY3Rvcmllcy9jcnVtYkZhY3RvcnkuanN4JywgW1xuICAgICdyZXF1aXJlJyxcbiAgICAncmVhY3QnXG5dLCBmdW5jdGlvbiAocmVxdWlyZSkge1xuICAgIHZhciBSZWFjdCA9IHJlcXVpcmUoJ3JlYWN0Jyk7XG4gICAgcmV0dXJuIHtcbiAgICAgICAgbGlua0ZhY3Rvcnk6IGZ1bmN0aW9uIGxpbmtGYWN0b3J5KG1lKSB7XG4gICAgICAgICAgICB2YXIgZG9tcyA9IFtdO1xuICAgICAgICAgICAgZm9yICh2YXIgaSA9IDA7IGkgPCBtZS5wcm9wcy5kYXRhc291cmNlLmxlbmd0aDsgaSsrKSB7XG4gICAgICAgICAgICAgICAgdmFyIGl0ZW0gPSBtZS5wcm9wcy5kYXRhc291cmNlW2ldO1xuICAgICAgICAgICAgICAgIGlmICghaXRlbS5oYXNPd25Qcm9wZXJ0eSgnaHJlZicpIHx8IG1lLnByb3BzLmRpc2FibGVkIHx8IGl0ZW0uZGlzYWJsZWQpIHtcbiAgICAgICAgICAgICAgICAgICAgZG9tcy5wdXNoKFJlYWN0LmNyZWF0ZUVsZW1lbnQoJ3NwYW4nLCB7XG4gICAgICAgICAgICAgICAgICAgICAgICBrZXk6ICduJyArIGksXG4gICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU6ICdqcHVpLWNydW1iLWxhYmVsJ1xuICAgICAgICAgICAgICAgICAgICB9LCBpdGVtLmxhYmVsKSk7XG4gICAgICAgICAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAgICAgICAgICAgZG9tcy5wdXNoKFJlYWN0LmNyZWF0ZUVsZW1lbnQoJ2EnLCB7XG4gICAgICAgICAgICAgICAgICAgICAgICBrZXk6ICdsJyArIGksXG4gICAgICAgICAgICAgICAgICAgICAgICBocmVmOiBpdGVtLmhyZWYsXG4gICAgICAgICAgICAgICAgICAgICAgICB0YXJnZXQ6IGl0ZW0udGFyZ2V0XG4gICAgICAgICAgICAgICAgICAgIH0sIGl0ZW0ubGFiZWwpKTtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgaWYgKGkgPCBtZS5wcm9wcy5kYXRhc291cmNlLmxlbmd0aCAtIDEpIHtcbiAgICAgICAgICAgICAgICAgICAgZG9tcy5wdXNoKFJlYWN0LmNyZWF0ZUVsZW1lbnQoJ2RpdicsIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGtleTogJ3MnICsgaSxcbiAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZTogJ2pwdWktY3J1bWItc2VwYXJhdG9yJ1xuICAgICAgICAgICAgICAgICAgICB9KSk7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuICAgICAgICAgICAgcmV0dXJuIGRvbXM7XG4gICAgICAgIH1cbiAgICB9O1xufSk7XG5cblxuLyoqIGQgZSBmIGkgbiBlICovXG5kZWZpbmUoJ2ZhY3Rvcmllcy9jcnVtYkZhY3RvcnkuanN4JywgWydqcHVpL2ZhY3Rvcmllcy9jcnVtYkZhY3RvcnkuanN4J10sIGZ1bmN0aW9uICh0YXJnZXQpIHsgcmV0dXJuIHRhcmdldDsgfSk7Il19</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 19 2018 11:30:14 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

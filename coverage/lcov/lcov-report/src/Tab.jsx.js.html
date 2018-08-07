@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/Tab.jsx.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> Tab.jsx.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>18/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>17/17</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">define('jpui/Tab.jsx', ['require', 'react', './mixins/InputWidget', './components/tab/NormalRenderer.jsx', './core/componentTools', './factories/tabFactory.jsx'], function (require) {
+    var React = require('react');
+    var InputWidget = require('./mixins/InputWidget');
+    var NormalRenderer = require('./components/tab/NormalRenderer.jsx');
+    var cTools = require('./core/componentTools');
+    var factory = require('./factories/tabFactory.jsx');
+    return React.createClass({
+        contextTypes: { appSkin: React.PropTypes.string },
+        mixins: [InputWidget],
+        getDefaultProps: function getDefaultProps() {
+            return {
+                skin: '',
+                className: '',
+                style: {},
+                disabled: false,
+                datasource: [],
+                renderer: NormalRenderer,
+                valueTemplate: ''
+            };
+        },
+        getInitialState: function getInitialState() {
+            return {};
+        },
+        onClick: function onClick(e) {
+            if (this.props.disabled || e.target.value === this.___getValue___()) return;
+            var value = e.target.value;
+            e = { target: this.refs.container };
+            e.target.value = value;
+            this.___dispatchChange___(e);
+        },
+        render: function render() {
+            return React.createElement('div', cTools.containerBaseProps('tab', this), factory.produceTabs(this));
+        }
+    });
+});
+&nbsp;
+/** d e f i n e */
+define('Tab.jsx', ['jpui/Tab.jsx'], function (target) {
+    return target;
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlRhYi5qc3guanMiXSwibmFtZXMiOlsiZGVmaW5lIiwicmVxdWlyZSIsIlJlYWN0IiwiSW5wdXRXaWRnZXQiLCJOb3JtYWxSZW5kZXJlciIsImNUb29scyIsImZhY3RvcnkiLCJjcmVhdGVDbGFzcyIsImNvbnRleHRUeXBlcyIsImFwcFNraW4iLCJQcm9wVHlwZXMiLCJzdHJpbmciLCJtaXhpbnMiLCJnZXREZWZhdWx0UHJvcHMiLCJza2luIiwiY2xhc3NOYW1lIiwic3R5bGUiLCJkaXNhYmxlZCIsImRhdGFzb3VyY2UiLCJyZW5kZXJlciIsInZhbHVlVGVtcGxhdGUiLCJnZXRJbml0aWFsU3RhdGUiLCJvbkNsaWNrIiwiZSIsInByb3BzIiwidGFyZ2V0IiwidmFsdWUiLCJfX19nZXRWYWx1ZV9fXyIsInJlZnMiLCJjb250YWluZXIiLCJfX19kaXNwYXRjaENoYW5nZV9fXyIsInJlbmRlciIsImNyZWF0ZUVsZW1lbnQiLCJjb250YWluZXJCYXNlUHJvcHMiLCJwcm9kdWNlVGFicyJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU8sY0FBUCxFQUF1QixDQUNuQixTQURtQixFQUVuQixPQUZtQixFQUduQixzQkFIbUIsRUFJbkIscUNBSm1CLEVBS25CLHVCQUxtQixFQU1uQiw0QkFObUIsQ0FBdkIsRUFPRyxVQUFVQyxPQUFWLEVBQW1CO0FBQ2xCLFFBQUlDLFFBQVFELFFBQVEsT0FBUixDQUFaO0FBQ0EsUUFBSUUsY0FBY0YsUUFBUSxzQkFBUixDQUFsQjtBQUNBLFFBQUlHLGlCQUFpQkgsUUFBUSxxQ0FBUixDQUFyQjtBQUNBLFFBQUlJLFNBQVNKLFFBQVEsdUJBQVIsQ0FBYjtBQUNBLFFBQUlLLFVBQVVMLFFBQVEsNEJBQVIsQ0FBZDtBQUNBLFdBQU9DLE1BQU1LLFdBQU4sQ0FBa0I7QUFDckJDLHNCQUFjLEVBQUVDLFNBQVNQLE1BQU1RLFNBQU4sQ0FBZ0JDLE1BQTNCLEVBRE87QUFFckJDLGdCQUFRLENBQUNULFdBQUQsQ0FGYTtBQUdyQlUseUJBQWlCLFNBQVNBLGVBQVQsR0FBMkI7QUFDeEMsbUJBQU87QUFDSEMsc0JBQU0sRUFESDtBQUVIQywyQkFBVyxFQUZSO0FBR0hDLHVCQUFPLEVBSEo7QUFJSEMsMEJBQVUsS0FKUDtBQUtIQyw0QkFBWSxFQUxUO0FBTUhDLDBCQUFVZixjQU5QO0FBT0hnQiwrQkFBZTtBQVBaLGFBQVA7QUFTSCxTQWJvQjtBQWNyQkMseUJBQWlCLFNBQVNBLGVBQVQsR0FBMkI7QUFDeEMsbUJBQU8sRUFBUDtBQUNILFNBaEJvQjtBQWlCckJDLGlCQUFTLFNBQVNBLE9BQVQsQ0FBaUJDLENBQWpCLEVBQW9CO0FBQ3pCLGdCQUFJLEtBQUtDLEtBQUwsQ0FBV1AsUUFBWCxJQUF1Qk0sRUFBRUUsTUFBRixDQUFTQyxLQUFULEtBQW1CLEtBQUtDLGNBQUwsRUFBOUMsRUFDSTtBQUNKLGdCQUFJRCxRQUFRSCxFQUFFRSxNQUFGLENBQVNDLEtBQXJCO0FBQ0FILGdCQUFJLEVBQUVFLFFBQVEsS0FBS0csSUFBTCxDQUFVQyxTQUFwQixFQUFKO0FBQ0FOLGNBQUVFLE1BQUYsQ0FBU0MsS0FBVCxHQUFpQkEsS0FBakI7QUFDQSxpQkFBS0ksb0JBQUwsQ0FBMEJQLENBQTFCO0FBQ0gsU0F4Qm9CO0FBeUJyQlEsZ0JBQVEsU0FBU0EsTUFBVCxHQUFrQjtBQUN0QixtQkFBTzdCLE1BQU04QixhQUFOLENBQW9CLEtBQXBCLEVBQTJCM0IsT0FBTzRCLGtCQUFQLENBQTBCLEtBQTFCLEVBQWlDLElBQWpDLENBQTNCLEVBQW1FM0IsUUFBUTRCLFdBQVIsQ0FBb0IsSUFBcEIsQ0FBbkUsQ0FBUDtBQUNIO0FBM0JvQixLQUFsQixDQUFQO0FBNkJILENBMUNEOztBQTZDQTtBQUNBbEMsT0FBTyxTQUFQLEVBQWtCLENBQUMsY0FBRCxDQUFsQixFQUFvQyxVQUFVeUIsTUFBVixFQUFrQjtBQUFFLFdBQU9BLE1BQVA7QUFBZ0IsQ0FBeEUiLCJmaWxlIjoiVGFiLmpzeC5qcyIsInNvdXJjZXNDb250ZW50IjpbImRlZmluZSgnanB1aS9UYWIuanN4JywgW1xuICAgICdyZXF1aXJlJyxcbiAgICAncmVhY3QnLFxuICAgICcuL21peGlucy9JbnB1dFdpZGdldCcsXG4gICAgJy4vY29tcG9uZW50cy90YWIvTm9ybWFsUmVuZGVyZXIuanN4JyxcbiAgICAnLi9jb3JlL2NvbXBvbmVudFRvb2xzJyxcbiAgICAnLi9mYWN0b3JpZXMvdGFiRmFjdG9yeS5qc3gnXG5dLCBmdW5jdGlvbiAocmVxdWlyZSkge1xuICAgIHZhciBSZWFjdCA9IHJlcXVpcmUoJ3JlYWN0Jyk7XG4gICAgdmFyIElucHV0V2lkZ2V0ID0gcmVxdWlyZSgnLi9taXhpbnMvSW5wdXRXaWRnZXQnKTtcbiAgICB2YXIgTm9ybWFsUmVuZGVyZXIgPSByZXF1aXJlKCcuL2NvbXBvbmVudHMvdGFiL05vcm1hbFJlbmRlcmVyLmpzeCcpO1xuICAgIHZhciBjVG9vbHMgPSByZXF1aXJlKCcuL2NvcmUvY29tcG9uZW50VG9vbHMnKTtcbiAgICB2YXIgZmFjdG9yeSA9IHJlcXVpcmUoJy4vZmFjdG9yaWVzL3RhYkZhY3RvcnkuanN4Jyk7XG4gICAgcmV0dXJuIFJlYWN0LmNyZWF0ZUNsYXNzKHtcbiAgICAgICAgY29udGV4dFR5cGVzOiB7IGFwcFNraW46IFJlYWN0LlByb3BUeXBlcy5zdHJpbmcgfSxcbiAgICAgICAgbWl4aW5zOiBbSW5wdXRXaWRnZXRdLFxuICAgICAgICBnZXREZWZhdWx0UHJvcHM6IGZ1bmN0aW9uIGdldERlZmF1bHRQcm9wcygpIHtcbiAgICAgICAgICAgIHJldHVybiB7XG4gICAgICAgICAgICAgICAgc2tpbjogJycsXG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lOiAnJyxcbiAgICAgICAgICAgICAgICBzdHlsZToge30sXG4gICAgICAgICAgICAgICAgZGlzYWJsZWQ6IGZhbHNlLFxuICAgICAgICAgICAgICAgIGRhdGFzb3VyY2U6IFtdLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiBOb3JtYWxSZW5kZXJlcixcbiAgICAgICAgICAgICAgICB2YWx1ZVRlbXBsYXRlOiAnJ1xuICAgICAgICAgICAgfTtcbiAgICAgICAgfSxcbiAgICAgICAgZ2V0SW5pdGlhbFN0YXRlOiBmdW5jdGlvbiBnZXRJbml0aWFsU3RhdGUoKSB7XG4gICAgICAgICAgICByZXR1cm4ge307XG4gICAgICAgIH0sXG4gICAgICAgIG9uQ2xpY2s6IGZ1bmN0aW9uIG9uQ2xpY2soZSkge1xuICAgICAgICAgICAgaWYgKHRoaXMucHJvcHMuZGlzYWJsZWQgfHwgZS50YXJnZXQudmFsdWUgPT09IHRoaXMuX19fZ2V0VmFsdWVfX18oKSlcbiAgICAgICAgICAgICAgICByZXR1cm47XG4gICAgICAgICAgICB2YXIgdmFsdWUgPSBlLnRhcmdldC52YWx1ZTtcbiAgICAgICAgICAgIGUgPSB7IHRhcmdldDogdGhpcy5yZWZzLmNvbnRhaW5lciB9O1xuICAgICAgICAgICAgZS50YXJnZXQudmFsdWUgPSB2YWx1ZTtcbiAgICAgICAgICAgIHRoaXMuX19fZGlzcGF0Y2hDaGFuZ2VfX18oZSk7XG4gICAgICAgIH0sXG4gICAgICAgIHJlbmRlcjogZnVuY3Rpb24gcmVuZGVyKCkge1xuICAgICAgICAgICAgcmV0dXJuIFJlYWN0LmNyZWF0ZUVsZW1lbnQoJ2RpdicsIGNUb29scy5jb250YWluZXJCYXNlUHJvcHMoJ3RhYicsIHRoaXMpLCBmYWN0b3J5LnByb2R1Y2VUYWJzKHRoaXMpKTtcbiAgICAgICAgfVxuICAgIH0pO1xufSk7XG5cblxuLyoqIGQgZSBmIGkgbiBlICovXG5kZWZpbmUoJ1RhYi5qc3gnLCBbJ2pwdWkvVGFiLmpzeCddLCBmdW5jdGlvbiAodGFyZ2V0KSB7IHJldHVybiB0YXJnZXQ7IH0pOyJdfQ==</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 19 2018 11:30:14 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

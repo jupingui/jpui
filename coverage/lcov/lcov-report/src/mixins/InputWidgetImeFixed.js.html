@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/mixins/InputWidgetImeFixed.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/mixins/</a> InputWidgetImeFixed.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">18.03% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>11/61</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">13.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">18.33% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/60</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">define('jpui/mixins/InputWidgetImeFixed', [
+    'require',
+    '../core/util'
+], function (require) {
+    var util = require('../core/util');
+    return {
+        componentDidMount: function () {
+            var value = this.___getValue___();
+            this.refs.inputbox.value = value;
+            this.___lastFiredValue___ = value;
+            this.___lastCursorPos___ = -1;
+            this.___imeStart___ = false;
+            this.___isPressing___ = false;
+            this.___workerTimer___ = null;
+        },
+        componentWillReceiveProps: <span class="fstat-no" title="function not covered" >function (nextProps) {</span>
+<span class="cstat-no" title="statement not covered" >            this.___syncValue___(nextProps);</span>
+        },
+        ___syncValue___: <span class="fstat-no" title="function not covered" >function (props) {</span>
+<span class="cstat-no" title="statement not covered" >            props = props || this.props;</span>
+<span class="cstat-no" title="statement not covered" >            var value = props.value;</span>
+<span class="cstat-no" title="statement not covered" >            if (typeof value == null || value === undefined || !this.refs || !this.refs.inputbox || value + '' === this.refs.inputbox.value + '') {</span>
+<span class="cstat-no" title="statement not covered" >                clearInterval(this.___workerTimer___);</span>
+<span class="cstat-no" title="statement not covered" >                return;</span>
+            }
+<span class="cstat-no" title="statement not covered" >            value = value + '';</span>
+<span class="cstat-no" title="statement not covered" >            this.___lastFiredValue___ = value;</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({ ___value___: value });</span>
+<span class="cstat-no" title="statement not covered" >            this.refs.inputbox.value = value;</span>
+<span class="cstat-no" title="statement not covered" >            if (this.___lastCursorPos___ &gt; -1 &amp;&amp; this.___lastCursorPos___ &lt; value.length) {</span>
+<span class="cstat-no" title="statement not covered" >                util.setCursorPosition(this.refs.inputbox, this.___lastCursorPos___);</span>
+            }
+        },
+        ___onCompositionStart___: <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >            this.___imeStart___ = true;</span>
+        },
+        ___onCompositionEnd___: <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >            this.___imeStart___ = false;</span>
+<span class="cstat-no" title="statement not covered" >            if ([</span>
+                    'ie',
+                    'chrome'
+                ].indexOf(util.getBrowserEnterprise()) &gt; -1) {
+<span class="cstat-no" title="statement not covered" >                this.___onKeyUp___({</span>
+                    keyCode: 0,
+                    target: e.nativeEvent.target,
+                    nativeEvent: e.nativeEvent
+                });
+            }
+        },
+        ___onKeyDown___: <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >            this.___isPressing___ = true;</span>
+        },
+        ___onKeyUp___: <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >            this.___isPressing___ = false;</span>
+<span class="cstat-no" title="statement not covered" >            this.___lastCursorPos___ = util.getCursorPosition(e.target);</span>
+<span class="cstat-no" title="statement not covered" >            e.keyCode === 13 &amp;&amp; typeof this.onEnterPress === 'function' &amp;&amp; this.onEnterPress();</span>
+<span class="cstat-no" title="statement not covered" >            if (typeof this.props.hotkeyAnalyzer === 'function' &amp;&amp; typeof this.props.onHotKey === 'function') {</span>
+<span class="cstat-no" title="statement not covered" >                var hotkey = this.props.hotkeyAnalyzer(e);</span>
+<span class="cstat-no" title="statement not covered" >                typeof hotkey === 'string' &amp;&amp; hotkey.length &amp;&amp; this.props.onHotKey(hotkey);</span>
+            }
+<span class="cstat-no" title="statement not covered" >            if (this.___imeStart___ || this.___lastFiredValue___ === this.refs.inputbox.value)</span>
+<span class="cstat-no" title="statement not covered" >                return;</span>
+<span class="cstat-no" title="statement not covered" >            this.______callDispatch______(e);</span>
+        },
+        ___onInput___: <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >            if (this.___imeStart___ || this.___lastFiredValue___ === e.target.value)</span>
+<span class="cstat-no" title="statement not covered" >                return;</span>
+<span class="cstat-no" title="statement not covered" >            this.___isPressing___ = false;</span>
+<span class="cstat-no" title="statement not covered" >            this.___lastCursorPos___ = util.getCursorPosition(e.target);</span>
+<span class="cstat-no" title="statement not covered" >            this.______callDispatch______(e);</span>
+        },
+        ___onFocus___: <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({ hasFocus: true });</span>
+<span class="cstat-no" title="statement not covered" >            typeof this.props.onFocus === 'function' &amp;&amp; this.props.onFocus(e);</span>
+        },
+        ___onBlur___: <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >            var me = this;</span>
+<span class="cstat-no" title="statement not covered" >            setTimeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >                if (me.___stopBlur___ || !me.__isMounted) {</span>
+<span class="cstat-no" title="statement not covered" >                    me.___stopBlur___ = false;</span>
+<span class="cstat-no" title="statement not covered" >                    return;</span>
+                }
+<span class="cstat-no" title="statement not covered" >                me.setState({ hasFocus: false });</span>
+            }, 200);
+<span class="cstat-no" title="statement not covered" >            typeof this.props.onBlur === 'function' &amp;&amp; this.props.onBlur(e);</span>
+        },
+        ______callDispatch______: <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >            var me = this;</span>
+<span class="cstat-no" title="statement not covered" >            var lastValue = this.___lastFiredValue___;</span>
+<span class="cstat-no" title="statement not covered" >            e = { target: this.refs.container };</span>
+<span class="cstat-no" title="statement not covered" >            e.target.value = this.___lastFiredValue___ = this.refs.inputbox.value;</span>
+<span class="cstat-no" title="statement not covered" >            this.___dispatchChange___(e, this.___lastFiredValue___, lastValue);</span>
+<span class="cstat-no" title="statement not covered" >            clearInterval(me.___workerTimer___);</span>
+<span class="cstat-no" title="statement not covered" >            this.___workerTimer___ = setInterval(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >                clearInterval(me.___workerTimer___);</span>
+<span class="cstat-no" title="statement not covered" >                me.___syncValue___();</span>
+            }, 10);
+        }
+    };
+});
+&nbsp;
+&nbsp;
+/** d e f i n e */
+define('mixins/InputWidgetImeFixed', ['jpui/mixins/InputWidgetImeFixed'], <span class="fstat-no" title="function not covered" >function (target) {</span> <span class="cstat-no" title="statement not covered" >return target; </span>});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 19 2018 11:30:14 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

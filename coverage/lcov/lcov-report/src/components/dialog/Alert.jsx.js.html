@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/dialog/Alert.jsx.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">src/components/dialog/</a> Alert.jsx.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90.91% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>10/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90.91% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>10/11</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">define('jpui/components/dialog/Alert.jsx', ['require', '../../Button.jsx', 'react'], function (require) {
+    var Button = require('../../Button.jsx');
+    var React = require('react');
+    return React.createClass({
+        contextTypes: { appSkin: React.PropTypes.string },
+        getDefaultProps: function getDefaultProps() {
+            return {
+                message: 'Message',
+                close: <span class="fstat-no" title="function not covered" >function close() {</span>}
+            };
+        },
+        onClose: function onClose() {
+            this.props.close();
+        },
+        render: function render() {
+            var className = 'jpui-dialog-' + (this.context.appSkin ? <span class="branch-0 cbranch-no" title="branch not covered" >this.context.appSkin + '-alert' </span>: 'alert');
+            var buttonProps = {
+                skin: 'important',
+                width: 67,
+                label: '\u786E\u5B9A',
+                onClick: this.onClose
+            };
+            return React.createElement('div', { className: className }, React.createElement('div', {
+                className: 'message',
+                dangerouslySetInnerHTML: { __html: this.props.message }
+            }), React.createElement('div', { className: 'button-bar' }, React.createElement(Button, buttonProps)));
+        }
+    });
+});
+&nbsp;
+/** d e f i n e */
+define('components/dialog/Alert.jsx', ['jpui/components/dialog/Alert.jsx'], <span class="fstat-no" title="function not covered" >function (target) {</span>
+<span class="cstat-no" title="statement not covered" >    return target;</span>
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFsZXJ0LmpzeC5qcyJdLCJuYW1lcyI6WyJkZWZpbmUiLCJyZXF1aXJlIiwiQnV0dG9uIiwiUmVhY3QiLCJjcmVhdGVDbGFzcyIsImNvbnRleHRUeXBlcyIsImFwcFNraW4iLCJQcm9wVHlwZXMiLCJzdHJpbmciLCJnZXREZWZhdWx0UHJvcHMiLCJtZXNzYWdlIiwiY2xvc2UiLCJvbkNsb3NlIiwicHJvcHMiLCJyZW5kZXIiLCJjbGFzc05hbWUiLCJjb250ZXh0IiwiYnV0dG9uUHJvcHMiLCJza2luIiwid2lkdGgiLCJsYWJlbCIsIm9uQ2xpY2siLCJjcmVhdGVFbGVtZW50IiwiZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUwiLCJfX2h0bWwiLCJ0YXJnZXQiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPLGtDQUFQLEVBQTJDLENBQ3ZDLFNBRHVDLEVBRXZDLGtCQUZ1QyxFQUd2QyxPQUh1QyxDQUEzQyxFQUlHLFVBQVVDLE9BQVYsRUFBbUI7QUFDbEIsUUFBSUMsU0FBU0QsUUFBUSxrQkFBUixDQUFiO0FBQ0EsUUFBSUUsUUFBUUYsUUFBUSxPQUFSLENBQVo7QUFDQSxXQUFPRSxNQUFNQyxXQUFOLENBQWtCO0FBQ3JCQyxzQkFBYyxFQUFFQyxTQUFTSCxNQUFNSSxTQUFOLENBQWdCQyxNQUEzQixFQURPO0FBRXJCQyx5QkFBaUIsU0FBU0EsZUFBVCxHQUEyQjtBQUN4QyxtQkFBTztBQUNIQyx5QkFBUyxTQUROO0FBRUhDLHVCQUFPLFNBQVNBLEtBQVQsR0FBaUIsQ0FDdkI7QUFIRSxhQUFQO0FBS0gsU0FSb0I7QUFTckJDLGlCQUFTLFNBQVNBLE9BQVQsR0FBbUI7QUFDeEIsaUJBQUtDLEtBQUwsQ0FBV0YsS0FBWDtBQUNILFNBWG9CO0FBWXJCRyxnQkFBUSxTQUFTQSxNQUFULEdBQWtCO0FBQ3RCLGdCQUFJQyxZQUFZLGtCQUFrQixLQUFLQyxPQUFMLENBQWFWLE9BQWIsR0FBdUIsS0FBS1UsT0FBTCxDQUFhVixPQUFiLEdBQXVCLFFBQTlDLEdBQXlELE9BQTNFLENBQWhCO0FBQ0EsZ0JBQUlXLGNBQWM7QUFDZEMsc0JBQU0sV0FEUTtBQUVkQyx1QkFBTyxFQUZPO0FBR2RDLHVCQUFPLGNBSE87QUFJZEMseUJBQVMsS0FBS1Q7QUFKQSxhQUFsQjtBQU1BLG1CQUFPVCxNQUFNbUIsYUFBTixDQUFvQixLQUFwQixFQUEyQixFQUFFUCxXQUFXQSxTQUFiLEVBQTNCLEVBQXFEWixNQUFNbUIsYUFBTixDQUFvQixLQUFwQixFQUEyQjtBQUNuRlAsMkJBQVcsU0FEd0U7QUFFbkZRLHlDQUF5QixFQUFFQyxRQUFRLEtBQUtYLEtBQUwsQ0FBV0gsT0FBckI7QUFGMEQsYUFBM0IsQ0FBckQsRUFHSFAsTUFBTW1CLGFBQU4sQ0FBb0IsS0FBcEIsRUFBMkIsRUFBRVAsV0FBVyxZQUFiLEVBQTNCLEVBQXdEWixNQUFNbUIsYUFBTixDQUFvQnBCLE1BQXBCLEVBQTRCZSxXQUE1QixDQUF4RCxDQUhHLENBQVA7QUFJSDtBQXhCb0IsS0FBbEIsQ0FBUDtBQTBCSCxDQWpDRDs7QUFvQ0E7QUFDQWpCLE9BQU8sNkJBQVAsRUFBc0MsQ0FBQyxrQ0FBRCxDQUF0QyxFQUE0RSxVQUFVeUIsTUFBVixFQUFrQjtBQUFFLFdBQU9BLE1BQVA7QUFBZ0IsQ0FBaEgiLCJmaWxlIjoiQWxlcnQuanN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZGVmaW5lKCdqcHVpL2NvbXBvbmVudHMvZGlhbG9nL0FsZXJ0LmpzeCcsIFtcbiAgICAncmVxdWlyZScsXG4gICAgJy4uLy4uL0J1dHRvbi5qc3gnLFxuICAgICdyZWFjdCdcbl0sIGZ1bmN0aW9uIChyZXF1aXJlKSB7XG4gICAgdmFyIEJ1dHRvbiA9IHJlcXVpcmUoJy4uLy4uL0J1dHRvbi5qc3gnKTtcbiAgICB2YXIgUmVhY3QgPSByZXF1aXJlKCdyZWFjdCcpO1xuICAgIHJldHVybiBSZWFjdC5jcmVhdGVDbGFzcyh7XG4gICAgICAgIGNvbnRleHRUeXBlczogeyBhcHBTa2luOiBSZWFjdC5Qcm9wVHlwZXMuc3RyaW5nIH0sXG4gICAgICAgIGdldERlZmF1bHRQcm9wczogZnVuY3Rpb24gZ2V0RGVmYXVsdFByb3BzKCkge1xuICAgICAgICAgICAgcmV0dXJuIHtcbiAgICAgICAgICAgICAgICBtZXNzYWdlOiAnTWVzc2FnZScsXG4gICAgICAgICAgICAgICAgY2xvc2U6IGZ1bmN0aW9uIGNsb3NlKCkge1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH07XG4gICAgICAgIH0sXG4gICAgICAgIG9uQ2xvc2U6IGZ1bmN0aW9uIG9uQ2xvc2UoKSB7XG4gICAgICAgICAgICB0aGlzLnByb3BzLmNsb3NlKCk7XG4gICAgICAgIH0sXG4gICAgICAgIHJlbmRlcjogZnVuY3Rpb24gcmVuZGVyKCkge1xuICAgICAgICAgICAgdmFyIGNsYXNzTmFtZSA9ICdqcHVpLWRpYWxvZy0nICsgKHRoaXMuY29udGV4dC5hcHBTa2luID8gdGhpcy5jb250ZXh0LmFwcFNraW4gKyAnLWFsZXJ0JyA6ICdhbGVydCcpO1xuICAgICAgICAgICAgdmFyIGJ1dHRvblByb3BzID0ge1xuICAgICAgICAgICAgICAgIHNraW46ICdpbXBvcnRhbnQnLFxuICAgICAgICAgICAgICAgIHdpZHRoOiA2NyxcbiAgICAgICAgICAgICAgICBsYWJlbDogJ1xcdTc4NkVcXHU1QjlBJyxcbiAgICAgICAgICAgICAgICBvbkNsaWNrOiB0aGlzLm9uQ2xvc2VcbiAgICAgICAgICAgIH07XG4gICAgICAgICAgICByZXR1cm4gUmVhY3QuY3JlYXRlRWxlbWVudCgnZGl2JywgeyBjbGFzc05hbWU6IGNsYXNzTmFtZSB9LCBSZWFjdC5jcmVhdGVFbGVtZW50KCdkaXYnLCB7XG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lOiAnbWVzc2FnZScsXG4gICAgICAgICAgICAgICAgZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUw6IHsgX19odG1sOiB0aGlzLnByb3BzLm1lc3NhZ2UgfVxuICAgICAgICAgICAgfSksIFJlYWN0LmNyZWF0ZUVsZW1lbnQoJ2RpdicsIHsgY2xhc3NOYW1lOiAnYnV0dG9uLWJhcicgfSwgUmVhY3QuY3JlYXRlRWxlbWVudChCdXR0b24sIGJ1dHRvblByb3BzKSkpO1xuICAgICAgICB9XG4gICAgfSk7XG59KTtcblxuXG4vKiogZCBlIGYgaSBuIGUgKi9cbmRlZmluZSgnY29tcG9uZW50cy9kaWFsb2cvQWxlcnQuanN4JywgWydqcHVpL2NvbXBvbmVudHMvZGlhbG9nL0FsZXJ0LmpzeCddLCBmdW5jdGlvbiAodGFyZ2V0KSB7IHJldHVybiB0YXJnZXQ7IH0pOyJdfQ==</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 19 2018 11:30:14 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

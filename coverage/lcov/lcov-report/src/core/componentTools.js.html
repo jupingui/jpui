@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/core/componentTools.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/core/</a> componentTools.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">95% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>57/60</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>54/60</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>9/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">94.92% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>56/59</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105</td><td class="line-coverage quiet"><span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">243×</span>
+<span class="cline-any cline-yes">203×</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32×</span>
+<span class="cline-any cline-yes">32×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">4340×</span>
+<span class="cline-any cline-yes">1025×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">2811×</span>
+<span class="cline-any cline-yes">11244×</span>
+<span class="cline-any cline-yes">11244×</span>
+<span class="cline-any cline-yes">11244×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">2934×</span>
+<span class="cline-any cline-yes">8625×</span>
+<span class="cline-any cline-yes">8625×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">565×</span>
+<span class="cline-any cline-yes">574×</span>
+<span class="cline-any cline-yes">448×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">26052×</span>
+<span class="cline-any cline-yes">26052×</span>
+<span class="cline-any cline-yes">100×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-yes">18×</span>
+<span class="cline-any cline-yes">18×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4342×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span></td><td class="text"><pre class="prettyprint lang-js">define('jpui/core/componentTools', [
+    'require',
+    './util'
+], function (require) {
+    var util = require('./util');
+    var MERGE_FROM_PROPS_TO_STYLE = [
+        'width',
+        'minWidth',
+        'maxWidth',
+        'height',
+        'minHeight',
+        'maxHeight'
+    ];
+    return {
+        noop: new Function(),
+        getValueFromPropsAndStyle: function (props, key, defaultValue) {
+            if (props.hasOwnProperty(key))
+                return props[key];
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (props.hasOwnProperty('style') &amp;&amp; props.style.hasOwnProperty(key))
+<span class="cstat-no" title="statement not covered" >                return props.style[key];</span>
+            return defaultValue;
+        },
+        openLayerHandlerFactory: function (me, flag) {
+            return function () {
+                <span class="missing-if-branch" title="if path not taken" >I</span>if (me.props.disabled)
+<span class="cstat-no" title="statement not covered" >                    return;</span>
+                var obj = {};
+                obj[flag] = true;
+                me.setState(obj);
+            };
+        },
+        closeLayerHandlerFactory: function (me, flag, layerRef) {
+            layerRef = layerRef || 'layer';
+            return function () {
+                setTimeout(function () {
+                    if (me.state.mouseenter || me.refs[layerRef] &amp;&amp; me.refs[layerRef].state.mouseenter)
+                        return;
+                    var obj = {};
+                    obj[flag] = false;
+                    me.setState(obj);
+                }, 200);
+            };
+        },
+        containerBaseProps: function (type, me, options) {
+            var result = {
+                ref: 'container',
+                style: {},
+                className: 'jpui-' + type
+            };
+            var key = '';
+            var appSkin = me.context.appSkin ? <span class="branch-0 cbranch-no" title="branch not covered" >'-' + me.context.appSkin </span>: '';
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (me.props.uuid) {
+<span class="cstat-no" title="statement not covered" >                result['data-uuid'] = me.props.uuid;</span>
+            }
+            ;
+            result.style = util.extend({}, result.style, me.props.style);
+            result.className += ' jpui-' + type + appSkin + '-' + (typeof me.props.skin === 'string' &amp;&amp; me.props.skin.length ? me.props.skin : 'normal');
+            result.className += typeof me.props.className === 'string' &amp;&amp; me.props.className.length ? ' ' + me.props.className : '';
+            if (me.state.isValid === false) {
+                result.className += ' jpui-' + type + appSkin + '-reject';
+            } else if (me.props.disabled) {
+                result.className += ' jpui-' + type + appSkin + '-disabled';
+            }
+            result.className += ' browser-' + util.getBrowserType();
+            options = options || {};
+            if (options.mergeFromProps instanceof Array) {
+                for (var i = 0; i &lt; options.mergeFromProps.length; i++) {
+                    key = options.mergeFromProps[i];
+                    <span class="missing-if-branch" title="else path not taken" >E</span>if (me.props.hasOwnProperty(key) &amp;&amp; !result.hasOwnProperty(key)) {
+                        result[key] = me.props[key];
+                    }
+                }
+            }
+            if (options.hasOwnProperty('merge')) {
+                for (key in options.merge) {
+                    <span class="missing-if-branch" title="else path not taken" >E</span>if (options.merge.hasOwnProperty(key) &amp;&amp; !result.hasOwnProperty(key)) {
+                        result[key] = options.merge[key];
+                    }
+                }
+            }
+            if (options.hasOwnProperty('style')) {
+                for (key in options.style) {
+                    if (options.style.hasOwnProperty(key) &amp;&amp; !result.style.hasOwnProperty(key)) {
+                        result.style[key] = options.style[key];
+                    }
+                }
+            }
+            for (var j = 0; j &lt; MERGE_FROM_PROPS_TO_STYLE.length; j++) {
+                key = MERGE_FROM_PROPS_TO_STYLE[j];
+                if (!result.style.hasOwnProperty(key) &amp;&amp; me.props.hasOwnProperty(key)) {
+                    result.style[key] = me.props[key];
+                }
+            }
+            if (!isNaN(options.widthCorrect) &amp;&amp; (!isNaN(result.style.width) || (result.style.width + '').indexOf('px') &gt; -1)) {
+                result.style.width = 1 * (result.style.width + 'px').replace(/px/g, '');
+                result.style.width = result.style.width + options.widthCorrect;
+            }
+            return result;
+        }
+    };
+});
+&nbsp;
+&nbsp;
+/** d e f i n e */
+define('core/componentTools', ['jpui/core/componentTools'], function (target) { return target; });</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 19 2018 11:30:14 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

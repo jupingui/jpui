@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/core/scheduleTools.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/core/</a> scheduleTools.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90.16% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>110/122</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">71.76% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>61/85</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.86% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>13/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90.91% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>110/121</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">118×</span>
+<span class="cline-any cline-yes">118×</span>
+<span class="cline-any cline-yes">118×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">118×</span>
+<span class="cline-any cline-yes">118×</span>
+<span class="cline-any cline-yes">118×</span>
+<span class="cline-any cline-yes">118×</span>
+<span class="cline-any cline-yes">19824×</span>
+<span class="cline-any cline-yes">826×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19824×</span>
+<span class="cline-any cline-yes">19824×</span>
+<span class="cline-any cline-yes">826×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">118×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">136×</span>
+<span class="cline-any cline-yes">136×</span>
+<span class="cline-any cline-yes">136×</span>
+<span class="cline-any cline-yes">136×</span>
+<span class="cline-any cline-yes">3264×</span>
+<span class="cline-any cline-yes">3232×</span>
+<span class="cline-any cline-yes">3223×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">136×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">136×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">93×</span>
+<span class="cline-any cline-yes">93×</span>
+<span class="cline-any cline-yes">93×</span>
+<span class="cline-any cline-yes">525×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">525×</span>
+<span class="cline-any cline-yes">1029×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1008×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">93×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">define('jpui/core/scheduleTools', [
+    'require',
+    './language'
+], function (require) {
+    var language = require('./language').schedule;
+    var CELL_LENGTH = 24;
+    return {
+        parseValue: function (value) {
+            var arrValue = [];
+            try {
+                arrValue = JSON.parse(value);
+            } catch (e) {
+            }
+            arrValue = arrValue instanceof Array ? arrValue : <span class="branch-1 cbranch-no" title="branch not covered" >[];</span>
+            var result = [];
+            var day = [];
+            for (var i = 0; i &lt; 7 * 24; i++) {
+                if (i % 24 === 0) {
+                    day = [];
+                }
+                day.push(arrValue.length &gt; i ? arrValue[i] : null);
+                if (i % 24 === 23) {
+                    result.push(day);
+                }
+            }
+            return result;
+        },
+        stringifyValue: function (rawValue) {
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (!(rawValue instanceof Array))
+<span class="cstat-no" title="statement not covered" >                return '';</span>
+            var result = [];
+            rawValue.map(function (item) {
+                <span class="missing-if-branch" title="else path not taken" >E</span>if (item instanceof Array) {
+                    result = result.concat(item);
+                } else {
+<span class="cstat-no" title="statement not covered" >                    result.push(item);</span>
+                }
+            });
+            return JSON.stringify(result);
+        },
+        getCursorSize: function (state) {
+            var pos = {
+                left: -2,
+                top: -2,
+                width: 0,
+                height: 0
+            };
+            if (state.mouseCurrentX &lt; 0 &amp;&amp; (state.mouseDownX &lt; 0 &amp;&amp; state.mouseDownY &lt; 0)) {
+                return pos;
+            }
+            if (state.mouseDownX &lt; 0) {
+                var axis = this.getGridAxis(state.mouseCurrentX, state.mouseCurrentY);
+                pos.left = axis.x * CELL_LENGTH + 1;
+                pos.top = axis.y * CELL_LENGTH + 1;
+                pos.width = CELL_LENGTH - 1;
+                pos.height = CELL_LENGTH - 1;
+                return pos;
+            }
+            var axis1 = this.getGridAxis(Math.min(state.mouseDownX, state.mouseCurrentX), Math.min(state.mouseDownY, state.mouseCurrentY));
+            var axis2 = this.getGridAxis(Math.max(state.mouseDownX, state.mouseCurrentX), Math.max(state.mouseDownY, state.mouseCurrentY));
+            pos.left = axis1.x * CELL_LENGTH + 1;
+            pos.top = axis1.y * CELL_LENGTH + 1;
+            pos.width = (axis2.x - axis1.x + 1) * CELL_LENGTH - 1;
+            pos.height = (axis2.y - axis1.y + 1) * CELL_LENGTH - 1;
+            return pos;
+        },
+        getGridAxis: function (x, y) {
+            var x = (x - x % CELL_LENGTH) / CELL_LENGTH;
+            var y = (y - y % CELL_LENGTH) / CELL_LENGTH;
+            x = x &lt; 0 ? 0 : x;
+            x = x &gt; 23 ? <span class="branch-0 cbranch-no" title="branch not covered" >23 </span>: x;
+            y = y &lt; 0 ? 0 : y;
+            y = y &gt; 6 ? <span class="branch-0 cbranch-no" title="branch not covered" >6 </span>: y;
+            return {
+                x: x,
+                y: y
+            };
+        },
+        getMergedValues: function (arr) {
+            var result = [];
+            var beginIndex = 0;
+            var prevValue = null;
+            for (var i = 0; i &lt; arr.length; i++) {
+                if (arr[i] == null) {
+                    if (prevValue == null) {
+                        continue;
+                    } else {
+                        result.push({
+                            begin: beginIndex,
+                            end: i - 1,
+                            value: prevValue
+                        });
+                        prevValue = null;
+                        continue;
+                    }
+                } else {
+                    if (arr[i] === prevValue) {
+                        continue;
+                    } else {
+                        if (prevValue != null) {
+                            result.push({
+                                begin: beginIndex,
+                                end: i - 1,
+                                value: prevValue
+                            });
+                        }
+                        beginIndex = i;
+                        prevValue = arr[i];
+                    }
+                }
+            }
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (prevValue != null) {
+<span class="cstat-no" title="statement not covered" >                result.push({</span>
+                    begin: beginIndex,
+                    end: 23,
+                    value: prevValue
+                });
+            }
+            return result;
+        },
+        getSelectedRange: function (state) {
+            var axis1 = this.getGridAxis(Math.min(state.mouseDownX, state.mouseCurrentX), Math.min(state.mouseDownY, state.mouseCurrentY));
+            var axis2 = this.getGridAxis(Math.max(state.mouseDownX, state.mouseCurrentX), Math.max(state.mouseDownY, state.mouseCurrentY));
+            return {
+                startHour: axis1.x,
+                endHour: axis2.x,
+                startWeekday: axis1.y,
+                endWeekday: axis2.y
+            };
+        },
+        getRangeSelectedCount: function (value, axis1, axis2) {
+            value = this.parseValue(value);
+            var result = 0;
+            for (var y = axis1.y; y &lt; axis2.y + 1; y++) {
+                <span class="missing-if-branch" title="if path not taken" >I</span>if (y &gt; value.length - 1) {
+<span class="cstat-no" title="statement not covered" >                    continue;</span>
+                }
+                for (var x = axis1.x; x &lt; axis2.x + 1; x++) {
+                    if (x &gt; value[y].length - 1) {
+                        continue;
+                    }
+                    <span class="missing-if-branch" title="if path not taken" >I</span>if (value[y][x] != null) {
+<span class="cstat-no" title="statement not covered" >                        result++;</span>
+                    }
+                }
+            }
+            return result;
+        },
+        getRangeIntro: function (startHour, endHour, startWeekday, endWeekday) {
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (isEmpty(startHour))
+<span class="cstat-no" title="statement not covered" >                return '';</span>
+            var res = '';
+            res += isEmpty(startWeekday) ? '' : <span class="branch-1 cbranch-no" title="branch not covered" >language.day[startWeekday];</span>
+            res += isEmpty(endWeekday) || <span class="branch-1 cbranch-no" title="branch not covered" >startWeekday === endWeekday </span>? '' : <span class="branch-1 cbranch-no" title="branch not covered" >(res.length ? ' - ' : '') + language.day[endWeekday];</span>
+            res += res.length ? <span class="branch-0 cbranch-no" title="branch not covered" >' ' </span>: '';
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (+startHour === 0 &amp;&amp; +endHour === 23) {
+<span class="cstat-no" title="statement not covered" >                res += language.allDay;</span>
+            } else {
+                res += startHour + ':00' + (isEmpty(endHour) ? <span class="branch-0 cbranch-no" title="branch not covered" >'' </span>: ' - ' + (endHour + 1) + ':00');
+            }
+            return res;
+            function isEmpty(v) {
+                return v == null || v === undefined;
+            }
+        },
+        updateValueByMouse: function (value, state) {
+            var scheduleRange = this.getSelectedRange(state);
+            return this.updateValueByAxis(value, {
+                x: scheduleRange.startHour,
+                y: scheduleRange.startWeekday
+            }, {
+                x: scheduleRange.endHour,
+                y: scheduleRange.endWeekday
+            });
+        },
+        updateValueByAxis: function (value, axis1, axis2, v) {
+            value = this.parseValue(value);
+            var selectedAll = true;
+            for (var y = axis1.y; y &lt; axis2.y + 1; y++) {
+                if (!selectedAll)
+                    break;
+                <span class="missing-if-branch" title="if path not taken" >I</span>if (y &gt; value.length - 1)
+<span class="cstat-no" title="statement not covered" >                    continue;</span>
+                for (var x = axis1.x; x &lt; axis2.x + 1; x++) {
+                    if (!selectedAll)
+                        break;
+                    <span class="missing-if-branch" title="if path not taken" >I</span>if (x &gt; value[y].length - 1)
+<span class="cstat-no" title="statement not covered" >                        continue;</span>
+                    <span class="missing-if-branch" title="else path not taken" >E</span>if (value[y][x] == null || <span class="branch-1 cbranch-no" title="branch not covered" >value[y][x] === undefined)</span>
+                        selectedAll = false;
+                }
+            }
+            if (v == null || v === undefined) {
+                v = selectedAll ? <span class="branch-0 cbranch-no" title="branch not covered" >null </span>: '';
+            }
+            for (var y = axis1.y; y &lt; axis2.y + 1; y++) {
+                <span class="missing-if-branch" title="if path not taken" >I</span>if (y &gt; value.length - 1)
+<span class="cstat-no" title="statement not covered" >                    continue;</span>
+                for (var x = axis1.x; x &lt; axis2.x + 1; x++) {
+                    <span class="missing-if-branch" title="if path not taken" >I</span>if (x &gt; value[y].length - 1)
+<span class="cstat-no" title="statement not covered" >                        continue;</span>
+                    value[y][x] = v;
+                }
+            }
+            return this.stringifyValue(value);
+        }
+    };
+});
+&nbsp;
+&nbsp;
+/** d e f i n e */
+define('core/scheduleTools', ['jpui/core/scheduleTools'], <span class="fstat-no" title="function not covered" >function (target) {</span> <span class="cstat-no" title="statement not covered" >return target; </span>});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 19 2018 11:30:14 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
