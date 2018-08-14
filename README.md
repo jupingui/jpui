@@ -1,7 +1,7 @@
 # JPUI
-## See FCUI2 Doc locally
+## See JPUI Doc locally
 
-* Enter FCUI2 root directory, and install dependencies by running:
+* Enter JPUI root directory, and install dependencies by running:
 
 ```bash
     npm install
