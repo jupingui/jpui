@@ -1,6 +1,6 @@
 {
-  "name": "JPUI",
-  "version": "1.0.0",
+  "name": "jpui",
+  "version": "1.0.1",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --progress --colors --content-base build.doc --hot --port 8847 --host 0.0.0.0",
     "test": "node node_modules/edp/bin/edp-cli build -f && node node_modules/karma/bin/karma start",
@@ -17,6 +17,7 @@
     "type": "git",
     "url": "git@github.com:jupingui/jpui.git"
   },
+  "homepage": "https://github.com/jupingui/jpui",
   "main": "dist/index.js",
   "description": "JPUI, a lightweight UI based on React.",
   "devDependencies": {
