@@ -25,9 +25,9 @@ define(function (require) {
                             <NumberBox disabled={true}/>&nbsp;
                             <NumberBox showSpinButton={true}/>
                             <h5>Size</h5>
-                            <NumberBox placeholder="placeholder" showSpinButton={true} className="jpui-numberbox-small"/>&nbsp;
+                            <NumberBox placeholder="placeholder" showSpinButton={true} className="fcui2-numberbox-small"/>&nbsp;
                             <NumberBox placeholder="placeholder" showSpinButton={true}/>&nbsp;
-                            <NumberBox placeholder="placeholder"showSpinButton={true} className="jpui-numberbox-big"/>
+                            <NumberBox placeholder="placeholder"showSpinButton={true} className="fcui2-numberbox-big"/>
                         </Skin>
                     </div>
                     <div className="demo-item">

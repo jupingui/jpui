@@ -20,7 +20,7 @@ define(function (require) {
                 <div {...prop}>
                     <span data-level={config.menu[i].level}
                         className={
-                            'jpui-icon jpui-icon-arrow-'
+                            'fcui2-icon fcui2-icon-arrow-'
                                 + (me.props.level !== config.menu[i].level ? 'right' : 'down')
                         }>
                     </span>
@@ -68,7 +68,7 @@ define(function (require) {
             return {
                 file: 'src\\Button.jsx.js',
                 level: 'widget',
-                title: 'JPUI Docs OneUX3',
+                title: 'FCUI2 Docs OneUX3',
                 skin: 'oneux3',
                 dispatch: function () {}
             };
@@ -87,7 +87,7 @@ define(function (require) {
             var Demo = config.demos[this.props.file.replace(/_/g, '\\')];
             var componentSource = 'https://github.com/jupingui/jpui/tree/master/'
                 + this.props.file.replace(/_/g, '/');
-            var demoSource = 'https://github.com/jupingui/jpui/tree/master/doc/src/demos'
+            var demoSource = 'hhttps://github.com/jupingui/jpui/tree/master/doc/src/demos'
                 + this.props.file.replace(/_/g, '/').replace('src', '');
             return (
                 <div>

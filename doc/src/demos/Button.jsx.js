@@ -22,34 +22,34 @@ define(function (require) {
                             <Button label="light-blue" skin="light-blue"/>&nbsp;
                             <Button label="disabled" disabled={true}/>&nbsp;
                             <h5>Size</h5>
-                            <Button label="确定" className="jpui-button-small"/>&nbsp;
+                            <Button label="确定" className="fcui2-button-small"/>&nbsp;
                             <Button label="确定"/>&nbsp;
-                            <Button label="确定" className="jpui-button-big"/>
+                            <Button label="确定" className="fcui2-button-big"/>
                             <br/><br/>
-                            <Button label="确定" className="jpui-button-small" skin="important"/>&nbsp;
+                            <Button label="确定" className="fcui2-button-small" skin="important"/>&nbsp;
                             <Button label="确定" skin="important"/>&nbsp;
-                            <Button label="确定" className="jpui-button-big" skin="important"/>
+                            <Button label="确定" className="fcui2-button-big" skin="important"/>
                             <br/><br/>
-                            <Button label="确定" className="jpui-button-small" skin="opacity"/>&nbsp;
+                            <Button label="确定" className="fcui2-button-small" skin="opacity"/>&nbsp;
                             <Button label="确定" skin="opacity"/>&nbsp;
-                            <Button label="确定" className="jpui-button-big" skin="opacity"/>
+                            <Button label="确定" className="fcui2-button-big" skin="opacity"/>
                             <h5>Only Icon</h5>
-                            <Button icon="jpui-icon jpui-icon-arrow-left-2" width="28" iconLeft={4} label=""/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="grey"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="important"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="opacity"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="normal-blue"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="grey-blue"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="light-blue"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-arrow-left-2" width="28" iconLeft={4} label="" disabled={true}/>
+                            <Button icon="fcui2-icon fcui2-icon-arrow-left-2" width="28" iconLeft={4} label=""/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="grey"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="important"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="opacity"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="normal-blue"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="grey-blue"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-arrow-left-2" width="28" iconLeft={4} label="" skin="light-blue"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-arrow-left-2" width="28" iconLeft={4} label="" disabled={true}/>
                             <br/><br/>
-                            <Button icon="jpui-icon jpui-icon-search" width="28" iconLeft={4} label="" className="jpui-button-nocolor"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-search" width="28" iconLeft={4} label="" skin="normal-blue" className="jpui-button-nocolor"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-search" width="28" iconLeft={4} label="" disabled={true} className="jpui-button-nocolor"/>
+                            <Button icon="fcui2-icon fcui2-icon-search" width="28" iconLeft={4} label="" className="fcui2-button-nocolor"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-search" width="28" iconLeft={4} label="" skin="normal-blue" className="fcui2-button-nocolor"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-search" width="28" iconLeft={4} label="" disabled={true} className="fcui2-button-nocolor"/>
                             <br/><br/>
-                            <Button icon="jpui-icon jpui-icon-plus" label="    新建物料"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-arrow-right-2" label="查看更多    " iconLeft={70} skin="important"/>&nbsp;
-                            <Button icon="jpui-icon jpui-icon-arrow-right-2" label="查看更多    " iconLeft={70} skin="opacity"/>
+                            <Button icon="fcui2-icon fcui2-icon-plus" label="    新建物料"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-arrow-right-2" label="查看更多    " iconLeft={70} skin="important"/>&nbsp;
+                            <Button icon="fcui2-icon fcui2-icon-arrow-right-2" label="查看更多    " iconLeft={70} skin="opacity"/>
                         </Skin>
                     </div>
                     <div className="demo-item">

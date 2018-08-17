@@ -37,8 +37,8 @@ define(function (require) {
                 subComponentCloseHandlerName: 'onIconClick',
                 subComponentProps: {
                     skin: 'white',
-                    message: '<span class="jpui-icon jpui-icon-failed-2"></span>提示文案',
-                    icon: 'jpui-icon jpui-icon-remove',
+                    message: '<span class="fcui2-icon fcui2-icon-failed-2"></span>提示文案',
+                    icon: 'fcui2-icon fcui2-icon-remove',
                     status: 'new-refresh',
                     onRefreshClick() {
                         alert('hello world');
@@ -61,9 +61,9 @@ define(function (require) {
                         width: 400
                     },
                     message: [
-                        '<div class="jpui-message-multi-lines">',
+                        '<div class="fcui2-message-multi-lines">',
                         '<div class="message-title">',
-                        '<span class="jpui-icon jpui-icon-failed-2" style="color:#FF5b5b;font-weight:700;"></span>',
+                        '<span class="fcui2-icon fcui2-icon-failed-2" style="color:#FF5b5b;font-weight:700;"></span>',
                         '这是标题啊',
                         '</div>',
                         '<div class="message-content">',
@@ -71,7 +71,7 @@ define(function (require) {
                         '</div>',
                         '</div>'
                     ].join(''),
-                    icon: 'jpui-icon jpui-icon-remove'
+                    icon: 'fcui2-icon fcui2-icon-remove'
                 }
             });
         },
