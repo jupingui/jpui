@@ -10,14 +10,15 @@ define(function (require) {
     function menuFactory(me) {
         var doms = [];
         for (var i = 0; i < config.menu.length; i++) {
-            var prop = {
-                key: i + '',
-                className: 'menu-item',
-                'data-level': config.menu[i].level,
-                onClick: me.onLevelChange
-            };
+            // var prop = {
+            //     key: i + '',
+            //     className: 'menu-item',
+            //     'data-level': config.menu[i].level,
+            //     onClick: me.onLevelChange
+            // };
             doms.push(
-                <div {...prop}>
+                <div key={i + ''} className='menu-item' 
+                onClick = {me.onLevelChange} data-level={config.menu[i].level}>
                     <span data-level={config.menu[i].level}
                         className={
                             'fcui2-icon fcui2-icon-arrow-'
