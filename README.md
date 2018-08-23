@@ -1,9 +1,7 @@
 # JPUI
 ## See JPUI examples
 
-```bash
-    https://jupingui.github.io/jpui/
-```
+* Visit [https://jupingui.github.io/jpui/](https://jupingui.github.io/jpui/)
 
 ## See JPUI Doc locally
 

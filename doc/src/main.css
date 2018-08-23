@@ -207,7 +207,7 @@ h6 {
 .fork-me {
   width: 139px;
   height: 139px;
-  background-image: url(../images/fork.png);
+  background-image: url(./images/fork.png);
   display: block;
   position: fixed;
   top: 0px;
