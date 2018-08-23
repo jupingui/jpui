@@ -19,5 +19,4 @@ setTimeout(function () {
     data = JSON.stringify(data);
     fs.writeFileSync(outDir + '/dataset.js', 'define(function(require){return ' + data +';});');
     fs.unlinkSync(outDir + '/data.json');
-    console.log('FCUI2 docs parsed!')
 }, 1000);
