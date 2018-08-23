@@ -5,3 +5,4 @@ build.doc/src
 *.log
 output
 package-lock.json
+coverage
