@@ -35,10 +35,10 @@ module.exports = {
         alias: {
             'react': path.resolve(__dirname, 'dep/react-with-addons.min.js'),
             'react-dom': path.resolve(__dirname, 'dep/react-dom.min.js'),
-            // 'preact': path.resolve(__dirname, 'dep/preact.dev.js'),
-            // 'react': path.resolve(__dirname, 'dep/preact-compat.js'),
-            // 'prop-types': path.resolve(__dirname, 'dep/prop-types.js'),
-            // 'react-dom': path.resolve(__dirname, 'dep/preact-compat.js'),
+            'preact': path.resolve(__dirname, 'dep/preact.dev.js'),
+            'react': path.resolve(__dirname, 'dep/preact-compat.js'),
+            'prop-types': path.resolve(__dirname, 'dep/prop-types.js'),
+            'react-dom': path.resolve(__dirname, 'dep/preact-compat.js'),
             'jpui': path.join(__dirname, 'src'),
             'js-formatter': path.join(__dirname, 'dep/formatterJS'),
             'markdown': path.join(__dirname, 'dep/markdown.min')

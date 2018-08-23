@@ -10,24 +10,20 @@ define(function (require) {
     function menuFactory(me) {
         var doms = [];
         for (var i = 0; i < config.menu.length; i++) {
-            // var prop = {
-            //     key: i + '',
-            //     className: 'menu-item',
-            //     'data-level': config.menu[i].level,
-            //     onClick: me.onLevelChange
-            // };
-            doms.push(
-                <div key={i + ''} className='menu-item' 
-                onClick = {me.onLevelChange} data-level={config.menu[i].level}>
-                    <span data-level={config.menu[i].level}
-                        className={
-                            'fcui2-icon fcui2-icon-arrow-'
-                                + (me.props.level !== config.menu[i].level ? 'right' : 'down')
-                        }>
-                    </span>
-                    <span data-level={config.menu[i].level}>{config.menu[i].label}</span>
-                </div>
-            );
+            var prop = {
+                key: i + '',
+                className: 'menu-item',
+                'data-level': config.menu[i].level,
+                onClick: me.onLevelChange
+            };
+            var spanProp = {
+                'data-level': config.menu[i].level,
+                className: 'fcui2-icon fcui2-icon-arrow-' + (me.props.level !== config.menu[i].level ? 'right' : 'down'
+            }
+            var twoProp = {
+                'data-level': config.menu[i].level
+            }
+            doms.push(<div {...prop}><span {...spanProp}/><span {...twoProp}>{config.menu[i].label}</span></div>);
             if (me.props.level !== config.menu[i].level) {
                 doms.push(<hr key={i + '-begin'}/>);
                 continue;
