@@ -1,8 +1,5 @@
 /**
  * 栅格形式的色彩选择器
- * @author Wang Yi
- * @email wangyispaceman@gmail.com
- * @version 0.0.2.2
  */
 define(function (require) {
     var React = require('react');

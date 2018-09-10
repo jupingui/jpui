@@ -7,7 +7,7 @@ module.exports = {
         './doc/src/main.webpack.js'
     ],
     output: {
-        path: path.resolve(__dirname, 'build.doc'),
+        path: path.resolve(__dirname, 'doc'),
         filename: 'src/build.js'
     },
     module: {
