@@ -1,11 +1,11 @@
-# JPUI
-## See JPUI examples
+# JPUI2
+## See JPUI2 examples
 
 * Visit [https://jupingui.github.io/jpui2/](https://jupingui.github.io/jpui2/)
 
-## See JPUI Doc locally
+## See JPUI2 Doc locally
 
-* Enter JPUI root directory, and install dependencies by running:
+* Enter JPUI2 root directory, and install dependencies by running:
 
 ```bash
     npm install
