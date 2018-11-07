@@ -1,5 +1,5 @@
 {
-  "name": "jpui",
+  "name": "jpui2",
   "version": "1.0.1",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --progress --colors --content-base build.doc --hot --port 8847 --host 0.0.0.0",
@@ -15,9 +15,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jupingui/jpui.git"
+    "url": "git@github.com:jupingui/jpui2.git"
   },
-  "homepage": "https://github.com/jupingui/jpui",
+  "homepage": "https://github.com/jupingui/jpui2",
   "main": "dist/index.js",
   "description": "JPUI, a lightweight UI based on React.",
   "devDependencies": {
