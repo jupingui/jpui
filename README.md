@@ -1,7 +1,7 @@
 # JPUI
 ## See JPUI examples
 
-* Visit [https://jupingui.github.io/jpui/](https://jupingui.github.io/jpui/)
+* Visit [https://jupingui.github.io/jpui2/](https://jupingui.github.io/jpui2/)
 
 ## See JPUI Doc locally
 
@@ -20,7 +20,7 @@
 
 * Visit [http://localhost:8847/](http://localhost:8847/)
 
-## How to run JPUI test
+## How to run JPUI2 test
 
 ```bash
 $ npm test
@@ -30,7 +30,7 @@ or
 $ edp test start
 ```
 
-## How to build JPUI Doc System
+## How to build JPUI2 Doc System
 
 ```bash
 $ npm run build
